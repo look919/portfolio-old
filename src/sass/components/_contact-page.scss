@@ -1,0 +1,70 @@
+.contact-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    
+
+    &__email{
+        height: 3rem;
+        width: 60rem;
+        margin-bottom: 1rem;
+        padding: .5rem 1rem;
+        border: 1px solid $color-black;
+        border-radius: .6rem;
+        letter-spacing: .2rem;
+
+        background-image: linear-gradient(to right bottom, 
+        rgba(#0c28a6,.7),
+        rgba($color-black,.7));
+
+        &:active,
+        &:focus{
+            outline: none;
+        }
+        &::placeholder{
+            color: $color-black;
+        }
+
+        &--user{
+            color: $color-black;
+
+            background-image: linear-gradient(to right bottom, 
+            rgba(#0c28a6,.7),
+            rgba(#60c0e0,.7));
+
+
+            &:placeholder-shown{
+                animation: placeholder 5s ease-in infinite;
+            }
+            
+        }
+    }
+    &__textarea{
+        resize: none;
+        width: 60rem;
+        height: 28rem;
+        margin-bottom: 1rem;
+        padding: 2.5rem 3rem;
+        font-size: 1.6rem;
+        letter-spacing: .1rem;
+        line-height: 2.2rem;
+        border: 1px solid $color-black;
+        border-radius: 1rem;
+
+        font-family: 'Quicksand', sans-serif;  
+        color: $color-black;
+        font-weight: 900;
+
+        background-image: linear-gradient(to right bottom, 
+        rgba(#0c28a6,.7),
+        rgba(#60c0e0,.7));
+
+        &:active,
+        &:focus{
+            outline: none;
+        }
+    }
+
+    
+}

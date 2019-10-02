@@ -1,0 +1,90 @@
+.card{
+    display: inline-block;
+    height: 10rem;
+    width: 90rem;
+    margin-bottom: 1rem;
+    
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+
+    transition: all .7s ease;
+
+    &__side{
+        height: 10rem;
+        width: 90rem;
+        padding: .1rem 5rem;
+        border-radius: .5rem;
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+
+        transition: all .7s ease;
+        backface-visibility: hidden;
+        
+
+        &--front{         
+            transition: all .7s ease;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+
+            &-header{
+                font-size: 3.5rem;
+                letter-spacing: .2rem;
+                font-family: 'Quicksand', sans-serif;      
+                font-weight: 900;                                        
+            }
+            &-img{
+
+            }
+
+        }
+
+        &--back{
+            transform: rotateX(180deg);
+            transition: all .7s ease;
+                       
+            text-align: left;
+            font-size: 1.6rem;
+            display: flex;
+            align-items: center;
+            
+
+            border: 1px solid $color-black;
+        }
+    }
+
+
+    &:hover &__side--front{
+        transform: rotateX(-180deg);
+    }
+    &:hover &__side--back{
+        transform: rotateX(0);
+    }
+}
+
+.background{
+
+    &-html{
+        background-image: linear-gradient(to right bottom, 
+        rgba(red,.7),
+        rgba($color-black,.7));
+    }
+    &-css{
+        background-image: linear-gradient(to right bottom, 
+        rgba(#0c28a6,.7),
+        rgba(#60c0e0,.7));
+    }
+    &-sass{
+        background-image: linear-gradient(to right bottom,
+        rgba(#db37cb,.7),
+        rgba($color-black,.7));
+    }
+    &-js{
+        background-image: linear-gradient(to right bottom,
+        rgba(#c7bd0a,.7),
+        rgba($color-black,.7));
+    }
+}

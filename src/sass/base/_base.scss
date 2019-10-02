@@ -1,0 +1,42 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    letter-spacing: 1px;
+    font-size: 2.2rem;
+    color: $color-white;
+    background-color: $color-background;
+    width: 100%;  
+}
+button {
+    cursor: pointer;
+}
+button:disabled{
+    cursor: default;
+}
+
+.content{  
+    max-width: 140rem;
+    height: 100vh;
+    margin: 0 auto;
+    margin-top: 8.5rem;
+    text-align: center;
+}
+
+
+::selection {
+    background-color: $color-white;
+    color: $color-background;
+}
