@@ -23,7 +23,10 @@ module.exports = {
             use: [
                 'file-loader',
             ]
-        }
+        }, {
+            test: /\.svg$/,
+            use: ['@svgr/webpack'],
+        },
     ]},
     devtool: 'cheap-module-eval-source-map',
     devServer: {

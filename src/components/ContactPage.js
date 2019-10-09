@@ -2,8 +2,6 @@ import React from 'react'
 import Header from '../components/Header'
 import Nav from '../components/Nav'
 
-import myPhoto from '../img/me.png'
-
 const ContactPage = () => {
     
     return(

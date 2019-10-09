@@ -1,8 +1,11 @@
 import React from 'react'
-import Header from '../components/Header'
-import Nav from '../components/Nav'
+import Header from './Header'
+import Nav from './Nav'
+import {Link} from 'react-router-dom'
 
 import myPhoto from '../img/me.png'
+
+import {LinkedInIcon, GithubIcon, HackerrankIcon, GmailIcon} from '../Icons/Icons'
 
 const AboutMePage = () => {
     
@@ -32,7 +35,20 @@ const AboutMePage = () => {
                     </div>
                     <div className="about-me__photo">
                         <img src={myPhoto} className="main-page__img-radius"/>
-                        <div className="main-page__icons">Icons</div>
+                        <div className="main-page__icons">
+                            <a href='https://github.com/look919'>
+                                <LinkedInIcon />
+                            </a>                     
+                            <a href='https://github.com/look919'>
+                                <GithubIcon />
+                            </a>
+                            <a href='https://www.hackerrank.com/wirkustomasz919'>
+                                <HackerrankIcon />
+                            </a>
+                            <Link to='/contact'>
+                                <GmailIcon />
+                            </Link>
+                        </div>
                     </div>
 
                     
