@@ -13,9 +13,9 @@ import {HtmlIcon, CssIcon, JsIcon, ReactIcon, GitIcon} from '../Icons/Icons'
 const WelcomePage = () => {
     
     return(
-        <div className="content smaller-margin-top">
+        <div className="content">
 
-            <h1 className="header__heading-primary smaller-margin-bot">Skills</h1>
+            <h1 className="header__heading-primary">Skills</h1>
             <div className="card__flex">
             <div className="card">  
                     <div className="card__side card__side--front background-html">

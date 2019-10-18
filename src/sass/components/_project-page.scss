@@ -45,10 +45,10 @@
 
 .single-project{
     height: 100vh;
-    padding: 10rem;
+    padding: 2rem 10rem;
 
     @media only screen and (max-width: $bp-medium){
-        padding: 4.5rem;
+        padding: 2rem 4.5rem;
     }
     @media only screen and (max-width: $bp-small){
         padding: 2rem;
