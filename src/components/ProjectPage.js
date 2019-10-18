@@ -28,7 +28,7 @@ const ProjectPage = (props) => {
                 }
                 {props.location.state.title === 'Portfolio' && 
                 <div className="single-project__links">
-                    <a className="single-project__link" href="#" target="_blank">Link &rarr;</a> 
+                    <a className="single-project__link" href="https://tomasz-wirkus-portfolio.herokuapp.com/" target="_blank">Link &rarr;</a> 
                     <a className="single-project__link" href="https://github.com/look919" target="_blank">Github &rarr;</a>
                 </div>
                 }
