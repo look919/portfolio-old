@@ -52,7 +52,7 @@ const ProjectPage = (props) => {
             </div>
             <div className="single-project__photos">
                 {props.location.state.title==='Progress Tracker' && <img src={`/${progressTrackerImage}`} alt="Img" className="single-project__photo single-project__photo--pt"/>}
-                {props.location.state.title==='Portfolio' && <img src={`/${portfolioImage}`} alt="Img" className="single-project__photo single-project__photo--portfolio" />}
+                {props.location.state.title==='Portfolio' && <img src={`/${portfolioImage}`} alt="Img" className="single-project__photo single-project__photo--portfolio"/>}
 
                 {props.location.state.title==='Three games in one' && <img src={`/${threeGamesInOneImage}`} alt="Img" className="single-project__photo single-project__photo--tgio" />}
                 {props.location.state.title==='Chess game' && <img src={`/${chessImage}`} alt="Img" className="single-project__photo single-project__photo--chess" />}
