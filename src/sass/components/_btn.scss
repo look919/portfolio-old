@@ -1,8 +1,7 @@
 .btn{
     margin-bottom: 3.5rem;
-    color: $color-black;
-    
-    
+
+    color: $color-black;   
     font-weight: 300;
     
 
@@ -17,8 +16,7 @@
         transition: all 1s;
         outline: none;
         
-        
-
+    
         &:hover {
             transform: scale(1.15) skewX(16deg)  skewY(2deg);
             color: $color-white;   
@@ -35,36 +33,35 @@
        
     }
     
-    
     &__go-back{
-        margin-top: 4rem;
-        border-radius: 15%;
-        overflow: hidden;
-        font-size: 2rem;
-        padding: 1rem 3rem;
-        background-color: $color-white-3;
-        transition: all .3s;
-        outline: none;
+        padding: .5rem 2rem;
+        display: block;  
+        margin-bottom: 0;  
 
         &:visited,
         &:link{
             color: $color-black;
             text-decoration: none;          
         }
-
         &:hover{
             transform: scale(1.05);
         }
-        &:active{
-            transform: translateY(-.5rem);
-        }
+    
     }
+    
 
     &__action{
         width: 20rem;
         border: 1px solid $color-black;
         border-radius: 1rem;
-        padding: .5rem 2rem;
+        padding: .8rem;
+        font-weight: 600;
+
+        @media only screen and(max-width: $bp-small){
+            padding: .6rem;
+        }
+
+
         transition: all .2s;
 
         background-image: linear-gradient(to right bottom, 
@@ -81,5 +78,21 @@
             transform: translateY(-.2rem);
             outline: none;
         }
+        &:visited,
+            &:link{
+                color: $color-black;
+                text-decoration: none; 
+                
+                &:hover{
+                    transform: scale(1.05);
+                    box-shadow: 0 1rem 4rem rgba(#0c28a6,.1);
+                }
+        
+                &:active,
+                &:focus{
+                    transform: translateY(-.2rem);
+                    outline: none;
+                }
+            }
     }
 }

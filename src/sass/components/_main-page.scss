@@ -1,28 +1,37 @@
 .main-page{
     &__text{
         margin-bottom: 7rem;
+        padding: 2rem;
+
+        @media only screen and (max-width: $bp-medium){
+            margin-bottom: 3rem;
+        }
     }
 
     &__photo{
         width: 19rem;
-        display: inline-block;
+        
+        display: inline-flex;
+        flex-direction: column;
     }
     &__img-radius{
         border: 1px solid $color-white;
         border-radius: 50%;
+        width: 19rem !important;
+        height: 19rem !important;
 
         margin-bottom: 1rem;
     }
 
     &__icons{
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
 
         margin-right:2rem;
         margin-left: 2rem;
     }
     &__icon{
-
+        margin-right: .5rem;
         transition: all .6s;
         
         &:hover{

@@ -3,9 +3,7 @@ import {Link} from 'react-router-dom'
 import Header from '../components/Header'
 import Nav from '../components/Nav'
 
-import p1 from '../img/pt-1.png'
-import p2 from '../img/pt-2.png'
-import p3 from '../img/pt-3.png'
+
 
  
 
@@ -30,6 +28,22 @@ const ProjectsPage = () => {
                     }
                     }} >
                     Progress Tracker &rarr;
+                    </Link>
+                </button>
+            </div>
+            <div>
+                <button className = "btn btn__inline">
+                    <Link 
+                    className="btn btn__inline" 
+                    to={{
+                    pathname: '/projects/portfolio',
+                    state: {
+                        title: 'Portfolio',
+                        description: 'Project you are currently looking at, so there is no point in describing it, my first bigger self-experience with React library',
+                        photos: '../img/pt-1.png'
+                    }
+                    }} >
+                    Portfolio &rarr;
                     </Link>
                 </button>
             </div>

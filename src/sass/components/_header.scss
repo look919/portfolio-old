@@ -1,6 +1,8 @@
 .header{
 
-    margin-bottom: 7rem;
+    margin-bottom: 10rem;
+
+
 
     &__heading-primary{
 
@@ -8,5 +10,11 @@
         font-weight: 100;
         font-size: 6rem;
         letter-spacing: .5rem;
+    }
+    &__heading-secondary{
+        font-size: 2rem;
+        font-style: italic;
+        color: $color-white-3;
+        font-weight: 100;
     }
 }

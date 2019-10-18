@@ -26,23 +26,23 @@ const AboutMePage = () => {
                 </ul>
                 <div className="about-me__info">                  
                     <div className="about-me__text">
-                        <p>I started programming at the beginning of my studies but it absorbed me right away.</p>
-                        <p>I began with C++ and became interested in the Qt framework relatively quickly,</p>
-                        <p>I wrote simple windowed programs in it, I also spent a lot of time solving algorithms from hackerrank.</p>
-                        <p>After a few months I became interested in web programming and thats what I plan to tie my future with, </p>
-                        <p>because thats what gives me the biggest joy. Currently, I spend much more time on the</p>
-                        <p> front-end but plans to focus also on back-end to become a fullstack developer.</p>
+                        <p>I started programming at the beginning of my studies but it absorbed me right away.
+                        I began with C++ and became interested in the Qt framework relatively quickly,
+                        I wrote simple windowed programs in it, I also spent a lot of time solving algorithms from hackerrank.
+                        After a few months I became interested in web programming and thats what I plan to tie my future with, 
+                        because thats what gives me the biggest joy. Currently, I spend much more time on the
+                        front-end but plans to focus also on back-end to become a fullstack developer.</p>
                     </div>
                     <div className="about-me__photo">
                         <img src={myPhoto} className="main-page__img-radius"/>
                         <div className="main-page__icons">
-                            <a href='https://github.com/look919'>
+                            <a href='https://github.com/look919' target="_blank">
                                 <LinkedInIcon />
                             </a>                     
-                            <a href='https://github.com/look919'>
+                            <a href='https://github.com/look919' target="_blank">
                                 <GithubIcon />
                             </a>
-                            <a href='https://www.hackerrank.com/wirkustomasz919'>
+                            <a href='https://www.hackerrank.com/wirkustomasz919' target="_blank">
                                 <HackerrankIcon />
                             </a>
                             <Link to='/contact'>

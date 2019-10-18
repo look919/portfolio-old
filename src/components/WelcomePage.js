@@ -11,9 +11,10 @@ const WelcomePage = () => {
     return(
         <div className="content">
 
-            <Header title='Tomasz Wirkus'/>
+            <Header title='Tomasz Wirkus' subtitle="Junior fullstack developer"/>
+            
+            <p className="main-page__text">Hello! My name is Tomasz and I would like to welcome you on my website, feel free to look around.</p>
 
-            <p className="main-page__text">Hello! My name is Tomasz and I would like to welcome you on my website. I work everyday to become Junior fullstack developer</p>
             <div className="main-page__photo">
 
                 <img src={myPhoto} className="main-page__img-radius"/>

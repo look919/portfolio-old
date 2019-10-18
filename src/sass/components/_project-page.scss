@@ -47,8 +47,131 @@
     height: 100vh;
     padding: 10rem;
 
+    @media only screen and (max-width: $bp-medium){
+        padding: 4.5rem;
+    }
+    @media only screen and (max-width: $bp-small){
+        padding: 2rem;
+        padding-left: 3.5rem;
+    }
+
     &__container{
         display: flex;
+        justify-content: center;
+    }
+
+    &__description{
+        flex: 1 0 0;
+        display: flex;
+        flex-direction: column;
+    }
+    &__title{
+        text-align: left;
+        display: block;
+    }
+    &__text{
+        text-align: left;
+        margin-right: 5rem;
+        margin-bottom: 3rem;
+
+        @media only screen and(max-width: $bp-smallest){
+            margin-right: 2rem;
+        }
+    }
+    &__links{
+        display: flex;
+        flex-direction: column;
+    }
+    &__link{
+        color: $color-white-3;
+        background: none;
+        border: none;
+        font-size: 3rem;
+        font-style: italic;
+        text-align: left;
+        letter-spacing: .2rem;
+        transition: all 1s;
+        outline: none;
+        margin-bottom: 2rem;
+        width: 12rem;
+
+        &:active{       
+            transform: translateY(-.5rem);
+        }
+        &:hover{
+            text-shadow: 0 .6rem 2rem rgba($color-white-3, .6);
+        }
+        &:visited,
+        &:link{
+            color: $color-white-3;
+            text-decoration: none;
+        }
+    }
+    &__btn{
+        align-self: flex-end;
+        justify-self: flex-end;
+    }
+    &__photos{
+        flex: 1 0 0;
+    }
+    &__photo{
+        outline-offset: 1rem;
+        outline: 1rem dashed $color-black;
+        border-radius: .5rem;         
+        transition: all .4s;
+        
+        &:hover{
+            transform: rotate(5deg) scale(1.05);
+            outline: 1.5rem dashed $color-black;
+        }
+
+        @media only screen and(max-width: $bp-small) {
+            outline: none;
+            &:hover{
+                transform: none;
+                outline: none;
+            }
+        }
+
+        
+        &--pt{
+            width: 57.4rem;
+            width: 100%;
+            @media only screen and(max-width: $bp-large) {
+                width: 100%;
+            }
+            @media only screen and(max-width: $bp-smallest){
+                width: 80%;
+            }
+        }
+        &--portfolio{
+            width: 39.8rem;
+            width: 100%;
+            @media only screen and(max-width: $bp-large) {
+                width: 100%;
+            }
+            @media only screen and(max-width: $bp-smallest){
+                width: 90%;
+            }
+        }
+        &--tgio{
+            width: 44.9rem;
+            width: 100%;
+            @media only screen and(max-width: $bp-large) {
+                width: 100%;
+            }
+        }
+        &--chess{
+            width: 47.4rem;
+            width: 100%;
+            @media only screen and(max-width: $bp-large) {
+                width: 100%;
+            }
+            @media only screen and(max-width: $bp-smallest){
+                width: 80%;
+                margin-right: -4rem;
+            }
+        }
     }
 }
 

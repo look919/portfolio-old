@@ -5,10 +5,21 @@
     padding: 0;
     box-sizing: inherit;
 }
-
-
 html{
     font-size: 62.5%;
+
+    @media only screen and(max-width: $bp-largest){
+        font-size: 55%;
+    }
+    @media only screen and(max-width: $bp-large){
+        font-size: 50%;
+    }
+    @media only screen and(max-width: $bp-medium){
+        font-size: 40%;
+    }
+    @media only screen and(max-width: $bp-small){
+        font-size: 35%;
+    }
 }
 
 body{
@@ -32,7 +43,12 @@ button:disabled{
     height: 100vh;
     margin: 0 auto;
     margin-top: 8.5rem;
+    align-items: center;
     text-align: center;
+    animation: showUp .7s ease-in;
+
+
+
 }
 
 
