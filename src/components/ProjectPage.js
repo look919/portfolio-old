@@ -23,26 +23,26 @@ const ProjectPage = (props) => {
                 {props.location.state.title === 'Progress Tracker' && 
                 <div className="single-project__links">
                     <a className="single-project__link" href="http://progresstracker.surge.sh/index.html#" target="_blank">Link &rarr;</a> 
-                    <a className="single-project__link" href="https://github.com/look919" target="_blank">Github &rarr;</a>
+                    <a className="single-project__link" href="https://github.com/look919/Progress-Tracker" target="_blank">Github &rarr;</a>
                 </div>
                 }
                 {props.location.state.title === 'Portfolio' && 
                 <div className="single-project__links">
                     <a className="single-project__link" href="https://tomasz-wirkus-portfolio.herokuapp.com/" target="_blank">Link &rarr;</a> 
-                    <a className="single-project__link" href="https://github.com/look919" target="_blank">Github &rarr;</a>
+                    <a className="single-project__link" href="https://github.com/look919/portfolio" target="_blank">Github &rarr;</a>
                 </div>
                 }
 
                 {props.location.state.title === 'Three games in one' && 
                 <div className="single-project__links">
                     <a className="single-project__link" href="https://www.youtube.com/watch?v=SC5MxK_dTsI" target="_blank">Link &rarr;</a> 
-                    <a className="single-project__link" href="https://github.com/look919" target="_blank">Github &rarr;</a>
+                    <a className="single-project__link" href="https://github.com/look919/Three-games-in-one-Qt" target="_blank">Github &rarr;</a>
                 </div>
                 }
                 {props.location.state.title === 'Chess game' && 
                 <div className="single-project__links">
                     <a className="single-project__link" href="https://www.youtube.com/watch?v=oQRxG5nHmoY" target="_blank">Link &rarr;</a> 
-                    <a className="single-project__link" href="https://github.com/look919" target="_blank">Github &rarr;</a>
+                    <a className="single-project__link" href="https://github.com/look919/Chess-game-Qt" target="_blank">Github &rarr;</a>
                 </div>
                 }
 

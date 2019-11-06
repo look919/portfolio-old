@@ -12,8 +12,14 @@
 
     
     &__item{
-        font-size: 2.5rem;
+        font-size: 2.5rem;      
         font-family: 'Quicksand', sans-serif;
+
+
+        @media only screen and(max-width: $bp-smallest){
+            font-size: 2rem;
+        }
+
         &:link,
         &:visited{
             color: $color-white;
