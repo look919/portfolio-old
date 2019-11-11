@@ -1,6 +1,6 @@
 .main-page{
     &__text{
-        margin-bottom: 7rem;
+        margin-bottom: 5rem;
         padding: 2rem;
 
         @media only screen and (max-width: $bp-medium){
@@ -8,32 +8,43 @@
         }
     }
 
-    &__photo{
-        width: 19rem;
-        
+    &__photo{     
         display: inline-flex;
         flex-direction: column;
     }
     &__img-radius{
         border: 1px solid $color-white;
         border-radius: 50%;
-        width: 19rem !important;
-        height: 19rem !important;
+        width: 20rem;
+        height: 20rem;
 
-        margin-bottom: 1rem;
+        @media only screen and (max-height: $bp-height){
+            width: 16rem;
+            height: 16rem;
+        }
     }
 
     &__icons{
         display: flex;
         justify-content: center;
 
-        margin-right:2rem;
-        margin-left: 2rem;
+        margin-right:2.2rem;
+        margin-left: 2.2rem;
+
+        @media only screen and (max-height: $bp-height){
+            padding-top: 1rem;
+        }
     }
     &__icon{
         margin-right: .5rem;
         transition: all .6s;
         
+        @media only screen and (max-height: $bp-height){
+            height: 2rem;
+            width: 2rem;
+            margin-right: .4rem;
+        }
+
         &:hover{
             transform: scale(1.3);
         }

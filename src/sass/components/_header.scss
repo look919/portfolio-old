@@ -1,18 +1,17 @@
 .header{
-    margin-bottom: 7rem;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
 
 
     &__heading-primary{
-
         font-family: 'Quicksand', sans-serif;      
         font-weight: 100;
         font-size: 6rem;
         letter-spacing: .5rem;
+
+        @media only screen and (max-height: $bp-height){
+            font-size: 5rem;
+        }
     }
-    &__heading-secondary{
-        font-size: 2rem;
-        font-style: italic;
-        color: $color-white-3;
-        font-weight: 100;
-    }
+
 }

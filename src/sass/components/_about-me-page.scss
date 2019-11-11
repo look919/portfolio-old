@@ -7,6 +7,10 @@
         list-style-type: none;
         text-align: center;
         color: $color-white-2;
+
+        @media only screen and (max-height: $bp-height){
+            font-size: 1.8rem;
+        }
     }
 
     &__item{
@@ -17,18 +21,19 @@
             margin-left: .8rem;
             color: $color-white-3;
         }
-
-        &:last-child{
-            margin-bottom: 7rem;
-        }
     }
 
     &__info{
-       padding: 1.5rem;
+        padding: 1.5rem;
+        padding-top: 0;
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 2rem;
+
+        @media only screen and (max-height: $bp-height){
+            font-size: 1.7rem;
+        }
     }
 
     &__text{
@@ -40,7 +45,6 @@
     }
 
     &__photo{
-   
         display: flex;
         flex-direction: column;
     }

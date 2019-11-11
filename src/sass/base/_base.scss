@@ -40,11 +40,14 @@ button:disabled{
 
 .content{  
     max-width: 140rem;
-    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+    height: 100vh;
+    margin: auto auto;
     overflow: hidden;
-    margin: 0 auto;
-    margin-top: 5rem;
-    align-items: center;
+    
+    justify-content: space-between;
     text-align: center;
     animation: showUp .7s ease-in;
 }

@@ -13,8 +13,7 @@ const ProjectsPage = () => {
     return(
         <div className="content">
 
-            <Header title='Projects'/>
-            
+            <Header title='Projects'/>           
             <div>
                 <button className = "btn btn__inline">
                     <Link 
