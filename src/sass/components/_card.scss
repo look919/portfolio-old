@@ -5,7 +5,7 @@
     margin-bottom: 1.5rem;
 
     @media only screen and(max-width: $bp-small){
-        width: 80%;
+        width: 50rem;
     }
     
     perspective: 150rem;
@@ -43,6 +43,9 @@
             
             
             @media only screen and(max-width: $bp-small){
+                display: none;
+            }
+            @media only screen and (orientation:landscape) and (max-width: $bp-large)  {
                 display: none;
             }
 
@@ -89,6 +92,10 @@
                 transform: rotateX(0);
                 transition: all 0;
             }
+            @media only screen and (orientation:landscape) and (max-width: $bp-large)  {
+                transform: rotateX(0);
+                transition: all 0;
+            }
           
             &__list{
                 display: flex;
@@ -115,11 +122,17 @@
         @media only screen and(max-width: $bp-small){
             transform: none;
         }
+        @media only screen and (orientation:landscape) and (max-width: $bp-large)  {
+            transform: none;
+        }
     }
     &:hover &__side--back{
         transform: rotateX(0);
         
         @media only screen and(max-width: $bp-small){
+            transform: none;
+        }
+        @media only screen and (orientation:landscape) and (max-width: $bp-large)  {
             transform: none;
         }
     }
@@ -145,6 +158,11 @@
     &-js{
         background-image: linear-gradient(to right bottom,
         rgba(#c7bd0a,.7),
+        rgba($color-black,.7));
+    }
+    &-node{
+        background-image: linear-gradient(to right bottom,
+        rgba(#3C873A,.7),
         rgba($color-black,.7));
     }
 }

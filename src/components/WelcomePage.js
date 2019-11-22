@@ -9,32 +9,36 @@ import {LinkedInIcon, GithubIcon, HackerrankIcon, GmailIcon} from '../Icons/Icon
 const WelcomePage = () => {
     
     return(
-        <div className="content">
+        <div className="container">
+            <div className="content">
 
-            <Header title='Tomasz Wirkus'/>
-            
-            <p className="main-page__text">Hello! My name is Tomasz and I would like to welcome you on my website, feel free to look around.</p>
+                <Header title='Tomasz Wirkus'/>
+                
+                <p className="main-page__text">Hello! My name is Tomasz and I would like to welcome you on my website, feel free to look around.</p>
 
-            <div className="main-page__photo">
+                <div className="main-page__photo">
 
-                <img src={myPhoto} className="main-page__img-radius"/>
-                <div className="main-page__icons">
-                    <a href='https://github.com/look919'>
-                        <LinkedInIcon />
-                    </a>                     
-                    <a href='https://github.com/look919'>
-                        <GithubIcon />
-                    </a>
-                    <a href='https://www.hackerrank.com/wirkustomasz919'>
-                        <HackerrankIcon />
-                    </a>
-                        <Link to='/contact'>
-                        <GmailIcon />
-                    </Link>
-                </div>
+                    <img src={myPhoto} className="main-page__img-radius"/>
+                    <div className="main-page__icons">
+                        <a href='https://github.com/look919'>
+                            <LinkedInIcon />
+                        </a>                     
+                        <a href='https://github.com/look919'>
+                            <GithubIcon />
+                        </a>
+                        <a href='https://www.hackerrank.com/wirkustomasz919'>
+                            <HackerrankIcon />
+                        </a>
+                            <Link to='/contact'>
+                            <GmailIcon />
+                        </Link>
+                    </div>
+                </div>  
             </div>
             <Nav/>
         </div>
+
+        
     )}
 
 export default WelcomePage

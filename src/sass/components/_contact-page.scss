@@ -14,10 +14,9 @@
         border-radius: .6rem;
         letter-spacing: .2rem;
         
-        @media only screen and(max-width: $bp-smallest){
-            width: 80%;
+        @media only screen and(max-width: $bp-small){
+            width: 50rem;
         }
-
         background-image: linear-gradient(to right bottom, 
         rgba(#0c28a6,.7),
         rgba($color-black,.7));
@@ -55,7 +54,7 @@
         border-radius: 1rem;
 
         @media only screen and(max-width: $bp-small){
-            width: 80%;
+            width: 50rem;
         }
 
         font-family: 'Quicksand', sans-serif;  

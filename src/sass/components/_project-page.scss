@@ -62,19 +62,26 @@
     &__container{
         display: flex;
         justify-content: center;
+
+        @media only screen and(max-width: $bp-small){
+            flex-direction: column;
+        }
     }
 
     &__description{
         flex: 1 0 0;
         display: flex;
         flex-direction: column;
+
     }
     &__title{
         text-align: left;
         display: block;
+        margin: 3rem 0;
     }
     &__text{
         text-align: left;
+        margin-top: 4rem;
         margin-right: 5rem;
         margin-bottom: 3rem;
 
@@ -111,18 +118,21 @@
             text-decoration: none;
         }
     }
-    &__btn{
-        align-self: flex-end;
-        justify-self: flex-end;
-    }
+
     &__photos{
         flex: 1 0 0;
+        align-self: center;
+        
+        @media only screen and(max-width: $bp-small){
+            margin-top: 3rem;
+        }
     }
     &__photo{
         outline-offset: 1rem;
         outline: 1rem dashed $color-black;
         border-radius: .5rem;         
         transition: all .4s;
+        
         
         &:hover{
             transform: rotate(5deg) scale(1.05);
@@ -137,16 +147,8 @@
             }
         }
 
-        
-        &--pt{
-            width: 57.4rem;
-            width: 100%;
-            @media only screen and(max-width: $bp-large) {
-                width: 100%;
-            }
-            @media only screen and(max-width: $bp-smallest){
-                width: 80%;
-            }
+        &--byt{
+            width: 90%;
         }
         &--portfolio{
             width: 39.8rem;
@@ -158,6 +160,16 @@
                 width: 90%;
             }
         }
+        &--pt{
+            width: 57.4rem;
+            width: 100%;
+            @media only screen and(max-width: $bp-large) {
+                width: 100%;
+            }
+            @media only screen and(max-width: $bp-smallest){
+                width: 80%;
+            }
+        }      
         &--tgio{
             width: 44.9rem;
             width: 100%;

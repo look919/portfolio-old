@@ -6,3 +6,19 @@
         opacity: 1;
     }
 }
+
+@keyframes welcomeAnimation{
+    
+    0%{
+        width: 100%;
+
+    }
+    50%{
+        width:25%;
+    }
+    100%{
+        width: 0%;
+        z-index: 0;
+        display: none;
+    }
+}
