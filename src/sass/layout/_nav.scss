@@ -1,16 +1,7 @@
-.is-active{
-    font-weight: 900;
-    color: $color-white-2 !important;
-    padding: .5rem;
-    border-bottom: .2rem solid $color-white;
-}
-
 .nav{
     width: 80%;
-    grid-row: 2/3;
-    align-self: end;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    grid-row: 3/4;
+    align-self: center;
     padding-top: 2rem;
     border-top: 1px solid $color-white;
 
@@ -18,6 +9,7 @@
     &__item{
         font-size: 2.5rem;      
         font-family: 'Quicksand', sans-serif;
+        font-weight: 400;
 
 
         @media only screen and(max-width: $bp-smallest){
@@ -27,12 +19,16 @@
         &:link,
         &:visited{
             color: $color-white;
-            text-decoration: none;
-            
+            text-decoration: none;           
         }
-
         &:not(:last-child){
-            margin-right: 1.5rem;
+            margin-right: 2.5rem;
         }
     }
+}
+.is-active{
+    font-weight: 900;
+    color: $color-white-2 !important;
+    padding: .5rem;
+    border-bottom: .2rem solid $color-white;
 }

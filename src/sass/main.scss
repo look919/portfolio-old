@@ -3,13 +3,15 @@
 @import './base/utilities';
 @import './base/animations';
 
-@import './components/about-me-page';
-@import './components//btn';
-@import './components/_contact-page';
+@import './components/btn';
+@import './components/contact-page';
 @import './components/card';
-@import './components/header';
-@import './components/main-page';
-@import './components/nav';
 @import './components/project-page';
+
+@import './layout/header';
+@import './layout//main-page';
+@import './layout/nav';
+
+
 
 

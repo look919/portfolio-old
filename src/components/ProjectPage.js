@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import Nav from '../components/Nav'
 
+import Nav from './Nav'
 
 import chessImage from '../img/chess-1.png'
 import threeGamesInOneImage from '../img/threegamesinone.png'

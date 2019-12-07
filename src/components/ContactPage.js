@@ -1,7 +1,8 @@
 import React from 'react'
-import Header from '../components/Header'
-import Nav from '../components/Nav'
 import validator from 'validator'
+
+import Header from './Header'
+import Nav from './Nav'
 
 class ContactPage extends React.Component{
     
@@ -22,10 +23,8 @@ class ContactPage extends React.Component{
         const { status } = this.state;
         return(
             <div className="container">
-                <div className="content">
-        
-                    <Header title='Contact'/>
-                    <div >
+                <Header title='Contact'/>
+                <div className="content content--contactPage">    
                         <form
                             onSubmit={this.submitForm}
                             action="https://formspree.io/xkdayzkm"
@@ -38,9 +37,7 @@ class ContactPage extends React.Component{
                             <button className="btn__action">Submit</button>
                             {status === "ERROR" && <p className="contact-page__info">An Error, please fill email field.</p>}
                             {status === "SUCCESS"  && <p className="contact-page__info">Thanks!</p>}
-                        </form>
-                    </div>
-                    
+                        </form>                  
                 </div>
                 <Nav/>
             </div>
