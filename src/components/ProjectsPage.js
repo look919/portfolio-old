@@ -1,114 +1,80 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-import Header from './Header'
-import Nav from './Nav'
+import Header from './Header';
+import Nav from './Nav';
+
+import {ArrowRight, ArrowLeft} from '../Icons/Icons';
+
+import byt from '../img/byt.png';
+import portfolio from '../img/portfolio.png';
+import pt from '../img/pt.png';
+import chessGame from '../img/chess.png';
+import tgio from '../img/tgio.png';
+
 
 
 
  
 
 
-const ProjectsPage = () => {
-    
-    return(
-        <div className="container">
-            <div className="content">
+class ProjectsPage extends React.Component {
+    constructor(props){
+        super(props)
+        this.state = {
+            index: 0,
+            project: [
+                { title: 'ChickyChicken', github: '', url: '', img: chessGame},
+                { title: 'BookYourTime', github: 'https://github.com/look919/Book-Your-Time', url: 'https://bookyourtime.herokuapp.com/', img: byt},
+                { title: 'Portfolio', github: 'https://github.com/look919/portfolio', url: 'https://tomasz-wirkus-portfolio.herokuapp.com/', img: portfolio},
+                { title: 'ProgressTracker', github: 'https://github.com/look919/Progress-Tracker', url: 'http://progresstracker.surge.sh/index.html#', img: pt},
+                { title: 'C++ Chess game', github: 'https://github.com/look919/Chess-game-Qt', url: 'https://www.youtube.com/watch?v=oQRxG5nHmoY', img: chessGame},
+                { title: 'C++ ThreeGamesInOne', github: 'https://github.com/look919/Three-games-in-one-Qt', url: 'https://www.youtube.com/watch?v=SC5MxK_dTsI', img: tgio},
+            ]
+        }
+    }
+    addIndex = () => {
+        const maxIndex = this.state.project.length;
+        let newValueOfIndex = this.state.index + 1;
 
+        if(newValueOfIndex === maxIndex) newValueOfIndex = 0
+        this.setState(() => ({index: newValueOfIndex}))
+    }
+    subtractIndex = () => {
+        const lastProjectIndex = this.state.project.length - 1;
+        const minIndex = 0;
+        let newValueOfIndex = this.state.index - 1;
+
+        if(newValueOfIndex < minIndex) newValueOfIndex = lastProjectIndex
+        this.setState(() => ({index: newValueOfIndex}))
+    }
+
+    render(){
+        let index = this.state.index;
+        let project = this.state.project[index];
+        return(
+            <div className="container">
                 <Header title='Projects'/>
-                <div>
-                    <button className = "btn btn__inline">
-                        <Link 
-                        className="btn btn__inline" 
-                        to={{
-                        pathname: '/projects/byt',
-                        state: {
-                            title: 'Book Your Time',
-                            description: 'Project you are currently looking at, so there is no point in describing it, my first bigger self-experience with React library',
-                            photos: '../img/bookyourtime.png'
-                        }
-                        }} >
-                        Book Your Time &rarr;
-                        </Link>
-                    </button>
-                </div>         
-                <div>
-                    <button className = "btn btn__inline">
-                        <Link 
-                        className="btn btn__inline" 
-                        to={{
-                        pathname: '/projects/portfolio',
-                        state: {
-                            title: 'Portfolio',
-                            description: 'Project you are currently looking at, so there is no point in describing it, my first bigger self-experience with React library',
-                            photos: '../img/pt-1.png'
-                        }
-                        }} >
-                        Portfolio &rarr;
-                        </Link>
+                <div className="content content--projectPage">
+                    <button onClick={this.subtractIndex} className="project__btn">
+                        <ArrowLeft />
+                    </button>               
+                    <figure className="project">
+                        <div className="project__info">
+                            <h2 className="project__title">{project.title}</h2>
+                            <a href={project.github} className="project__link" target="_blanc">Github</a>
+                            <a href={project.url} className="project__link" target="_blanc">Online</a> 
+                        </div>               
+                        <img src={project.img} className="project__img"/>
+                    </figure>              
+                    <button onClick={this.addIndex} className="project__btn">
+                        <ArrowRight />
                     </button>
                 </div>
-                <div>
-                    <button className = "btn btn__inline">
-                        <Link 
-                        className="btn btn__inline" 
-                        to={{
-                        pathname: '/projects/progressTracker',
-                        state: {
-                            title: 'Progress Tracker',
-                            description: 'Very Simple application to track progress in learning, its still better than writing it in a notebook. Thats my first project that uses Javascript and JSON.',
-                            photos: '../img/pt-1.png'
-                        }
-                        }} >
-                        Progress Tracker &rarr;
-                        </Link>
-                    </button>
-                </div>
-
-                <h4 className="project-page__heading-quarternary">C++ projects: </h4>
-
-                <div>
-                    <button className = "btn btn__inline">
-                        <Link 
-                        className="btn btn__inline" 
-                        to={{
-                            pathname: '/projects/threeInOne',
-                            state: {
-                                title: 'Three games in one',
-                                description: 'There it all started, this is my first bigger project. An application written in Qt Creator that combines three simple games: WordGuesser, Ships and memory game into one project.It turned out that I was not very original with ideas, but we have what we have.',
-                                photos: 'baba'
-                            }
-                            }} >
-                            Three games in one &rarr;
-                        </Link>
-                    </button>
-                </div>
-                <div>
-                    <button className = "btn btn__inline">
-                        <Link 
-                        className="btn btn__inline" 
-                        to={{
-                            pathname: '/projects/chess',
-                            state: {
-                                title: 'Chess game',
-                                description: 'My biggest project so far and also last using C++ and Qt Creator. It took me around 2 months. Game is fully functional, includes pinning figures, en passant move, discover and double checks. I must admit that i found several bugs in the game but i decided not to dive into this project anymore, in order to focus on Web developing.',
-                                }
-                            }} >
-                            Chess game &rarr;
-                        </Link>
-                    </button>
-                </div>
+                <Nav/>
             </div>
-            <Nav/>
-        </div>
-    )}
+        )
+    }  
+}
 
 export default ProjectsPage
-
-
-//<ProjectModal />
-
-
-
-
-

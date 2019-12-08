@@ -73,10 +73,7 @@
             display: none;              
             text-align: left;
             font-size: 1.6rem;
-
-            
-
-           
+         
             display: flex;
             justify-content: space-between;
 
@@ -131,6 +128,22 @@
             transform: none;
         }
     }
+
+
+    //animations
+    &--css{
+        animation: showUp .7s ease-in 1s both;
+    }
+    &--js{
+        animation: showUp .7s ease-in 1.7s both;
+    }
+    &--react{
+        animation: showUp .7s ease-in 2.4s both;
+    }
+    &--node{
+        animation: showUp .7s ease-in 3.1s both;
+    }
+
 }
 
 .background{

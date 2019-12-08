@@ -4,7 +4,7 @@
         padding: 2rem;
         font-size: 1.7rem;
         color: $color-white-3;
-        animation: showUpWithScale 1.5s ease-in 3s both;
+        animation: showUpWithScale 1.5s ease-in 6.5s both;
     }
 }
 
@@ -13,6 +13,7 @@
     grid-template-columns: 2fr 1fr;
     align-items: center;
 
+    animation: showUp 2.5s ease-out 6s both;
 
     &__list{
         grid-column: 1 / 2;

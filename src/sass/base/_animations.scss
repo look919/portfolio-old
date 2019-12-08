@@ -56,3 +56,36 @@
         rgba($color-black,.7));
     }
 }
+
+@keyframes pseudoWelcome {
+    0%{
+        height: 100%;
+        content: "";
+    }
+    15%{
+        content: "H";
+        transition: all .2s;
+    }
+    20%{
+        content: "Hi";
+        transition: all .2s;
+    }
+    25%{
+        content: "Hi.";
+        transition: all .2s;
+    }
+    30%{
+        content: '';
+        width: 100%;
+    }
+    65%{
+        content: '';
+        width: 80%;
+    }
+
+    100%{
+        width: 0%;
+        content: '';
+
+    }
+}

@@ -1,23 +1,20 @@
 import React from 'react';
 import Header from './Header';
-import Nav from '../components/Nav';
+import Nav from './Nav';
 
 import css from '../img/css.png'
 import js from '../img/js.png'
 import react from '../img/react.png'
 import node from '../img/node.png'
 
-import html from '../img/html.png';
-import git from '../img/git.png'
 
-
-const SkillPage = () => {
+const SkillsPage = () => {
     
     return(
         <div className="container">
             <Header title='Skills'/>
             <div className="content content--skillPage">
-                <div className="card">
+                <div className="card card--css">
                     <div className="card__side card__side--front background-css">
                         <div className="card__side--front-header">CSS & Sass</div>               
                         <div>
@@ -38,7 +35,7 @@ const SkillPage = () => {
                     </div>
                 </div>
 
-                <div className="card">
+                <div className="card card--js">
                     <div className="card__side card__side--front background-js">
                         <div className="card__side--front-header">Javascript</div>               
                         <div>
@@ -59,8 +56,7 @@ const SkillPage = () => {
                         </div>
                     </div>
                 </div>
-
-                <div className="card">
+                <div className="card card--react">
                     <div className="card__side card__side--front background-css">
                         <div className="card__side--front-header">React</div>               
                         <div>
@@ -79,9 +75,8 @@ const SkillPage = () => {
                             <img src={react} alt="React Logo" className="card__side--front-image"/>
                         </div>
                     </div>
-                </div>
-        
-                <div className="card">  
+                </div>      
+                <div className="card card--node">  
                         <div className="card__side card__side--front background-node">
                             <div className="card__side--front-header">Node.js</div>               
                             <div>
@@ -108,7 +103,7 @@ const SkillPage = () => {
         </div>
     )}
 
-export default SkillPage
+export default SkillsPage
 
 
 // <div className="card">

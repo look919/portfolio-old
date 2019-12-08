@@ -9,7 +9,7 @@ import {LinkedInIcon, GithubIcon, HackerrankIcon, GmailIcon} from '../Icons/Icon
 const WelcomePage = () => {
     
     return(
-        <div className="container">
+        <div className="container container--animated">
             <Header title='Tomasz Wirkus'/>
             <div className="content content--welcomePage">                
                 <p className="main-page__text">
@@ -28,13 +28,13 @@ const WelcomePage = () => {
                     <div className="my-photo about-me__photo">
                         <img src={myPhoto} className="my-photo__img-radius"/>
                         <div className="my-photo__icons">
-                            <a href='https://github.com/look919'>
+                            <a href='https://github.com/look919'target="_blanc">
                                 <LinkedInIcon />
                             </a>                     
-                            <a href='https://github.com/look919'>
+                            <a href='https://github.com/look919' target="_blanc">
                                 <GithubIcon />
                             </a>
-                            <a href='https://www.hackerrank.com/wirkustomasz919'>
+                            <a href='https://www.hackerrank.com/wirkustomasz919' target="_blanc">
                                 <HackerrankIcon />
                             </a>
                                 <Link to='/contact'>
