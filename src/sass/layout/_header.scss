@@ -1,7 +1,9 @@
 .header{
     margin-bottom: 1rem;
     margin-top: 1.5rem;
-
+    align-self: center;
+    width: 100%;
+    background-color: $color-black;
 
     &__heading-primary{
         font-family: 'Quicksand', sans-serif;      
@@ -13,17 +15,17 @@
     &--animated{
         position: relative;
         z-index: 1;
-        
+
         &::after,
         &::before{
             content: '';
-            background-color: $color-background;
+            background-color: $color-black;
             position: absolute;
             height: 100%;
             width: 50%;
             
             z-index: 10;
-            animation: welcomeAnimation 2s ease-in-out 0s both;       
+            animation: welcomeAnimation 4s ease-in-out 3.5s both;       
         }
         &::after{
             left: 75%;
@@ -36,5 +38,4 @@
             transform: translate(-50%,-50%);  
         }
     }
-
 }

@@ -3,10 +3,8 @@ import { BrowserRouter, Route, Switch} from 'react-router-dom'
 
 
 import WelcomePage from '../components/WelcomePage'
-import SkillPage from '../components/SkillPage'
+import SkillsPage from '../components/SkillsPage'
 import ProjectsPage from '../components/ProjectsPage'
-import ProjectPage from '../components/ProjectPage'
-import AboutMePage from '../components/AboutMePage'
 import ContactPage from '../components/ContactPage'
 
 
@@ -17,10 +15,8 @@ const AppRouter = () => (
         <div>
             <Switch>
                 <Route path="/" component={WelcomePage} exact={true}/>
-                <Route path="/about-me" component={AboutMePage} />               
-                <Route path="/projects" component={ProjectsPage} exact={true}/>
-                <Route path="/projects/:name" component={ProjectPage} />
-                <Route path="/skills" component={SkillPage} />
+                <Route path="/skills" component={SkillsPage} />
+                <Route path="/projects" component={ProjectsPage} />
                 <Route path="/contact" component={ContactPage} />
             </Switch>
         </div>     
