@@ -16,11 +16,11 @@
     }
 }
 
-@keyframes welcomeAnimation{    
+@keyframes welcomeAnimation{   
     0%{
         width: 100%;
     }
-    50%{
+    60%{
         width:25%;
     }
     100%{
@@ -62,19 +62,22 @@
         height: 100%;
         content: "";
     }
-    15%{
+    25%{
         content: "H";
         transition: all .2s;
+        text-shadow: 0 3rem 6rem rgba($color-black, .4);
     }
-    20%{
+    30%{
         content: "Hi";
         transition: all .2s;
+        text-shadow: 0 3rem 6rem rgba($color-black, .6);
+        
     }
-    25%{
+    35%{
         content: "Hi.";
         transition: all .2s;
     }
-    30%{
+    50%{
         content: '';
         width: 100%;
     }
@@ -86,6 +89,68 @@
     100%{
         width: 0%;
         content: '';
+    }
+}
 
+@keyframes arrowRight {
+    0%{
+        fill: #3C873A;
+    }
+    30%{
+        fill: darken(#3C873A, 20%);
+        transform: rotate(180deg);
+    }
+
+    50%{
+        fill: #3C873A;
+    }
+    80%{
+        fill: darken(#3C873A, 20%);
+    }
+    100%{
+        transform: rotate(360deg);
+        fill: #3C873A;
+    }
+}
+@keyframes arrowLeft {
+    0%{
+        fill: #3C873A;
+    }
+    30%{
+        fill: lighten(#3C873A, 20%);
+        transform: rotate(-180deg);
+    }
+
+    50%{
+        fill: #3C873A;
+    }
+    80%{
+        fill: lighten(#3C873A, 20%);
+    }
+    100%{
+        transform: rotate(-360deg);
+        fill: #3C873A;
+    }
+}
+@keyframes moveInRight{    
+    0%{
+        transform: translateX(10rem);
+    }
+    50%{
+        transform: translateX(7rem);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes moveInLeft{    
+    0%{
+        transform: translateX(-10rem);
+    }
+    50%{
+        transform: translateX(-7rem);
+    }
+    100%{
+        transform: translateX(0);
     }
 }

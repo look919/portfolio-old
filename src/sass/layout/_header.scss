@@ -12,30 +12,38 @@
         letter-spacing: .5rem;
     }
 
-    &--animated{
-        position: relative;
-        z-index: 1;
+    //animation properties
+    position: relative;
+    z-index: 1;
 
+    &::after,
+    &::before{
+        content: '';
+        background-color: $color-black;
+        position: absolute;
+        height: 100%;
+        width: 50%;
+        
+        z-index: 10;
+        animation: welcomeAnimation 7s ease-in-out 0s both;     
+    }
+    &::after{
+        left: 75%;
+        top: 50%;
+        transform: translate(-50%,-50%);  
+    }
+    &::before{
+        left: 25%;
+        top: 50%;
+        transform: translate(-50%,-50%);  
+    }
+
+    &--delayed{
+        
         &::after,
         &::before{
-            content: '';
-            background-color: $color-black;
-            position: absolute;
-            height: 100%;
-            width: 50%;
-            
-            z-index: 10;
-            animation: welcomeAnimation 4s ease-in-out 3.5s both;       
-        }
-        &::after{
-            left: 75%;
-            top: 50%;
-            transform: translate(-50%,-50%);  
-        }
-        &::before{
-            left: 25%;
-            top: 50%;
-            transform: translate(-50%,-50%);  
+            animation: welcomeAnimation 5s ease-in-out 3.5s both;       
         }
     }
+    
 }

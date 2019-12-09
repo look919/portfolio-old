@@ -50,6 +50,14 @@
         cursor: pointer;
 
         transition: all .2s;
+
+        &--right{
+            animation: arrowRight 4s ease-in-out .5s both;
+        }
+        &--left{
+            animation: arrowLeft 4s ease-in-out .5s both;
+        }
+
         &:focus{
             outline: none;
         }

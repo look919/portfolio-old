@@ -17,9 +17,12 @@
         @media only screen and(max-width: $bp-small){
             width: 50rem;
         }
+
         background-image: linear-gradient(to right bottom, 
         rgba(#0c28a6,.7),
         rgba($color-black,.7));
+        animation: moveInLeft 3s ease .5s both;
+
 
         &:active,
         &:focus{
@@ -34,10 +37,10 @@
             background-image: linear-gradient(to right bottom, 
             rgba(#0c28a6,.7),
             rgba(#60c0e0,.7)) !important;  
-            
+            animation: moveInRight 3s ease .5s both;
             
             &:placeholder-shown{
-                animation: placeholder 3.5s ease-in-out infinite;
+                animation: moveInRight 3s ease .5s both, placeholder 3.5s ease-in-out infinite;
             }
         }
     }

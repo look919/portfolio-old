@@ -6,6 +6,7 @@ import Nav from './Nav';
 
 import {ArrowRight, ArrowLeft} from '../Icons/Icons';
 
+import chickyChicken from '../img/chickychicken.png'
 import byt from '../img/byt.png';
 import portfolio from '../img/portfolio.png';
 import pt from '../img/pt.png';
@@ -24,7 +25,7 @@ class ProjectsPage extends React.Component {
         this.state = {
             index: 0,
             project: [
-                { title: 'ChickyChicken', github: '', url: '', img: chessGame},
+                { title: 'ChickyChicken', github: 'https://github.com/look919/chickyChicken', url: 'https://chickychicken.herokuapp.com', img: chickyChicken},
                 { title: 'BookYourTime', github: 'https://github.com/look919/Book-Your-Time', url: 'https://bookyourtime.herokuapp.com/', img: byt},
                 { title: 'Portfolio', github: 'https://github.com/look919/portfolio', url: 'https://tomasz-wirkus-portfolio.herokuapp.com/', img: portfolio},
                 { title: 'ProgressTracker', github: 'https://github.com/look919/Progress-Tracker', url: 'http://progresstracker.surge.sh/index.html#', img: pt},
