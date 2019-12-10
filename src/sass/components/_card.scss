@@ -1,176 +1,178 @@
-.card{
-    display: inline-block;
-    height: 10rem;
+.card {
+  display: inline-block;
+  height: 10rem;
+  width: 85rem;
+
+  @media only screen and(max-width: $bp-small) {
+    width: 50rem;
+  }
+
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+
+  transition: all 0.9s ease;
+
+  &__side {
     width: 85rem;
 
+    padding: 0.1rem 5rem;
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
 
-    @media only screen and(max-width: $bp-small){
-        width: 50rem;
-    }
-    
-    perspective: 150rem;
-    -moz-perspective: 150rem;
+    transition: all 0.9s ease;
+    backface-visibility: hidden;
 
-    transition: all .9s ease;
+    &--front {
+      height: 10rem;
 
-    &__side{
-        width: 85rem;
+      transition: all 0.9s ease;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
 
-        padding: .1rem 5rem;
-        border-radius: .5rem;
-        position: absolute;
-        top:0;
-        left:0;
-        width:100%;
+      @media only screen and(max-width: $bp-small) {
+        display: none;
+      }
+      @media only screen and (orientation: landscape) and (max-width: $bp-1120) {
+        display: none;
+      }
 
-        transition: all .9s ease;
-        backface-visibility: hidden;
-        
+      &-header {
+        font-size: 3.5rem;
+        letter-spacing: 0.2rem;
+        font-family: "Quicksand", sans-serif;
+        font-weight: 900;
+      }
+      &-image {
+        fill: white;
+        height: 9rem;
+        width: 9rem;
+        align-self: center;
 
-        &--front{     
-            height: 10rem;
-
-            transition: all .9s ease;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            
-            
-            @media only screen and(max-width: $bp-small){
-                display: none;
-            }
-            @media only screen and (orientation:landscape) and (max-width: $bp-large)  {
-                display: none;
-            }
-
-            &-header{
-                font-size: 3.5rem;
-                letter-spacing: .2rem;
-                font-family: 'Quicksand', sans-serif;      
-                font-weight: 900;              
-            }
-            &-image{
-                fill: white;
-                height: 9rem;
-                width: 9rem;  
-                align-self: center;   
-                
-                &--js{
-                    height: 8.5rem;
-                    width: 8.5rem;  
-                }
-                @media only screen and(max-width: $bp-small){
-                    margin-right: -4rem;
-                }
-            }
-
+        &--js {
+          height: 8.5rem;
+          width: 8.5rem;
         }
-
-        &--back{   
-            height: 10rem;
-
-            transform: rotateX(180deg); 
-            display: none;              
-            text-align: left;
-            font-size: 1.6rem;
-         
-            display: flex;
-            justify-content: space-between;
-
-            transform: rotateX(180deg);
-            transition: all .9s ease;
-           
-            @media only screen and(max-width: $bp-small){
-                transform: rotateX(0);
-                transition: all 0;
-            }
-            @media only screen and (orientation:landscape) and (max-width: $bp-large)  {
-                transform: rotateX(0);
-                transition: all 0;
-            }
-          
-            &__list{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-
-                @media only screen and(max-width: $bp-small){
-                    margin-left: -2rem;
-                }
-            }
-            &__link{
-                &:visited,
-                &:link{
-                    color: $color-white;
-                }
-            }
+        @media only screen and(max-width: $bp-small) {
+          margin-right: -4rem;
         }
+      }
     }
 
+    &--back {
+      height: 10rem;
 
-    &:hover &__side--front{
-        transform: rotateX(-180deg);
-       
-        @media only screen and(max-width: $bp-small){
-            transform: none;
-        }
-        @media only screen and (orientation:landscape) and (max-width: $bp-large)  {
-            transform: none;
-        }
-    }
-    &:hover &__side--back{
+      transform: rotateX(180deg);
+      display: none;
+      text-align: left;
+      font-size: 1.6rem;
+
+      display: flex;
+      justify-content: space-between;
+
+      transform: rotateX(180deg);
+      transition: all 0.9s ease;
+
+      @media only screen and(max-width: $bp-small) {
         transform: rotateX(0);
-        
-        @media only screen and(max-width: $bp-small){
-            transform: none;
+        transition: all 0;
+      }
+      @media only screen and (orientation: landscape) and (max-width: $bp-1120) {
+        transform: rotateX(0);
+        transition: all 0;
+      }
+
+      &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @media only screen and(max-width: $bp-small) {
+          margin-left: -2rem;
         }
-        @media only screen and (orientation:landscape) and (max-width: $bp-large)  {
-            transform: none;
+      }
+      &__link {
+        &:visited,
+        &:link {
+          color: $color-white;
         }
+      }
     }
+  }
 
+  &:hover &__side--front {
+    transform: rotateX(-180deg);
 
-    //animations
-    &--css{
-        animation: showUp .7s ease-in 1s both;
+    @media only screen and(max-width: $bp-small) {
+      transform: none;
     }
-    &--js{
-        animation: showUp .7s ease-in 1.7s both;
+    @media only screen and (orientation: landscape) and (max-width: $bp-1120) {
+      transform: none;
     }
-    &--react{
-        animation: showUp .7s ease-in 2.4s both;
-    }
-    &--node{
-        animation: showUp .7s ease-in 3.1s both;
-    }
+  }
+  &:hover &__side--back {
+    transform: rotateX(0);
 
+    @media only screen and(max-width: $bp-small) {
+      transform: none;
+    }
+    @media only screen and (orientation: landscape) and (max-width: $bp-1120) {
+      transform: none;
+    }
+  }
+
+  //animations
+  &--css {
+    animation: showUp 0.7s ease-in 1s both;
+  }
+  &--js {
+    animation: showUp 0.7s ease-in 1.7s both;
+  }
+  &--react {
+    animation: showUp 0.7s ease-in 2.4s both;
+  }
+  &--node {
+    animation: showUp 0.7s ease-in 3.1s both;
+  }
 }
 
-.background{
-
-    &-html{
-        background-image: linear-gradient(to right bottom, 
-        rgba(red,.7),
-        rgba($color-black,.7));
-    }
-    &-css{
-        background-image: linear-gradient(to right bottom, 
-        rgba(#0c28a6,.7),
-        rgba(#60c0e0,.7));
-    }
-    &-sass{
-        background-image: linear-gradient(to right bottom,
-        rgba(#db37cb,.7),
-        rgba($color-black,.7));
-    }
-    &-js{
-        background-image: linear-gradient(to right bottom,
-        rgba(#c7bd0a,.7),
-        rgba($color-black,.7));
-    }
-    &-node{
-        background-image: linear-gradient(to right bottom,
-        rgba(#3C873A,.7),
-        rgba($color-black,.7));
-    }
+.background {
+  &-html {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(red, 0.7),
+      rgba($color-black, 0.7)
+    );
+  }
+  &-css {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(#0c28a6, 0.7),
+      rgba(#60c0e0, 0.7)
+    );
+  }
+  &-sass {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(#db37cb, 0.7),
+      rgba($color-black, 0.7)
+    );
+  }
+  &-js {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(#c7bd0a, 0.7),
+      rgba($color-black, 0.7)
+    );
+  }
+  &-node {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(#3c873a, 0.7),
+      rgba($color-black, 0.7)
+    );
+  }
 }

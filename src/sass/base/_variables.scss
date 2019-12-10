@@ -3,18 +3,16 @@ $color-white-2: #f1f2f6;
 $color-white-3: #dfc4ea;
 $color-black: #000;
 
-
 $color-background: #222222;
-
 
 //breakpoints
 
-$bp-largest: 87.5em;            //1400 width
-$bp-large: 56.25em;      //900 width, for project images mainly
-$bp-medium: 43.75rem;       //700width
-$bp-small: 37.5em;          //600width
-$bp-smallest: 25em;         //400width
+$bp-1400: 87.5em; //1400 width - only fontsize changed
 
+$bp-1120: 70em; //1120 width - font size on mainpage list and padding changed, removed card hover
+$bp-medium: 43.75rem; //700width
+$bp-small: 37.5em; //600width
+$bp-smallest: 25em; //400width
 
 $bp-height: 50em;
-$bp-height-landscape: 28.125em;     //450height for landscape view 
+$bp-height-landscape: 28.125em; //450height for landscape view

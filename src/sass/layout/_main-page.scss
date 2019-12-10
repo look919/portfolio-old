@@ -1,81 +1,86 @@
-.main-page{
-
-    &__text{
-        padding: 2rem;
-        font-size: 1.7rem;
-        color: $color-white-3;
-        animation: showUpWithScale 1.5s ease-in 6.5s both;
-    }
+.main-page {
+  &__text {
+    padding: 2rem;
+    font-size: 1.7rem;
+    color: $color-white-3;
+    animation: showUpWithScale 1.5s ease-in 6.5s both;
+  }
 }
 
-.about-me{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    align-items: center;
+.about-me {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
 
-    animation: showUp 2.5s ease-out 6s both;
+  animation: showUp 2.5s ease-out 6s both;
 
-    &__list{
-        grid-column: 1 / 2;
+  &__list {
+    grid-column: 1 / 2;
 
-        list-style-type: none;
-        color: $color-white-2;
-        text-align: left;
+    list-style-type: none;
+    color: $color-white-2;
+    text-align: left;
+  }
+  //informations about me
+  &__item {
+    width: fit-content;
+    padding-right: 1.5rem;
+
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid $color-white;
+
+    @media only screen and(max-width: $bp-1120) {
+      font-size: 2.6rem;
     }
-    //informations about me
-    &__item{
-        width: fit-content;
-        padding-right: 1.5rem;
 
-        font-size: 3rem;
-        text-transform: uppercase;
-        letter-spacing: .3rem;
-        margin-bottom: .5rem;
-        border-bottom: 1px solid $color-white;
-
-        &--answer{
-            text-transform: none;
-            margin-left: .8rem;
-            color: $color-white-3;
-        }
+    &--answer {
+      text-transform: none;
+      margin-left: 0.8rem;
+      color: $color-white-3;
     }
-    &__photo{
-        grid-column: 2 / 3;
-        justify-self: end;
-    }
+  }
+  &__photo {
+    grid-column: 2 / 3;
+    justify-self: end;
+  }
 }
 
-.my-photo{   
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
+.my-photo {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
 
-    &__img-radius{
-        height: 24rem;
-        width: 24rem;
-        border-radius: 50%;
-        border: 1px solid $color-white;
+  &__img-radius {
+    height: 24rem;
+    width: 24rem;
+    border-radius: 50%;
+    border: 1px solid $color-white;
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: center;
+
+    margin: 0 2rem;
+    padding-top: 1rem;
+  }
+
+  &__icon {
+    height: 4rem;
+    width: 4rem;
+    fill: #6e5494;
+
+    margin-right: 0.5rem;
+    transition: all 0.6s;
+
+    &:hover {
+      transform: scale(1.3);
     }
-
-    &__icons{
-        display: flex;
-        justify-content: center;
-
-        margin: 0 2rem;
-        padding-top: 1rem;
+    &--gmail {
+      fill: $color-white-2;
     }
-
-    &__icon{
-        height: 4rem;
-        width: 4rem;
-        margin-right: .5rem;
-        transition: all .6s;
-
-        &:hover{
-            transform: scale(1.3);
-        }
-        &--diff{
-            fill: white;
-        }
-    }
+  }
 }
