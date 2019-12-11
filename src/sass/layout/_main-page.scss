@@ -1,81 +1,160 @@
-.main-page{
-
-    &__text{
-        padding: 2rem;
-        font-size: 1.7rem;
-        color: $color-white-3;
-        animation: showUpWithScale 1.5s ease-in 6.5s both;
-    }
+.main-page {
+  &__text {
+    padding: 2rem;
+    margin-bottom: 5rem;
+    width: 75%;
+    align-self: center;
+    font-size: 1.7rem;
+    color: $color-white-3;
+    animation: showUpWithScale 1.5s ease-in 6.5s both;
+  }
 }
 
-.about-me{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+.about-me {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  justify-items: start;
+
+  animation: showUp 2.5s ease-out 6s both;
+
+  @media only screen and(max-width: $bp-1120) {
+    grid-template-columns: 3fr 1fr;
+  }
+
+  &__list {
+    grid-column: 1 / 2;
+
+    list-style-type: none;
+    color: $color-white-2;
+    text-align: left;
+
+    @media only screen and(max-width: $bp-600) {
+      margin-right: 1rem;
+    }
+  }
+  //informations about me
+  &__item {
+    width: fit-content;
+    padding-right: 1.5rem;
+
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid $color-white;
+
+    @media only screen and(max-width: $bp-1120) {
+      font-size: 2.6rem;
+    }
+    @media only screen and(max-width: $bp-600) {
+      font-size: 2rem;
+    }
+    @media only screen and(max-width: $bp-450) {
+      font-size: 1.8rem;
+      padding-right: 0.5rem;
+    }
+
+    &--flag {
+      margin-bottom: -0.5rem;
+      width: 3rem;
+      height: 3rem;
+
+      @media only screen and(max-width: $bp-1120) {
+        width: 2.6rem;
+        height: 2.6rem;
+      }
+      @media only screen and(max-width: $bp-600) {
+        width: 2rem;
+        height: 2rem;
+      }
+      @media only screen and(max-width: $bp-450) {
+        width: 1.8rem;
+        height: 1.8rem;
+      }
+    }
+    &--answer {
+      text-transform: none;
+      margin-left: 0.8rem;
+      color: $color-white-3;
+
+      &--languages {
+        @media only screen and(max-width: $bp-750) {
+          font-size: 2.2rem;
+        }
+        @media only screen and(max-width: $bp-600) {
+          font-size: 1.8rem;
+        }
+        @media only screen and(max-width: $bp-450) {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+  &__photo {
+    grid-column: 2 / 3;
+    justify-self: end;
     align-items: center;
 
-    animation: showUp 2.5s ease-out 6s both;
-
-    &__list{
-        grid-column: 1 / 2;
-
-        list-style-type: none;
-        color: $color-white-2;
-        text-align: left;
+    @media only screen and(max-width: $bp-450) {
+      width: 14rem;
     }
-    //informations about me
-    &__item{
-        width: fit-content;
-        padding-right: 1.5rem;
-
-        font-size: 3rem;
-        text-transform: uppercase;
-        letter-spacing: .3rem;
-        margin-bottom: .5rem;
-        border-bottom: 1px solid $color-white;
-
-        &--answer{
-            text-transform: none;
-            margin-left: .8rem;
-            color: $color-white-3;
-        }
-    }
-    &__photo{
-        grid-column: 2 / 3;
-        justify-self: end;
-    }
+  }
 }
 
-.my-photo{   
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
+.my-photo {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
 
-    &__img-radius{
-        height: 24rem;
-        width: 24rem;
-        border-radius: 50%;
-        border: 1px solid $color-white;
+  &__img-radius {
+    height: 24rem;
+    width: 24rem;
+    border-radius: 50%;
+    border: 1px solid $color-white;
+
+    @media only screen and(max-width: $bp-750) {
+      height: 20rem;
+      width: 20rem;
+    }
+    @media only screen and(max-width: $bp-450) {
+      height: 14rem;
+      width: 14rem;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: center;
+
+    margin: 0 2rem;
+    padding-top: 1rem;
+  }
+
+  &__icon {
+    height: 4rem;
+    width: 4rem;
+
+    @media only screen and(max-width: $bp-750) {
+      height: 3.5rem;
+      width: 3.5rem;
+    }
+    @media only screen and(max-width: $bp-750) {
+      height: 2.7rem;
+      width: 2.7rem;
     }
 
-    &__icons{
-        display: flex;
-        justify-content: center;
+    fill: #6e5494;
+    padding-bottom: 0.3rem;
+    margin-right: 0.5rem;
+    transition: all 0.6s;
 
-        margin: 0 2rem;
-        padding-top: 1rem;
+    &:hover {
+      transform: scale(1.3);
     }
-
-    &__icon{
-        height: 4rem;
-        width: 4rem;
-        margin-right: .5rem;
-        transition: all .6s;
-
-        &:hover{
-            transform: scale(1.3);
-        }
-        &--diff{
-            fill: white;
-        }
+    &--gmail {
+      fill: $color-white-2;
     }
+  }
 }

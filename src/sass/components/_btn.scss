@@ -1,98 +1,94 @@
-.btn{
-    color: $color-black;   
-    font-weight: 300;
-    
+.btn {
+  color: $color-black;
+  font-weight: 300;
 
-    &__inline{
-        color: $color-white-3;
-        background: none;
-        border: none;
-        font-size: 3rem;
-        margin-bottom: 4rem;
+  &__inline {
+    color: $color-white-3;
+    background: none;
+    border: none;
+    font-size: 3rem;
+    margin-bottom: 4rem;
 
-        font-style: italic;
-        text-align: left;
-        letter-spacing: .4rem;
-        transition: all 1s;
+    font-style: italic;
+    text-align: left;
+    letter-spacing: 0.4rem;
+    transition: all 1s;
+    outline: none;
+
+    &:hover {
+      transform: scale(1.15) skewX(16deg) skewY(2deg);
+      color: $color-white;
+    }
+
+    &:active {
+      transform: translateY(-0.5rem);
+    }
+    &:visited,
+    &:link {
+      color: $color-white-3;
+      text-decoration: none;
+    }
+  }
+
+  &__go-back {
+    padding: 0.5rem 2rem;
+    display: block;
+    margin-bottom: 0;
+
+    &:visited,
+    &:link {
+      color: $color-black;
+      text-decoration: none;
+    }
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &__action {
+    width: 20rem;
+    border: 1px solid $color-black;
+    border-radius: 1rem;
+    padding: 0.8rem;
+    font-weight: 600;
+
+    @media only screen and(max-width: $bp-600) {
+      padding: 0.6rem;
+    }
+
+    transition: all 0.2s;
+
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(#0c28a6, 0.7),
+      rgba($color-black, 0.7)
+    );
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 1rem 4rem rgba(#0c28a6, 0.1);
+    }
+
+    &:active,
+    &:focus {
+      transform: translateY(-0.2rem);
+      outline: none;
+    }
+    &:visited,
+    &:link {
+      color: $color-black;
+      text-decoration: none;
+
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 1rem 4rem rgba(#0c28a6, 0.1);
+      }
+
+      &:active,
+      &:focus {
+        transform: translateY(-0.2rem);
         outline: none;
-        
-    
-        &:hover {
-            transform: scale(1.15) skewX(16deg)  skewY(2deg);
-            color: $color-white;   
-        }
-    
-        &:active{       
-            transform: translateY(-.5rem);
-        }
-        &:visited,
-        &:link{
-            color: $color-white-3;
-            text-decoration: none;
-        }
-       
+      }
     }
-    
-    &__go-back{
-        padding: .5rem 2rem;
-        display: block;  
-        margin-bottom: 0;  
-
-        &:visited,
-        &:link{
-            color: $color-black;
-            text-decoration: none;          
-        }
-        &:hover{
-            transform: scale(1.05);
-        }
-    
-    }
-    
-
-    &__action{
-        width: 20rem;
-        border: 1px solid $color-black;
-        border-radius: 1rem;
-        padding: .8rem;
-        font-weight: 600;
-
-        @media only screen and(max-width: $bp-small){
-            padding: .6rem;
-        }
-
-
-        transition: all .2s;
-
-        background-image: linear-gradient(to right bottom, 
-        rgba(#0c28a6,.7),
-        rgba($color-black,.7));
-
-        &:hover{
-            transform: scale(1.05);
-            box-shadow: 0 1rem 4rem rgba(#0c28a6,.1);
-        }
-
-        &:active,
-        &:focus{
-            transform: translateY(-.2rem);
-            outline: none;
-        }
-        &:visited,
-            &:link{
-                color: $color-black;
-                text-decoration: none; 
-                
-                &:hover{
-                    transform: scale(1.05);
-                    box-shadow: 0 1rem 4rem rgba(#0c28a6,.1);
-                }
-        
-                &:active,
-                &:focus{
-                    transform: translateY(-.2rem);
-                    outline: none;
-                }
-            }
-    }
+  }
 }
