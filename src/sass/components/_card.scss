@@ -7,7 +7,7 @@
     width: 80%;
     margin-bottom: 1rem;
   }
-  @media only screen and(max-width: $bp-400) {
+  @media only screen and(max-width: $bp-450) {
     width: 95%;
   }
 
@@ -29,7 +29,7 @@
       padding: 0 1.5rem;
       padding-left: 5rem;
     }
-    @media only screen and(max-width: $bp-400) {
+    @media only screen and(max-width: $bp-450) {
       padding: 0 0.5rem;
       padding-left: 5rem;
     }
@@ -64,7 +64,7 @@
         width: 9rem;
         align-self: center;
 
-        @media only screen and(max-width: $bp-400) {
+        @media only screen and(max-width: $bp-450) {
           height: 8rem;
           width: 8rem;
         }
@@ -73,7 +73,7 @@
           height: 8.5rem;
           width: 8.5rem;
 
-          @media only screen and(max-width: $bp-400) {
+          @media only screen and(max-width: $bp-450) {
             height: 7.5rem;
             width: 7.5rem;
           }

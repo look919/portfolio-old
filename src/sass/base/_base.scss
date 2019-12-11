@@ -22,7 +22,7 @@ html {
   @media only screen and(max-width: $bp-900) {
     font-size: 40%;
   }
-  @media only screen and(max-width: $bp-400) {
+  @media only screen and(max-width: $bp-450) {
     font-size: 35%;
   }
 }
@@ -139,6 +139,10 @@ img {
     }
     @media only screen and(max-width: $bp-600) {
       grid-template-columns: 6rem 1fr 6rem;
+    }
+    @media only screen and(max-width: $bp-450) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 100vw repeat(2, 1fr);
     }
   }
   &--contactPage {
