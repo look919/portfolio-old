@@ -4,6 +4,11 @@
   padding: 1rem;
   max-width: 60rem;
   margin-bottom: 3rem;
+
+  @media only screen and(max-width: $bp-600) {
+    padding: 2.5rem;
+  }
+
   display: flex;
   flex-direction: column;
   animation: showUp 1.5s ease-in 2.5s both;
@@ -35,9 +40,9 @@
   }
   //FIXME: responsive image
   &__img {
+    width: 100%;
     border-radius: 3px;
   }
-
   //arrows left and right
   &__btn {
     height: 10rem;
@@ -46,6 +51,11 @@
     background: none;
     border: none;
     cursor: pointer;
+
+    @media only screen and(max-width: $bp-600) {
+      height: 6rem;
+      width: 6rem;
+    }
 
     transition: all 0.2s;
 

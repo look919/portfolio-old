@@ -19,12 +19,8 @@ html {
   @media only screen and(max-width: $bp-1400) {
     font-size: 50%;
   }
-
-  @media only screen and(max-width: $bp-medium) {
+  @media only screen and(max-width: $bp-900) {
     font-size: 40%;
-  }
-  @media only screen and(max-width: $bp-small) {
-    font-size: 35%;
   }
 }
 
@@ -107,7 +103,11 @@ img {
   padding: 1rem 20rem;
 
   @media only screen and(max-width: $bp-1120) {
-    padding: 1rem 15rem;
+    padding: 1rem 10rem;
+  }
+  @media only screen and(max-width: $bp-750) {
+    margin: 0;
+    padding: 0 5rem;
   }
 
   &--welcomePage {
@@ -127,6 +127,13 @@ img {
     grid-template-rows: 1fr;
     align-items: center;
     justify-items: center;
+
+    @media only screen and(max-width: $bp-1120) {
+      grid-template-columns: 10rem 1fr 10rem;
+    }
+    @media only screen and(max-width: $bp-600) {
+      grid-template-columns: 6rem 1fr 6rem;
+    }
   }
   &--contactPage {
     display: flex;
