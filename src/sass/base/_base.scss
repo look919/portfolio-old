@@ -22,6 +22,9 @@ html {
   @media only screen and(max-width: $bp-900) {
     font-size: 40%;
   }
+  @media only screen and(max-width: $bp-400) {
+    font-size: 35%;
+  }
 }
 
 body {
@@ -108,6 +111,9 @@ img {
   @media only screen and(max-width: $bp-750) {
     margin: 0;
     padding: 0 5rem;
+  }
+  @media only screen and(max-width: $bp-600) {
+    padding: 0 2rem;
   }
 
   &--welcomePage {

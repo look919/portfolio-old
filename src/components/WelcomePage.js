@@ -4,6 +4,9 @@ import Nav from "./Nav";
 import { Link } from "react-router-dom";
 
 import myPhoto from "../img/me.png";
+import Polish from "../img/polflag.png";
+import English from "../img/uk.png";
+import Italian from "../img/italy.png";
 import {
   LinkedInIcon,
   GithubIcon,
@@ -41,7 +44,11 @@ const WelcomePage = () => {
             <li className="about-me__item">
               Languages:
               <span className="about-me__item--answer about-me__item--answer--languages">
-                Polish - Native, English - B2, Italian - A1
+                <img src={Polish} className="about-me__item--flag" /> -
+                Native,&nbsp;
+                <img src={English} className="about-me__item--flag" /> -
+                B2,&nbsp;
+                <img src={Italian} className="about-me__item--flag" /> - A1
               </span>
             </li>
             <li className="about-me__item">
