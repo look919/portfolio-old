@@ -1,7 +1,7 @@
 import React from "react";
 
 //linkedin
-const LinkedInIcon = props => (
+export const LinkedInIcon = props => (
   <svg
     className="my-photo__icon"
     width="3rem"
@@ -16,7 +16,7 @@ const LinkedInIcon = props => (
   </svg>
 );
 //github
-const GithubIcon = props => (
+export const GithubIcon = props => (
   <svg
     className="my-photo__icon"
     width="3rem"
@@ -28,7 +28,7 @@ const GithubIcon = props => (
   </svg>
 );
 //hackerrank
-const HackerrankIcon = props => (
+export const HackerrankIcon = props => (
   <svg
     className="my-photo__icon"
     width="3rem"
@@ -43,7 +43,7 @@ const HackerrankIcon = props => (
   </svg>
 );
 //gmail
-const GmailIcon = props => (
+export const GmailIcon = props => (
   <svg
     className="my-photo__icon my-photo__icon--gmail"
     width="3rem"
@@ -55,7 +55,7 @@ const GmailIcon = props => (
   </svg>
 );
 //html
-const HtmlIcon = props => (
+export const HtmlIcon = props => (
   <svg
     className="card__side--front-image"
     width="9rem"
@@ -67,7 +67,7 @@ const HtmlIcon = props => (
   </svg>
 );
 //CSS
-const CssIcon = props => (
+export const CssIcon = props => (
   <svg
     className="card__side--front-image"
     width="9rem"
@@ -79,7 +79,7 @@ const CssIcon = props => (
   </svg>
 );
 //Js
-const JsIcon = props => (
+export const JsIcon = props => (
   <svg
     className="card__side--front-image"
     width="9rem"
@@ -91,7 +91,7 @@ const JsIcon = props => (
   </svg>
 );
 //React
-const ReactIcon = props => (
+export const ReactIcon = props => (
   <svg
     className="card__side--front-image"
     width="9rem"
@@ -103,7 +103,7 @@ const ReactIcon = props => (
   </svg>
 );
 //Git
-const GitIcon = props => (
+export const GitIcon = props => (
   <svg
     className="card__side--front-image"
     width="9rem"
@@ -114,7 +114,7 @@ const GitIcon = props => (
     <path d="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.438 1.9l2.658 2.66c.645-.223 1.387-.078 1.9.435.721.72.721 1.884 0 2.604-.719.719-1.881.719-2.6 0-.539-.541-.674-1.337-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348.713.721.713 1.883 0 2.6-.719.721-1.889.721-2.609 0-.719-.719-.719-1.879 0-2.598.182-.18.387-.316.605-.406V8.835c-.217-.091-.424-.222-.6-.401-.545-.545-.676-1.342-.396-2.009L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477c.604.604 1.582.604 2.186 0l10.43-10.43c.605-.603.605-1.582 0-2.187" />
   </svg>
 );
-const ArrowRight = props => (
+export const ArrowRight = props => (
   <svg
     className="project__btn project__btn--right"
     width="9rem"
@@ -125,7 +125,7 @@ const ArrowRight = props => (
     <path d="M18 7.762v-7.762l12 12-12 12v-7.932c-13.961-0.328-13.362 9.493-9.808 15.932-8.772-9.482-6.909-24.674 9.808-24.238z"></path>
   </svg>
 );
-const ArrowLeft = props => (
+export const ArrowLeft = props => (
   <svg
     className="project__btn project__btn--left"
     width="9rem"
@@ -136,17 +136,3 @@ const ArrowLeft = props => (
     <path d="M23.808 32c3.554-6.439 4.153-16.26-9.808-15.932v7.932l-12-12 12-12v7.762c16.718-0.436 18.58 14.757 9.808 24.238z"></path>
   </svg>
 );
-
-export {
-  GithubIcon,
-  LinkedInIcon,
-  HackerrankIcon,
-  GmailIcon,
-  HtmlIcon,
-  CssIcon,
-  JsIcon,
-  ReactIcon,
-  GitIcon,
-  ArrowRight,
-  ArrowLeft
-};

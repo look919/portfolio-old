@@ -26,20 +26,25 @@ const WelcomePage = () => {
         <div className="about-me">
           <ul className="about-me__list">
             <li className="about-me__item">
-              Name: <span className="about-me__item--answer"> Tomasz </span>
+              Name: <span className="about-me__item--answer">Tomasz</span>
             </li>
             <li className="about-me__item">
-              Surname: <span className="about-me__item--answer"> Wirkus </span>
+              Surname: <span className="about-me__item--answer">Wirkus</span>
             </li>
             <li className="about-me__item">
-              Age: <span className="about-me__item--answer"> 21 </span>
+              Age: <span className="about-me__item--answer">21</span>
             </li>
             <li className="about-me__item">
-              Status: <span className="about-me__item--answer"> Student </span>
+              Status:{" "}
+              <span className="about-me__item--answer">
+                Student of computer sience
+              </span>
             </li>
             <li className="about-me__item">
-              Field of study:
-              <span className="about-me__item--answer"> IT </span>
+              Goal:
+              <span className="about-me__item--answer">
+                Fullstack Developer
+              </span>
             </li>
             <li className="about-me__item">
               Languages:
