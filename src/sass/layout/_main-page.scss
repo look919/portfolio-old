@@ -19,11 +19,12 @@
   animation: showUp 2.5s ease-out 6s both;
 
   @media only screen and(max-width: $bp-1120) {
-    grid-template-columns: 3fr 1fr;
+    //grid-template-columns: 3fr 1fr;
   }
 
   &__list {
     grid-column: 1 / 2;
+    width: 100%;
 
     list-style-type: none;
     color: $color-white-2;
@@ -96,7 +97,7 @@
     align-items: center;
 
     @media only screen and(max-width: $bp-450) {
-      width: 14rem;
+      width: 16rem;
     }
   }
 }
@@ -118,8 +119,8 @@
       width: 20rem;
     }
     @media only screen and(max-width: $bp-450) {
-      height: 14rem;
-      width: 14rem;
+      height: 16rem;
+      width: 16rem;
     }
   }
 
