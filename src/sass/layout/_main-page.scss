@@ -7,6 +7,10 @@
     font-size: 1.7rem;
     color: $color-white-3;
     animation: showUpWithScale 1.5s ease-in 6.5s both;
+
+    @media only screen and(max-width: $bp-450) {
+      padding: 1rem;
+    }
   }
 }
 
