@@ -116,9 +116,9 @@ const SkillsPage = () => {
           </div>
           <div className="card__side card__side--back background-node">
             <ul className="card__side--back__list">
-              <li>Learning in progress</li>
-              <li>---------</li>
-              <li>---------</li>
+              <li>Learning still in progress!</li>
+              <li>Express</li>
+              <li>mongoDB, mongoose</li>
               <li>
                 Course by Jonas Schmedtmann on Udemy:{" "}
                 <a
