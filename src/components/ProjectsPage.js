@@ -1,17 +1,17 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
 
-import Header from "./Header";
-import Nav from "./Nav";
+import Header from './Header';
+import Info from './Info';
+import Nav from './Nav';
 
-import { ArrowRight, ArrowLeft } from "../Icons/Icons";
+import { ArrowRight, ArrowLeft } from '../Icons/Icons';
 
-import chickyChicken from "../img/chickychicken.png";
-import byt from "../img/byt.png";
-import portfolio from "../img/portfolio.png";
-import pt from "../img/pt.png";
-import chessGame from "../img/chess.png";
-import tgio from "../img/tgio.png";
+import chickyChicken from '../img/chickychicken.png';
+import byt from '../img/byt.png';
+import portfolio from '../img/portfolio.png';
+import pt from '../img/pt.png';
+import chessGame from '../img/chess.png';
+import tgio from '../img/tgio.png';
 
 class ProjectsPage extends React.Component {
   constructor(props) {
@@ -20,41 +20,45 @@ class ProjectsPage extends React.Component {
       index: 0,
       project: [
         {
-          title: "ChickyChicken",
-          github: "https://github.com/look919/chickyChicken",
-          url: "https://chickychicken.herokuapp.com",
+          title: 'ChickyChicken',
+          github: 'https://github.com/look919/chickyChicken',
+          url: 'https://chickychicken.herokuapp.com',
           img: chickyChicken
         },
         {
-          title: "BookYourTime",
-          github: "https://github.com/look919/Book-Your-Time",
-          url: "https://bookyourtime.herokuapp.com/",
+          title: 'BookYourTime',
+          github: 'https://github.com/look919/Book-Your-Time',
+          url: 'https://bookyourtime.herokuapp.com/',
           img: byt
         },
         {
-          title: "Portfolio",
-          github: "https://github.com/look919/portfolio",
-          url: "https://tomasz-wirkus-portfolio.herokuapp.com/",
+          title: 'Portfolio',
+          github: 'https://github.com/look919/portfolio',
+          url: 'https://tomasz-wirkus-portfolio.herokuapp.com/',
           img: portfolio
         },
         {
-          title: "ProgressTracker",
-          github: "https://github.com/look919/Progress-Tracker",
-          url: "http://progresstracker.surge.sh/index.html#",
+          title: 'ProgressTracker',
+          github: 'https://github.com/look919/Progress-Tracker',
+          url: 'http://progresstracker.surge.sh/index.html#',
           img: pt
         },
         {
-          title: "C++ Chess game",
-          github: "https://github.com/look919/Chess-game-Qt",
-          url: "https://www.youtube.com/watch?v=oQRxG5nHmoY",
+          title: 'C++ Chess game',
+          github: 'https://github.com/look919/Chess-game-Qt',
+          url: 'https://www.youtube.com/watch?v=oQRxG5nHmoY',
           img: chessGame
         },
         {
-          title: "C++ ThreeGamesInOne",
-          github: "https://github.com/look919/Three-games-in-one-Qt",
-          url: "https://www.youtube.com/watch?v=SC5MxK_dTsI",
+          title: 'C++ ThreeGamesInOne',
+          github: 'https://github.com/look919/Three-games-in-one-Qt',
+          url: 'https://www.youtube.com/watch?v=SC5MxK_dTsI',
           img: tgio
         }
+      ],
+      paragraph: [
+        'I decided not to include projects from online courses in the portfolio, despite the fact that their creation was very important in my development, I wrote all the projects in the portfolio 100% by myself',
+        'The most important projects of mine are ChickyChicken and HotelGiant, the first is an application for restaurant, the second is for a hotel. Both are made with an idea to get overview of a services that this comapnies can sell. Besides that in both apps potential customers can make an order online or contact with company Projects that I created bases on frontend but i plan to rebuild them with Node.js.'
       ]
     };
   }
@@ -78,29 +82,30 @@ class ProjectsPage extends React.Component {
     let index = this.state.index;
     let project = this.state.project[index];
     return (
-      <div className="container">
-        <Header title="Projects" />
-        <div className="content content--projectPage">
-          <button onClick={this.subtractIndex} className="project__btn">
+      <div className='container'>
+        <Header title='Projects' />
+        <Info title='My works' paragraph={this.state.paragraph} />
+        <div className='content content--projectPage'>
+          <button onClick={this.subtractIndex} className='project__btn'>
             <ArrowLeft />
           </button>
-          <figure className="project">
-            <div className="project__info">
-              <h2 className="project__title">{project.title}</h2>
+          <figure className='project'>
+            <div className='project__info'>
+              <h2 className='project__title'>{project.title}</h2>
               <a
                 href={project.github}
-                className="project__link"
-                target="_blanc"
+                className='project__link'
+                target='_blanc'
               >
                 Github
               </a>
-              <a href={project.url} className="project__link" target="_blanc">
+              <a href={project.url} className='project__link' target='_blanc'>
                 Online
               </a>
             </div>
-            <img className="project__img" src={project.img} />
+            <img className='project__img' src={project.img} />
           </figure>
-          <button onClick={this.addIndex} className="project__btn">
+          <button onClick={this.addIndex} className='project__btn'>
             <ArrowRight />
           </button>
         </div>
