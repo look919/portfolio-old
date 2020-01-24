@@ -18,12 +18,12 @@ import {
 const WelcomePage = () => {
   const paragraph = [
     'I started my programming adventure with the beginning of my studies in October 2018. At the beginning I programmed in c++ but around March 2019 i decided that i want to tie my future with web developing. ',
-    "For the first six months i was focused on frontend using raw Javascript and CSS with Sass preprocessor. Later I dived into React and thats the place where most of my projects comes from. Right now I'm mostly focused on backend using Node.js. My goal is to become MERN stack developer and i work hard everyday to become one."
+    "For the first couple of months i was focused on frontend using raw Javascript and CSS with Sass preprocessor. Later I dived into React and thats the place where most of my projects comes from. Right now I'm mostly focused on backend using Node.js. My goal is to become MERN stack developer and i work hard everyday to become one."
   ];
   return (
     <div className='container container--animated'>
       <Header title='Tomasz Wirkus' />
-      <Info title='About me' paragraph={paragraph} />
+      <Info title='About me' paragraph={paragraph} modalSvg={0} />
       <div className='content content--welcomePage'>
         <p className='main-page__text'>
           Hello! My name is Tomasz and I would like to welcome you on my

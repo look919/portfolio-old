@@ -40,6 +40,7 @@ export default class Info extends React.Component {
           infoOpen={this.state.infoOpen}
           paragraph={this.state.paragraph}
           title={this.props.title}
+          modalSvg={this.props.modalSvg}
         />
       </button>
     ) : (
@@ -55,6 +56,7 @@ export default class Info extends React.Component {
           infoOpen={this.state.infoOpen}
           title={this.props.title}
           paragraph={this.state.paragraph}
+          modalSvg={this.props.modalSvg}
         />
       </button>
     );

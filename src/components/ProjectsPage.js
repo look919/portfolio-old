@@ -57,8 +57,8 @@ class ProjectsPage extends React.Component {
         }
       ],
       paragraph: [
-        'I decided not to include projects from online courses in the portfolio, despite the fact that their creation was very important in my development, I wrote all the projects in the portfolio 100% by myself',
-        'The most important projects of mine are ChickyChicken and HotelGiant, the first is an application for restaurant, the second is for a hotel. Both are made with an idea to get overview of a services that this comapnies can sell. Besides that in both apps potential customers can make an order online or contact with company Projects that I created bases on frontend but i plan to rebuild them with Node.js.'
+        'I decided not to include projects from online courses in the portfolio, despite the fact that their creation was very important in my development, I wrote all the projects in the portfolio 100% by myself.',
+        'The most important projects of mine for now are ChickyChicken and HotelGiant, the first is an application for restaurant, the second is for a hotel. Both are made with an idea to get overview of a services that those comapnies can sell. Besides that in both apps potential customers can make an order online or contact with company. Projects that I created bases on frontend but i plan to rebuild them with Node.js to add things like api, user authentication and online payments.'
       ]
     };
   }
@@ -84,7 +84,7 @@ class ProjectsPage extends React.Component {
     return (
       <div className='container'>
         <Header title='Projects' />
-        <Info title='My works' paragraph={this.state.paragraph} />
+        <Info title='My works' paragraph={this.state.paragraph} modalSvg={2} />
         <div className='content content--projectPage'>
           <button onClick={this.subtractIndex} className='project__btn'>
             <ArrowLeft />

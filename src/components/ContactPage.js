@@ -29,7 +29,11 @@ class ContactPage extends React.Component {
     return (
       <div className='container'>
         <Header title='Contact' />
-        <Info title='First step' paragraph={this.state.paragraph} />
+        <Info
+          title='First step'
+          paragraph={this.state.paragraph}
+          modalSvg={3}
+        />
         <div className='content content--contactPage'>
           <form
             onSubmit={this.submitForm}

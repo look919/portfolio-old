@@ -20,7 +20,7 @@ const SkillsPage = () => {
   return (
     <div className='container'>
       <Header title='Skills' />
-      <Info title='What exactly can i do?' paragraph={paragraph} />
+      <Info title='What exactly can i do?' paragraph={paragraph} modalSvg={1} />
       <div className='content content--skillPage'>
         <div className='card card--css'>
           <div className='card__side card__side--front background-css'>
