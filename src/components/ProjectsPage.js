@@ -12,6 +12,7 @@ import portfolio from '../img/portfolio.png';
 import pt from '../img/pt.png';
 import chessGame from '../img/chess.png';
 import tgio from '../img/tgio.png';
+import hotelGiant from '../img/hotelGiant.png';
 
 class ProjectsPage extends React.Component {
   constructor(props) {
@@ -19,6 +20,12 @@ class ProjectsPage extends React.Component {
     this.state = {
       index: 0,
       project: [
+        {
+          title: 'Hotel Giant',
+          github: 'https://github.com/look919/chickyChicken',
+          url: 'https://chickychicken.herokuapp.com',
+          img: hotelGiant
+        },
         {
           title: 'ChickyChicken',
           github: 'https://github.com/look919/chickyChicken',

@@ -72,7 +72,10 @@ const WelcomePage = () => {
           <div className='my-photo about-me__photo'>
             <img src={myPhoto} className='my-photo__img-radius' />
             <div className='my-photo__icons'>
-              <a href='https://github.com/look919' target='_blanc'>
+              <a
+                href='https://www.linkedin.com/in/tomasz-wirkus-435621196/'
+                target='_blanc'
+              >
                 <LinkedInIcon />
               </a>
               <a href='https://github.com/look919' target='_blanc'>

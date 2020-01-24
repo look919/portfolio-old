@@ -126,9 +126,9 @@ const SkillsPage = () => {
           </div>
           <div className='card__side card__side--back background-node'>
             <ul className='card__side--back__list'>
-              <li>Learning still in progress!</li>
-              <li>Express</li>
-              <li>mongoDB, mongoose</li>
+              <li>Express,</li>
+              <li>MongoDB, Mongoose, API, data protecting and modelling,</li>
+              <li>Error Handling, security,</li>
               <li>
                 Course by Jonas Schmedtmann on Udemy:{' '}
                 <a
@@ -154,24 +154,3 @@ const SkillsPage = () => {
 };
 
 export default SkillsPage;
-
-// <div className="card">
-//     <div className="card__side card__side--front background-html">
-//         <div className="card__side--front-header">Git</div>
-//         <div>
-//             <img src={git} alt="Git Logo" className="card__side--front-image"/>
-//         </div>
-//     </div>
-//     <div className="card__side card__side--back background-html">
-//         <ul className="card__side--back__list">
-//             <li>Work locally with repo</li>
-//             <li>Use GitHub</li>
-//             <li>BDFBD</li>
-//             <li>Course by Maciej Aniserowicz: <a className="card__side--back__link" href="https://kursgita.pl/" target="_blanc">
-//             Link</a></li>
-//         </ul>
-//         <div>
-//             <img src={git} alt="Git Logo"className="card__side--front-image"/>
-//         </div>
-//     </div>
-// </div>
