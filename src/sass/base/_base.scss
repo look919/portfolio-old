@@ -29,7 +29,7 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-family: "Yanone Kaffeesatz", sans-serif;
   letter-spacing: 1px;
   font-size: 2.2rem;
   color: $color-white;
@@ -61,11 +61,14 @@ img {
       rgba($color-black, 0.9),
       rgba($color-black, 0.85)
     ),
-    url('../img/background.jpg');
+    url("../img/background.jpg");
   background-size: cover;
   background-position: center;
   overflow: hidden;
 
+  @media only screen and (max-width: $bp-1400) {
+    grid-template-rows: 13rem 7.5rem calc(100vh - 32.5rem) 12rem;
+  }
   //when landscape view and width is no bigger than 900px, otherwords, phone-landscape
   @media only screen and (orientation: landscape) and (max-width: $bp-1120) {
     grid-template-rows: 13rem 10rem minmax(calc(100vh - 35rem), max-content) 12rem;
@@ -73,7 +76,7 @@ img {
 
   &--animated {
     &::before {
-      content: 'Hi.';
+      content: "Hi.";
       position: absolute;
       z-index: 20;
       top: 0;
@@ -85,7 +88,7 @@ img {
       display: flex;
       justify-content: center;
       align-items: center;
-      font-family: 'Quicksand', sans-serif;
+      font-family: "Quicksand", sans-serif;
       font-size: 10rem;
       font-weight: 900;
 
