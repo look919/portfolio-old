@@ -71,6 +71,8 @@
 
     transform: translateX(-50%);
 
+    transition: all 0.1s;
+
     &__imgHover {
       object-fit: cover;
       height: 12rem;
@@ -84,6 +86,8 @@
   &__techs:hover > &__technologies {
     display: grid;
     z-index: 3;
+
+    transition: all 0.1s;
   }
 
   //arrows left and right
