@@ -69,16 +69,16 @@ const WelcomePage = () => {
             <div className='my-photo__icons'>
               <a
                 href='https://www.linkedin.com/in/tomasz-wirkus-435621196/'
-                target='_blanc'
+                target='_blank'
               >
                 <LinkedInIcon />
               </a>
-              <a href='https://github.com/look919' target='_blanc'>
+              <a href='https://github.com/look919' target='_blank'>
                 <GithubIcon />
               </a>
               <a
                 href='https://drive.google.com/file/d/1wThyPSeCTsdrNSzQ0C4alVxYPzZ6--gZ/view?usp=sharing'
-                target='_blanc'
+                target='_blank'
               >
                 <CVIcon />
               </a>

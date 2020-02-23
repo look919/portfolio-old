@@ -41,7 +41,7 @@ const SkillsPage = () => {
                 <a
                   className='card__side--back__link'
                   href='https://www.udemy.com/course/advanced-css-and-sass/'
-                  target='_blanc'
+                  target='_blank'
                 >
                   Link
                 </a>
@@ -66,7 +66,7 @@ const SkillsPage = () => {
                 <a
                   className='card__side--back__link'
                   href='https://www.udemy.com/course/modern-javascript/'
-                  target='_blanc'
+                  target='_blank'
                 >
                   Link
                 </a>
@@ -94,7 +94,7 @@ const SkillsPage = () => {
                 <a
                   className='card__side--back__link'
                   href='https://www.udemy.com/course/react-2nd-edition'
-                  target='_blanc'
+                  target='_blank'
                 >
                   Link
                 </a>
@@ -128,7 +128,7 @@ const SkillsPage = () => {
                 <a
                   className='card__side--back__link'
                   href='https://www.udemy.com/course/nodejs-express-mongodb-bootcamp'
-                  target='_blanc'
+                  target='_blank'
                 >
                   Link
                 </a>
