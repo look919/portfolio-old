@@ -140,4 +140,20 @@
       transform: translateY(-0.3rem) scale(0.95);
     }
   }
+
+  &__development {
+    position: absolute;
+    z-index: 20;
+    right: -3rem;
+    bottom: 0;
+
+    border: 1px solid $color-black;
+    padding: 0.4rem 1.3rem;
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(#0c28a6, 1),
+      rgba(#60c0e0, 1)
+    );
+    transform: rotate(25deg);
+  }
 }

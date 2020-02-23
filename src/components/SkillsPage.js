@@ -11,10 +11,13 @@ import node from '../img/node.png';
 const SkillsPage = () => {
   const paragraph = [
     'I really like working with Javascript. Although I try to develop towards MERN stack developer, I do not limit myself to other solutions.',
-    "List of technologies I've worked with:",
-    'HTML, CSS, Sass, Javascript, React, Redux, Node.js, Firebase, MongoDB, Mongoose, C++, Qt.',
-    "List of tools I've worked with:",
-    'VSC, Git, Heroku, Surge, Postman, MongoDB Compass, MongoDB Atlas, npm, yarn.'
+    "Full list of courses I've taken part:",
+    'Advanced CSS and Sass: Flexbox, Grid, Animations and More! by Jonas Schmedtmann ~28h',
+    'The Modern JavaScript Bootcamp by Andrew Mead ~30h',
+    'The Complete React Developer by Andrew Mead Course ~39h',
+    'Node.js, Express, MongoDB & More by Jonas Schmedtmann ~42h',
+    'MERN Stack Front To Back by Brad Traversy ~12h',
+    'Kurs Gita by Maciej Aniserowicz ~8h'
   ];
 
   return (
@@ -25,13 +28,8 @@ const SkillsPage = () => {
         <div className='card card--css'>
           <div className='card__side card__side--front background-css'>
             <div className='card__side--front-header'>CSS & Sass</div>
-            <div>
-              <img
-                src={css}
-                alt='CSS Logo'
-                className='card__side--front-image'
-              />
-            </div>
+
+            <img src={css} alt='CSS Logo' className='card__side--front-image' />
           </div>
           <div className='card__side card__side--back background-css'>
             <ul className='card__side--back__list'>
@@ -56,15 +54,13 @@ const SkillsPage = () => {
         <div className='card card--js'>
           <div className='card__side card__side--front background-js'>
             <div className='card__side--front-header'>Javascript</div>
-            <div>
-              <img src={js} alt='JS Logo' className='card__side--front-image' />
-            </div>
+            <img src={js} alt='JS Logo' className='card__side--front-image' />
           </div>
           <div className='card__side card__side--back background-js'>
             <ul className='card__side--back__list'>
               <li>ES6/ES7</li>
               <li>OOP, Babel, Webpack</li>
-              <li>Promises, JSON</li>
+              <li>Promises, JSON, async await</li>
               <li>
                 Course by Andrew Mead on Udemy:{' '}
                 <a
@@ -82,19 +78,17 @@ const SkillsPage = () => {
         <div className='card card--react'>
           <div className='card__side card__side--front background-css'>
             <div className='card__side--front-header'>React</div>
-            <div>
-              <img
-                src={react}
-                alt='React Logo'
-                className='card__side--front-image'
-              />
-            </div>
+            <img
+              src={react}
+              alt='React Logo'
+              className='card__side--front-image'
+            />
           </div>
           <div className='card__side card__side--back background-css'>
             <ul className='card__side--back__list'>
-              <li>React-router, Redux, Hooks</li>
+              <li>React-router, Redux</li>
+              <li>Hooks, third party components</li>
               <li>Basic understanding of unit testing in Jest</li>
-              <li>Firebase database, storage and authentication</li>
               <li>
                 Course by Andrew Mead on Udemy:{' '}
                 <a
@@ -116,19 +110,19 @@ const SkillsPage = () => {
         <div className='card card--node'>
           <div className='card__side card__side--front background-node'>
             <div className='card__side--front-header'>Node.js</div>
-            <div>
-              <img
-                src={node}
-                alt='HTML Logo'
-                className='card__side--front-image'
-              />
-            </div>
+            <img
+              src={node}
+              alt='HTML Logo'
+              className='card__side--front-image'
+            />
           </div>
           <div className='card__side card__side--back background-node'>
             <ul className='card__side--back__list'>
-              <li>Express,</li>
-              <li>MongoDB, Mongoose, API, data protecting and modelling,</li>
-              <li>Error Handling, security,</li>
+              <li>Express, error Handling, security</li>
+              <li>
+                MongoDB, Mongoose, data operations, validation and modelling
+              </li>
+              <li>Server side rendering with pug templates</li>
               <li>
                 Course by Jonas Schmedtmann on Udemy:{' '}
                 <a

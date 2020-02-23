@@ -8,12 +8,7 @@ import myPhoto from '../img/me.png';
 import Polish from '../img/polflag.png';
 import English from '../img/uk.png';
 import Italian from '../img/italy.png';
-import {
-  LinkedInIcon,
-  GithubIcon,
-  HackerrankIcon,
-  GmailIcon
-} from '../Icons/Icons';
+import { LinkedInIcon, GithubIcon, CVIcon, GmailIcon } from '../Icons/Icons';
 
 const WelcomePage = () => {
   const paragraph = [
@@ -82,10 +77,10 @@ const WelcomePage = () => {
                 <GithubIcon />
               </a>
               <a
-                href='https://www.hackerrank.com/wirkustomasz919'
+                href='https://drive.google.com/file/d/1wThyPSeCTsdrNSzQ0C4alVxYPzZ6--gZ/view?usp=sharing'
                 target='_blanc'
               >
-                <HackerrankIcon />
+                <CVIcon />
               </a>
               <Link to='/contact'>
                 <GmailIcon />
