@@ -44,19 +44,20 @@ class ContactPage extends React.Component {
             <input
               type='email'
               name='email'
-              placeholder='email@example.com'
+              placeholder='from:email@example.com'
               onChange={this.onEmailChange}
               className='contact-page__email contact-page__email--user'
             />
             <input
               type='text'
               disabled
-              placeholder='wirkus919@gmail.com'
+              placeholder='to:wirkus919@gmail.com'
               className='contact-page__email'
             />
             <textarea
               name='message'
               className='contact-page__textarea'
+              minLength={7}
             ></textarea>
             <button className='btn__action'>Submit</button>
             {status === 'ERROR' && (
