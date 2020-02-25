@@ -6,7 +6,7 @@ import {
   ModalSkills,
   ModalProjects,
   ModalContact
-} from '../Icons/Icons';
+} from './../Icons/Icons';
 const ModalInfo = props => {
   let JsxSvg;
 

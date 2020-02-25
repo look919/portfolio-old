@@ -29,7 +29,7 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
   letter-spacing: 1px;
   font-size: 2.2rem;
   color: $color-white;
@@ -61,7 +61,7 @@ img {
       rgba($color-black, 0.9),
       rgba($color-black, 0.85)
     ),
-    url("../img/background.jpg");
+    url('../../img/background.jpg');
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -76,7 +76,7 @@ img {
 
   &--animated {
     &::before {
-      content: "Hi.";
+      content: 'Hi.';
       position: absolute;
       z-index: 20;
       top: 0;
@@ -88,7 +88,7 @@ img {
       display: flex;
       justify-content: center;
       align-items: center;
-      font-family: "Quicksand", sans-serif;
+      font-family: 'Quicksand', 'Yanone Kaffeesatz', sans-serif;
       font-size: 10rem;
       font-weight: 900;
 

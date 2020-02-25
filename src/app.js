@@ -1,14 +1,5 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import AppRouter from './routers/AppRouter'
-import 'normalize.css/normalize.css';
-import './sass/main.scss'
+import React from 'react';
+import AppRouter from './routers/AppRouter';
 
-
-
-const jsx = (
-    <AppRouter />
-)
-
-ReactDOM.render(jsx, document.getElementById('app'));
-
+const App = () => <AppRouter />;
+export default App;

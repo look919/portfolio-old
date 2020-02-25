@@ -1,5 +1,5 @@
 import React from 'react';
-import { InfoIcon, CloseInfoIcon } from '../Icons/Icons';
+import { InfoIcon, CloseInfoIcon } from './../Icons/Icons';
 import Modal from './ModalInfo';
 
 export default class Info extends React.Component {

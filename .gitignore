@@ -1,15 +1,21 @@
-node_modules/
-public/bundle.js
-public/bundle.js.map
-public/styles.css
-public/styles.css.map
-public/0eb0efdc37d6bc457d73c77b1ba35277.png
-public/10da7e22a0d10e84d78542a3316e736f.png
-public/34d428ea8ea4989ce5f99ee470bb2fc1.png
-public/47ce6e77f039020ee2e76a10c1e988e9.png
-public/85f41917a870efa0b504814f74504710.png
-public/48226b821716ad6e87881ed535638b6a.png
-public/aef6a4837ff5cc420fd6d8a473c34266.png
-public/c4c631f53ed42af03f625b5a444d06f6.png
-public/ebb2fe79689dfb27e6802d8bb27716d7.png
-public/f2282f94c041c37ef4db028e428e41c1.png
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
