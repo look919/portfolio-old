@@ -22,6 +22,12 @@
   &:focus {
     outline: none;
   }
+  @media only screen and (max-width: $bp-600) {
+    margin-top: 2rem;
+  }
+  @media only screen and (max-width: $bp-350) {
+    margin-top: 0;
+  }
 
   &__icon {
     fill: $color-white;
@@ -30,7 +36,7 @@
     margin-bottom: 1rem;
   }
   &__heading {
-    font-family: "Merriweather", serif;
+    font-family: 'Merriweather', serif;
 
     font-size: 1.6rem;
     font-weight: 300;
@@ -62,8 +68,16 @@
   pointer-events: none;
 
   top: 23rem !important;
-
   animation: modalOpen 1s ease-in 0s both;
+
+  @media only screen and (max-width: $bp-600) {
+    top: 28rem !important;
+    animation: modalOpenMobile 1s ease-in 0s both;
+  }
+  @media only screen and (max-width: $bp-350) {
+    top: 23rem !important;
+    animation: modalOpen 1s ease-in 0s both;
+  }
 }
 
 .ReactModalPortal .ReactModal__Overlay--before-close {
@@ -99,6 +113,9 @@
   }
   @media only screen and (max-width: $bp-450) {
     padding: 2rem 3rem;
+  }
+  @media only screen and (max-width: $bp-350) {
+    padding: 1rem 1.5rem;
   }
 
   &:focus {
@@ -137,7 +154,7 @@
   &__paragraphs {
     display: flex;
     flex-direction: column;
-    font-family: "Merriweather", serif;
+    font-family: 'Merriweather', serif;
     font-weight: 300;
     font-size: 2.2rem;
     line-height: 1.6;
@@ -164,6 +181,10 @@
       font-style: normal;
       text-align: center;
     }
+    @media only screen and (max-width: $bp-350) {
+      font-size: 1.4rem;
+      padding: 0.4rem 1rem;
+    }
   }
   &__paragraph {
     padding: 0.4rem 0;
@@ -178,13 +199,14 @@
     background-color: $color-white-2;
     display: inline-block;
     margin: 4rem 0;
-    animation: moveInLeft 3s ease-out 0s both;
+    animation: modalLine 2s ease-out 0.8s both;
 
     @media only screen and (max-width: $bp-450) {
       margin: 2rem 0;
     }
     &--1 {
       margin-left: 4rem;
+      animation: modalLine 3s ease-out 0.4s both;
 
       @media only screen and (max-width: $bp-450) {
         margin-left: 0;
@@ -192,6 +214,8 @@
     }
     &--2 {
       margin-right: 4rem;
+      animation: modalLine 3s ease-out 0.9s both;
+
       @media only screen and (max-width: $bp-450) {
         margin-right: 0;
       }
