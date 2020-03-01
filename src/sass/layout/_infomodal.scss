@@ -1,6 +1,5 @@
 .infomodal {
   grid-row: 2 / 3;
-  height: 100%;
   position: relative;
   z-index: 100;
   display: flex;
@@ -10,7 +9,7 @@
   cursor: pointer;
 
   padding: 0.3rem 3rem;
-  height: 100%;
+
   background: none;
   border: none;
 
@@ -22,8 +21,10 @@
   &:focus {
     outline: none;
   }
+
   @media only screen and (max-width: $bp-600) {
     margin-top: 2rem;
+    justify-content: center;
   }
   @media only screen and (max-width: $bp-350) {
     margin-top: 0;
@@ -36,7 +37,7 @@
     margin-bottom: 1rem;
   }
   &__heading {
-    font-family: 'Merriweather', serif;
+    font-family: "Merriweather", serif;
 
     font-size: 1.6rem;
     font-weight: 300;
@@ -97,6 +98,7 @@
   display: grid;
   grid-template-rows: 10rem 1fr;
   grid-template-columns: repeat(3, 1fr);
+  align-items: center;
 
   @media only screen and (max-width: $bp-1400) {
     grid-template-rows: 7.5rem 1fr;
@@ -154,14 +156,15 @@
   &__paragraphs {
     display: flex;
     flex-direction: column;
-    font-family: 'Merriweather', serif;
+    font-family: "Merriweather", serif;
     font-weight: 300;
-    font-size: 2.2rem;
+    font-size: 2rem;
     line-height: 1.6;
     letter-spacing: 1px;
     margin-left: 2.5rem;
+    line-height: 1.4;
 
-    padding: 1rem 2rem;
+    padding: 0.1rem 2rem;
     padding-right: 0;
 
     font-style: italic;
@@ -169,7 +172,7 @@
     animation: showUp 1s ease-in 3s both;
 
     @media only screen and (max-width: $bp-1400) {
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
     @media only screen and (max-width: $bp-600) {
       padding: 1rem 4rem;
