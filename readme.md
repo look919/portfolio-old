@@ -14,7 +14,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 #### Things I learned during that project
 
-Due the fact, this website is propably the first meeting with my programming skills for potential employers, I'm trating it special and making several changes to it from time to time. First version of this project I started coding around August 2019 in React v15, since then, the design has turned 180 degrees at least twice. Around January I finally updated it to React v16. Even though it's not very complex project, its visual side took me a lot of time.
+Due the fact, this website is propably the first meeting with my programming skills for potential employers, I treat it exceptionally and and from time to time make several changes to it. First version of this project I started coding around August 2019 in React v15, since then, the design has turned 180 degrees at least twice. Around January I finally updated it to React v16. Even though it's not very complex project, its visual side took me a lot of time.
 
 Things I learned:
 
