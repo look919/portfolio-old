@@ -29,7 +29,7 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-family: "Yanone Kaffeesatz", sans-serif;
   letter-spacing: 1px;
   font-size: 2.2rem;
   color: $color-white;
@@ -61,7 +61,7 @@ img {
       rgba($color-black, 0.9),
       rgba($color-black, 0.85)
     ),
-    url('../../img/background.jpg');
+    url("../../img/background.jpg");
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -71,6 +71,13 @@ img {
   }
   @media only screen and (max-width: $bp-600) {
     grid-template-rows: 13rem 15rem calc(100vh - 40rem) 12rem;
+
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-black, 0.8),
+        rgba($color-black, 0.75)
+      ),
+      url("../../img/background.jpg");
   }
   @media only screen and (max-width: $bp-350) {
     grid-template-rows: 13rem 7.5rem calc(100vh - 32.5rem) 12rem;
@@ -82,7 +89,7 @@ img {
 
   &--animated {
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       z-index: 20;
       top: 0;
@@ -94,7 +101,7 @@ img {
       display: flex;
       justify-content: center;
       align-items: center;
-      font-family: 'Quicksand', 'Yanone Kaffeesatz', sans-serif;
+      font-family: "Quicksand", "Yanone Kaffeesatz", sans-serif;
       font-size: 10rem;
       font-weight: 900;
 
