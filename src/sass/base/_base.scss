@@ -49,7 +49,7 @@ img {
   margin: 0 auto;
 
   display: grid;
-  grid-template-rows: 13rem 10rem calc(100vh - 35rem) 12rem;
+  grid-template-rows: 13rem 12rem calc(100vh - 37rem) 12rem;
   grid-template-columns: 1fr;
   justify-items: center;
 
@@ -67,7 +67,7 @@ img {
   overflow: hidden;
 
   @media only screen and (max-width: $bp-1400) {
-    grid-template-rows: 13rem 7.5rem calc(100vh - 32.5rem) 12rem;
+    grid-template-rows: 13rem 10rem calc(100vh - 35rem) 12rem;
   }
   @media only screen and (max-width: $bp-600) {
     grid-template-rows: 13rem 15rem calc(100vh - 40rem) 12rem;
@@ -119,6 +119,7 @@ img {
   grid-row: 3 / 4;
   width: 100%;
   margin: 2rem;
+  margin-top: 0;
   padding: 1rem 20rem;
 
   @media only screen and(max-width: $bp-1120) {

@@ -38,7 +38,7 @@ const WelcomePage = () => {
             <li className="about-me__item">
               Status:{" "}
               <span className="about-me__item--answer">
-                Student of computer sience
+                Student of computer science
               </span>
             </li>
             <li className="about-me__item">
