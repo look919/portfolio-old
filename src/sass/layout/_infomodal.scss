@@ -195,6 +195,17 @@
     @media only screen and (max-width: $bp-450) {
       padding: 0.5rem 0;
     }
+
+    &--a {
+      pointer-events: visible;
+
+      color: $color-background;
+      font-style: default;
+
+      &:visited {
+        color: $color-background;
+      }
+    }
   }
   &__line {
     width: 100%;

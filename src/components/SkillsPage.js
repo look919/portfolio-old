@@ -11,7 +11,7 @@ import mongo from "../img/mongodb.png";
 
 const SkillsPage = () => {
   const paragraph = [
-    "The tools I use: VSCode, Git, Postman, Babel, Webpack, Eslint.",
+    "https://docs.google.com/document/d/1UUktoP11nRqgAhTEppao9B58RL6dvOz4u9B0DO5Lt74/edit?usp=sharing",
     "Full list of courses I've taken part:",
     "Advanced CSS and Sass: Flexbox, Grid, Animations and More! by Jonas Schmedtmann ~28h",
     "The Modern JavaScript Bootcamp by Andrew Mead ~30h",
