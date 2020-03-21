@@ -16,10 +16,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 Due the fact, this website is propably the first meeting with my programming skills for potential employers, I treat it exceptionally and and from time to time make several changes to it. First version of this project I started coding around August 2019 in React v15, since then, the design has turned 180 degrees at least twice. Around January I finally updated it to React v16. Even though it's not very complex project, its visual side took me a lot of time.
 
-Things I learned:
+Things I learned during that project:
 
 - That is my first self-coded project using React, so I learned a lot of basics from it
-- In Reactv15 I had to create and learn babel and webpack configuration by my own
+- Creating simple Node.js server
+- Publishing to Heroku
+- In Reactv15 I needed to learn and create babel and webpack configuration by my own
 - Cool css animations (all animations in that project comes straight from css)
 - Formspree setup
 - ReactModal
