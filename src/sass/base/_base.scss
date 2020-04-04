@@ -145,23 +145,19 @@ img {
     justify-items: center;
   }
   &--projectPage {
-    padding: 1rem 10rem;
     display: grid;
-    grid-template-rows: 1fr 20rem;
-
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr min-content;
+    grid-template-columns: 2fr 5fr 2fr;
     align-items: center;
+
     justify-items: center;
+    padding: 1rem 10rem;
 
     @media only screen and(max-width: $bp-1120) {
-      grid-template-columns: 10rem 1fr 10rem;
+      grid-template-columns: repeat(2, 1fr);
     }
     @media only screen and(max-width: $bp-600) {
-      grid-template-columns: 6rem 1fr 6rem;
-    }
-    @media only screen and(max-width: $bp-450) {
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: 100vw 1fr;
+      padding: 1rem 5rem;
     }
   }
   &--contactPage {

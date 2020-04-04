@@ -1,7 +1,8 @@
 .project {
+  grid-row: 1 / 2;
   grid-column: 2 / 3;
   margin: 0;
-  //padding: 1rem;
+  padding: 1rem 3rem;
   max-width: 60rem;
 
   margin-bottom: 3rem;
@@ -11,7 +12,10 @@
   grid-template-rows: repeat(2, min-content) 1fr;
   animation: showUp 1.5s ease-in 2.5s both;
 
-  @media only screen and(max-width: $bp-600) {
+  @media only screen and(max-width: $bp-1120) {
+    grid-column: 1 / -1;
+    max-width: 90rem;
+
     padding: 2.5rem;
   }
   @media only screen and(max-width: $bp-450) {
@@ -20,20 +24,51 @@
     padding: 0;
   }
 
+  &--left {
+    grid-column: 3 / 4;
+    justify-self: start;
+
+    animation: showUp 1.5s ease-in 3s both;
+  }
+  &--right {
+    grid-column: 1 / 2;
+    justify-self: end;
+
+    animation: showUp 1.5s ease-in 3s both;
+  }
+
   &__info {
     display: flex;
     align-items: center;
     border-bottom: 1px solid $color-white-3;
     margin-bottom: 1rem;
+
+    &--small {
+      margin-bottom: 0;
+      justify-content: center;
+      border-bottom: none;
+    }
   }
   &__title {
     text-align: left;
     padding: 0 0.5rem;
     flex: 1 0 0;
+
+    &--small {
+      padding: 0 0.5rem;
+
+      height: 4rem;
+      width: 4rem;
+      fill: #3c873a;
+    }
   }
   &__link {
     transition: all 0.4s;
     padding: 0 1.5rem;
+
+    &--small {
+      display: none;
+    }
 
     &:link,
     &:visited {
@@ -73,8 +108,14 @@
 
     &__imgHover {
       object-fit: cover;
-      height: 12rem;
-      width: 12rem;
+      height: 10rem;
+      width: 10rem;
+
+      &--small {
+        object-fit: cover;
+        height: 4rem;
+        width: 4rem;
+      }
     }
   }
   &__img {
@@ -105,7 +146,14 @@
     align-items: center;
     grid-row: 2 / 3;
     grid-column: 2 / 3;
-    width: 50%;
+    width: 40%;
+
+    @media only screen and(max-width: $bp-1120) {
+      grid-column: 1 / -1;
+      width: 50%;
+
+      // grid-template-columns: 6rem 1fr 6rem;
+    }
   }
   //arrows left and right
   &__btn {
@@ -117,14 +165,9 @@
     cursor: pointer;
 
     @media only screen and(max-width: $bp-600) {
-      height: 6rem;
-      width: 6rem;
-    }
-    @media only screen and(max-width: $bp-450) {
       height: 8rem;
       width: 8rem;
     }
-
     transition: all 0.2s;
 
     &--right {

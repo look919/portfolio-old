@@ -31,14 +31,7 @@
     "imgHover": ["react.png", "css.png"],
     "development": true
   },
-  {
-    "title": "BookYourTime",
-    "github": "https://github.com/look919/Book-Your-Time",
-    "url": "https://bookyourtime.herokuapp.com/",
-    "img": "byt.png",
-    "imgHover": ["node.png", "firebase.png", "react.png", "css.png"],
-    "development": false
-  },
+
   {
     "title": "C++ Chess game",
     "github": "https://github.com/look919/Chess-game-Qt",
@@ -48,11 +41,11 @@
     "development": false
   },
   {
-    "title": "C++ ThreeGamesInOne",
-    "github": "https://github.com/look919/Three-games-in-one-Qt",
-    "url": "https://www.youtube.com/watch?v=SC5MxK_dTsI",
-    "img": "tgio.png",
-    "imgHover": ["cpp.png", "qt.png"],
+    "title": "BookYourTime",
+    "github": "https://github.com/look919/Book-Your-Time",
+    "url": "https://bookyourtime.herokuapp.com/",
+    "img": "byt.png",
+    "imgHover": ["node.png", "firebase.png", "react.png", "css.png"],
     "development": false
   }
 ]

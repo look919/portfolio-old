@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SingleProject = ({ project }) => {
+const SingleProject = ({ project, side }) => {
   return (
     <figure className='project'>
       <div className='project__info'>

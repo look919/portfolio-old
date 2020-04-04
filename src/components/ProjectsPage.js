@@ -1,35 +1,36 @@
 import React, { useState } from 'react';
-
 import Header from './Header';
 import Info from './Info';
 import Nav from './Nav';
 
 import { ArrowRight, ArrowLeft } from '../Icons/Icons';
 import SingleProject from './SingleProject';
+import SingleProjectSmall from './SingleProjectSmall';
+import { useMediaQuery } from 'react-responsive';
 
 const ProjectsPage = () => {
-  const [index, setIndex] = useState(0);
-
+  const is1200px = useMediaQuery({ query: '(max-width: 1200px)' });
+  //projects and indexes values
   const projects = require('../projects.json');
   const paragraph = [
     'I decided not to include projects from online courses in the portfolio, despite the fact that their creation was very important in my development, I wrote all the projects in the portfolio 100% by myself.',
-    'The most important projects of mine for now are ChickyChicken and HotelGiant(still in development), the first is an application for restaurant, the second is for a hotel. Both are made with an idea to get overview of a services that those comapnies can sell. Besides that in both apps potential customers can make an order online or contact with company. HotelGiant also includes api crud operations on hotel rooms/users/orders, authentication for guests and admins, error handling and in the future online payments.',
+    'The most important projects of mine for now are TomOffice(still in development) and HotelGiant, both made in mern stack. The first is an online shop, the second is application for a hotel. Both apps are made with an idea to get overview of a services that those companies can sell. Besides that in both apps potential customers can make an order online or contact with company.',
   ];
 
-  const addIndex = () => {
-    const maxIndex = projects.length;
-    let newValueOfIndex = index + 1;
+  const [index, setIndex] = useState(0);
+  const lastIndex = projects.length - 1;
+  const indexOverflowMax = projects.length;
+  const indexOverflowMin = -1;
 
-    if (newValueOfIndex === maxIndex) newValueOfIndex = 0;
+  const addIndex = () => {
+    let newValueOfIndex = index + 1;
+    if (newValueOfIndex === indexOverflowMax) newValueOfIndex = 0;
 
     setIndex(newValueOfIndex);
   };
   const subtractIndex = () => {
-    //first and last value
-    const lastProjectIndex = projects.length - 1;
-
     let newValueOfIndex = index - 1;
-    if (newValueOfIndex < 0) newValueOfIndex = lastProjectIndex;
+    if (newValueOfIndex <= indexOverflowMin) newValueOfIndex = lastIndex;
 
     setIndex(newValueOfIndex);
   };
@@ -40,6 +41,25 @@ const ProjectsPage = () => {
       <Info title='My works' paragraph={paragraph} modalSvg={2} />
       <div className='content content--projectPage'>
         <SingleProject project={projects[index]} />
+        {!is1200px && (
+          <SingleProjectSmall
+            project={
+              index - 1 === indexOverflowMin
+                ? projects[lastIndex]
+                : projects[index - 1]
+            }
+            side='left'
+          />
+        )}
+        {!is1200px && (
+          <SingleProjectSmall
+            project={
+              index + 1 === indexOverflowMax ? projects[0] : projects[index + 1]
+            }
+            side='right'
+          />
+        )}
+
         <div className='project__btns'>
           <button onClick={() => subtractIndex()} className='project__btn'>
             <ArrowLeft />
