@@ -1,0 +1,58 @@
+[
+  {
+    "title": "TomOffice",
+    "github": "https://github.com/look919/tomOffice",
+    "url": "https://tomoffice.herokuapp.com/",
+    "img": "tomOffice.png",
+    "imgHover": ["node.png", "mongodb.png", "reactredux.png", "css.png"],
+    "development": true
+  },
+  {
+    "title": "Hotel Giant",
+    "github": "https://github.com/look919/hotelGiant",
+    "url": "https://hotelgiant.herokuapp.com/",
+    "img": "hotelGiant.png",
+    "imgHover": ["node.png", "mongodb.png", "reactredux.png", "css.png"],
+    "development": false
+  },
+  {
+    "title": "ChickyChicken",
+    "github": "https://github.com/look919/chickyChicken",
+    "url": "https://chickychicken.herokuapp.com",
+    "img": "chickychicken.png",
+    "imgHover": ["node.png", "firebase.png", "reactredux.png", "css.png"],
+    "development": false
+  },
+  {
+    "title": "Portfolio",
+    "github": "https://github.com/look919/portfolio",
+    "url": "https://tomasz-wirkus-portfolio.herokuapp.com/",
+    "img": "portfolio.png",
+    "imgHover": ["react.png", "css.png"],
+    "development": true
+  },
+  {
+    "title": "BookYourTime",
+    "github": "https://github.com/look919/Book-Your-Time",
+    "url": "https://bookyourtime.herokuapp.com/",
+    "img": "byt.png",
+    "imgHover": ["node.png", "firebase.png", "react.png", "css.png"],
+    "development": false
+  },
+  {
+    "title": "C++ Chess game",
+    "github": "https://github.com/look919/Chess-game-Qt",
+    "url": "https://www.youtube.com/watch?v=oQRxG5nHmoY",
+    "img": "chess.png",
+    "imgHover": ["cpp.png", "qt.png"],
+    "development": false
+  },
+  {
+    "title": "C++ ThreeGamesInOne",
+    "github": "https://github.com/look919/Three-games-in-one-Qt",
+    "url": "https://www.youtube.com/watch?v=SC5MxK_dTsI",
+    "img": "tgio.png",
+    "imgHover": ["cpp.png", "qt.png"],
+    "development": false
+  }
+]

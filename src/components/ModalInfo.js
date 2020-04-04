@@ -1,13 +1,13 @@
-import React from "react";
-import Modal from "react-modal";
-import { Link } from "react-router-dom";
+import React from 'react';
+import Modal from 'react-modal';
+
 import {
   ModalAboutMe,
   ModalSkills,
   ModalProjects,
-  ModalContact
-} from "./../Icons/Icons";
-const ModalInfo = props => {
+  ModalContact,
+} from './../Icons/Icons';
+const ModalInfo = (props) => {
   let JsxSvg;
 
   switch (props.modalSvg) {
@@ -32,33 +32,33 @@ const ModalInfo = props => {
     <Modal
       isOpen={!!props.infoOpen}
       closeTimeoutMS={200}
-      className="modal"
+      className='modal'
       ariaHideApp={false}
     >
-      <h2 className="modal__heading">{props.title}</h2>
-      <div className="modal__text">
-        <div className="modal__line modal__line--1">&nbsp;</div>
-        <div className="modal__paragraphs">
-          {props.paragraph.map(el => {
-            return el.includes("docs.google") ? (
+      <h2 className='modal__heading'>{props.title}</h2>
+      <div className='modal__text'>
+        <div className='modal__line modal__line--1'>&nbsp;</div>
+        <div className='modal__paragraphs'>
+          {props.paragraph.map((el) => {
+            return el.includes('docs.google') ? (
               <a
                 key={el}
                 href={el}
-                className="modal__paragraph modal__paragraph--a"
-                target="_blank"
-                rel="noopener noreferrer"
+                className='modal__paragraph modal__paragraph--a'
+                target='_blank'
+                rel='noopener noreferrer'
               >
                 Full List of technologies I work with you can find by clicking
                 this link
               </a>
             ) : (
-              <p className="modal__paragraph" key={el}>
+              <p className='modal__paragraph' key={el}>
                 {el}
               </p>
             );
           })}
         </div>
-        <div className="modal__line modal__line--2">&nbsp;</div>
+        <div className='modal__line modal__line--2'>&nbsp;</div>
       </div>
       <JsxSvg />
     </Modal>
