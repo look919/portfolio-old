@@ -147,17 +147,18 @@ img {
   &--projectPage {
     display: grid;
     grid-template-rows: 1fr min-content;
-    grid-template-columns: 2fr 5fr 2fr;
+    grid-template-columns: 1fr;
     align-items: center;
+    justify-items: center;
 
     justify-items: center;
     padding: 1rem 10rem;
 
-    @media only screen and(max-width: $bp-1120) {
-      grid-template-columns: repeat(2, 1fr);
+    @media only screen and (max-width: $bp-600) {
+      padding: 1rem 3rem;
     }
-    @media only screen and(max-width: $bp-600) {
-      padding: 1rem 5rem;
+    @media only screen and (max-width: $bp-450) {
+      padding: 0;
     }
   }
   &--contactPage {
