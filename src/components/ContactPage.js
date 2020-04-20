@@ -50,16 +50,36 @@ const ContactPage = () => {
         email: '',
         message: '',
       });
+
+      setTimeout(() => {
+        setFormData({
+          ...formData,
+          status: '',
+        });
+      }, 2500);
     } else if (message.length <= 7) {
       setFormData({
         ...formData,
         status: 'SHORT_MESSAGE',
       });
+
+      setTimeout(() => {
+        setFormData({
+          ...formData,
+          status: '',
+        });
+      }, 2500);
     } else {
       setFormData({
         ...formData,
         status: 'ERROR',
       });
+      setTimeout(() => {
+        setFormData({
+          ...formData,
+          status: '',
+        });
+      }, 2500);
     }
   };
 

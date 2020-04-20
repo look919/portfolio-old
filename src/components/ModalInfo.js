@@ -39,24 +39,11 @@ const ModalInfo = (props) => {
       <div className='modal__text'>
         <div className='modal__line modal__line--1'>&nbsp;</div>
         <div className='modal__paragraphs'>
-          {props.paragraph.map((el) => {
-            return el.includes('docs.google') ? (
-              <a
-                key={el}
-                href={el}
-                className='modal__paragraph modal__paragraph--a'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                Full List of technologies I work with you can find by clicking
-                this link
-              </a>
-            ) : (
-              <p className='modal__paragraph' key={el}>
-                {el}
-              </p>
-            );
-          })}
+          {props.paragraph.map((el) => (
+            <p className='modal__paragraph' key={el}>
+              {el}
+            </p>
+          ))}
         </div>
         <div className='modal__line modal__line--2'>&nbsp;</div>
       </div>

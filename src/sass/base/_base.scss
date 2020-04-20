@@ -67,11 +67,9 @@ img {
   overflow: hidden;
 
   @media only screen and (max-width: $bp-1400) {
-    grid-template-rows: 13rem 10rem calc(100vh - 35rem) 12rem;
+    grid-template-rows: 13rem 15rem calc(100vh - 40rem) 12rem;
   }
   @media only screen and (max-width: $bp-600) {
-    grid-template-rows: 13rem 15rem calc(100vh - 40rem) 12rem;
-
     background-image: linear-gradient(
         to right bottom,
         rgba($color-black, 0.8),
@@ -140,9 +138,14 @@ img {
   }
   &--skillPage {
     display: grid;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: 5rem repeat(4, 1fr);
+
     align-items: center;
     justify-items: center;
+
+    @media only screen and (max-width: $bp-450) {
+      grid-template-rows: 15rem repeat(4, 1fr);
+    }
   }
   &--projectPage {
     display: grid;
@@ -159,6 +162,7 @@ img {
     }
     @media only screen and (max-width: $bp-450) {
       padding: 0;
+      grid-template-rows: 15rem repeat(4, 1fr);
     }
   }
   &--contactPage {
@@ -171,4 +175,8 @@ img {
 ::selection {
   background-color: $color-white;
   color: $color-background;
+}
+
+a {
+  color: $color-white;
 }

@@ -1,26 +1,26 @@
-import React from "react";
+import React from 'react';
 
-export const Card = props => {
+export const Card = ({ name, img, paragraphs, css }) => {
   return (
-    <div className={`card card--${props.css}`}>
-      <div className={`card__side card__side--front background-${props.css}`}>
-        <div className="card__side--front-header">{props.name}</div>
+    <div className={`card card--${css}`}>
+      <div className={`card__side card__side--front background-${css}`}>
+        <div className='card__side--front-header'>{name}</div>
         <img
-          src={props.img}
-          alt={`${props.name} Logo`}
-          className="card__side--front-image"
+          src={img}
+          alt={`${name} Logo`}
+          className='card__side--front-image'
         />
       </div>
-      <div className={`card__side card__side--back background-${props.css}`}>
-        <ul className="card__side--back__list">
-          {props.paragraphs.map(p => (
+      <div className={`card__side card__side--back background-${css}`}>
+        <ul className='card__side--back__list'>
+          {paragraphs.map((p) => (
             <li key={p}>{p}</li>
           ))}
         </ul>
         <img
-          src={props.img}
-          alt={`${props.name} Logo`}
-          className="card__side--front-image"
+          src={img}
+          alt={`${name} Logo`}
+          className='card__side--front-image'
         />
       </div>
     </div>
