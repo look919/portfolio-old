@@ -66,7 +66,10 @@ img {
   background-position: center;
   overflow: hidden;
 
-  @media only screen and (max-width: $bp-900) {
+  @media only screen and (max-width: $bp-1300) {
+    grid-template-rows: 13rem 10rem calc(100vh - 35rem) 12rem;
+  }
+  @media only screen and (max-width: $bp-1120) {
     grid-template-rows: 13rem 15rem calc(100vh - 40rem) 12rem;
   }
   @media only screen and (max-width: $bp-600) {
@@ -141,6 +144,14 @@ img {
     align-items: center;
     justify-items: center;
 
+    @media only screen and (max-width: $bp-1300) {
+      grid-template-rows: 4rem repeat(4, 1fr);
+      align-items: end;
+    }
+    @media only screen and (max-width: $bp-1120) {
+      grid-template-rows: 10rem repeat(4, 1fr);
+      align-items: center;
+    }
     @media only screen and (max-width: $bp-450) {
       grid-template-rows: 15rem repeat(4, 1fr);
     }
