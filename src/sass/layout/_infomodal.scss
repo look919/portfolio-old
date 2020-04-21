@@ -217,6 +217,12 @@
     margin: 4rem 0;
     animation: modalLine 2s ease-out 0.8s both;
 
+    @media only screen and (max-width: $bp-1400) {
+      margin: 2rem 0;
+    }
+    @media only screen and (max-width: $bp-1120) {
+      margin: 4rem 0;
+    }
     @media only screen and (max-width: $bp-450) {
       margin: 2rem 0;
     }
