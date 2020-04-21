@@ -162,16 +162,23 @@
     margin-left: 2.5rem;
     line-height: 1.4;
 
-    padding: 0.1rem 2rem;
+    padding: 2px 2rem;
     padding-right: 0;
 
     font-style: italic;
 
     animation: showUp 1s ease-in 2.7s both;
 
+    @media only screen and (max-width: $bp-1400) {
+      font-size: 1.8rem;
+      padding: 2px 1rem;
+    }
+    @media only screen and (max-width: $bp-1120) {
+      font-size: 2rem;
+      padding: 2px 2rem;
+    }
     @media only screen and (max-width: $bp-600) {
       padding: 1rem 4rem;
-      font-size: 1.8rem;
     }
     @media only screen and (max-width: $bp-450) {
       font-size: 1.6rem;
