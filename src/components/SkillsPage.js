@@ -8,8 +8,11 @@ import css from '../img/techs/css.png';
 import react from '../img/techs/react.png';
 import node from '../img/techs/node.png';
 import mongo from '../img/techs/mongodb.png';
+import { useMediaQuery } from 'react-responsive';
 
 const SkillsPage = () => {
+  const is600px = useMediaQuery({ query: '(max-width: 600px)' });
+
   const paragraph = [
     "Full list of courses I've taken part:",
     'Advanced CSS and Sass: Flexbox, Grid, Animations and More! by Jonas Schmedtmann ~28h',
@@ -50,8 +53,8 @@ const SkillsPage = () => {
       <Info title='What exactly can i do?' paragraph={paragraph} modalSvg={1} />
       <div className='content content--skillPage'>
         <p className='card__header'>
-          Hover technology to get more detailed info. Full list of technlogies I
-          work with you can find by clicking this{' '}
+          {!is600px && 'Hover technology to get more detailed info. '}
+          Full list of technlogies I work with you can find by clicking this{' '}
           <a
             href='https://docs.google.com/document/d/1UUktoP11nRqgAhTEppao9B58RL6dvOz4u9B0DO5Lt74/edit?usp=sharing'
             target='_blank'

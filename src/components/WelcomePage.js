@@ -3,6 +3,7 @@ import Header from './Header';
 import Info from './Info';
 import Nav from './Nav';
 import { Link } from 'react-router-dom';
+import { useMediaQuery } from 'react-responsive';
 
 import myPhoto from '../img/me.png';
 import Polish from '../img/polflag.png';
@@ -11,20 +12,27 @@ import Italian from '../img/italy.png';
 import { LinkedInIcon, GithubIcon, CVIcon, GmailIcon } from '../Icons/Icons';
 
 const WelcomePage = () => {
+  const is600px = useMediaQuery({ query: '(max-width: 600px)' });
   const paragraph = [
     'I started my programming adventure with the beginning of my studies in October 2018. At the beginning I programmed in c++ but around March 2019 i decided that i want to tie my future with web developing. ',
     "For the first couple of months i was focused on frontend using raw Javascript and CSS with Sass preprocessor. Later I dived into React and thats the place where most of my projects comes from. Right now I'm mostly focused on backend using Node.js. My goal is to become MERN stack developer and i work hard everyday to become one.",
   ];
   return (
-    <div className='container container--animated'>
+    <div className={!is600px ? `container container--animated` : 'container'}>
       <Header title='Tomasz Wirkus' />
       <Info title='About me' paragraph={paragraph} modalSvg={0} />
       <div className='content content--welcomePage'>
-        <p className='main-page__text'>
+        <p
+          className={
+            !is600px
+              ? `main-page__text main-page__text--animated`
+              : 'main-page__text'
+          }
+        >
           Hello! My name is Tomasz and I would like to welcome you on my
           website, feel free to look around.
         </p>
-        <div className='about-me'>
+        <div className={!is600px ? `about-me about-me--animated` : 'about-me'}>
           <ul className='about-me__list'>
             <li className='about-me__item'>
               Name: <span className='about-me__item--answer'>Tomasz</span>

@@ -1,64 +1,56 @@
-import React from "react";
-import { InfoIcon, CloseInfoIcon } from "./../Icons/Icons";
-import Modal from "./ModalInfo";
+import React, { useState } from 'react';
+import { InfoIcon, CloseInfoIcon } from './../Icons/Icons';
+import Modal from './ModalInfo';
+import { useMediaQuery } from 'react-responsive';
 
-export default class Info extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      infoOpen: false,
-      paragraph: this.props.paragraph
-    };
-  }
+const Info = ({ title, paragraph, modalSvg }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const is600px = useMediaQuery({ query: '(max-width: 600px)' });
 
-  handleInfoState = () => {
-    if (this.state.infoOpen === false) {
-      this.setState(() => ({
-        infoOpen: true
-      }));
+  const handleOpen = () => {
+    if (!isOpen) {
+      setIsOpen(true);
     } else {
-      this.setState(() => ({
-        infoOpen: false
-      }));
+      setIsOpen(false);
     }
   };
 
-  render() {
-    return this.props.title === "About me" ? (
-      <button
-        className="infomodal infomodal--delayed"
-        onClick={this.handleInfoState}
-      >
-        {this.state.infoOpen === false ? <InfoIcon /> : <CloseInfoIcon />}
-        {this.state.infoOpen === false ? (
-          <h3 className="infomodal__heading">Click for more information</h3>
-        ) : (
-          <h3 className="infomodal__heading">Close info</h3>
-        )}
-        <Modal
-          handleInfoClose={this.handleInfoState}
-          infoOpen={this.state.infoOpen}
-          paragraph={this.state.paragraph}
-          title={this.props.title}
-          modalSvg={this.props.modalSvg}
-        />
-      </button>
-    ) : (
-      <button className="infomodal" onClick={this.handleInfoState}>
-        {this.state.infoOpen === false ? <InfoIcon /> : <CloseInfoIcon />}
-        {this.state.infoOpen === false ? (
-          <h3 className="infomodal__heading">Click for more information</h3>
-        ) : (
-          <h3 className="infomodal__heading">Close info</h3>
-        )}
-        <Modal
-          handleInfoClose={this.handleInfoState}
-          infoOpen={this.state.infoOpen}
-          title={this.props.title}
-          paragraph={this.state.paragraph}
-          modalSvg={this.props.modalSvg}
-        />
-      </button>
-    );
-  }
-}
+  return title === 'About me' ? (
+    <button
+      className={!is600px ? 'infomodal infomodal--delayed' : 'infomodal'}
+      onClick={handleOpen}
+    >
+      {!isOpen ? <InfoIcon /> : <CloseInfoIcon />}
+      {!isOpen ? (
+        <h3 className='infomodal__heading'>Click for more information</h3>
+      ) : (
+        <h3 className='infomodal__heading'>Close info</h3>
+      )}
+      <Modal
+        handleInfoClose={handleOpen}
+        infoOpen={isOpen}
+        paragraph={paragraph}
+        title={title}
+        modalSvg={modalSvg}
+      />
+    </button>
+  ) : (
+    <button className='infomodal' onClick={handleOpen}>
+      {!isOpen ? <InfoIcon /> : <CloseInfoIcon />}
+      {!isOpen ? (
+        <h3 className='infomodal__heading'>Click for more information</h3>
+      ) : (
+        <h3 className='infomodal__heading'>Close info</h3>
+      )}
+      <Modal
+        handleInfoClose={handleOpen}
+        infoOpen={isOpen}
+        title={title}
+        paragraph={paragraph}
+        modalSvg={modalSvg}
+      />
+    </button>
+  );
+};
+
+export default Info;

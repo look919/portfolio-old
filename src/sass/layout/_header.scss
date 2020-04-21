@@ -29,6 +29,10 @@
 
     z-index: 10;
     animation: welcomeAnimation 7s ease-in-out 0s both;
+
+    @media only screen and (max-width: $bp-600) {
+      animation: welcomeAnimation 2.5s ease-in-out 0s both;
+    }
   }
   &::after {
     left: 75%;
@@ -45,6 +49,16 @@
     &::after,
     &::before {
       animation: welcomeAnimation 5s ease-in-out 3.5s both;
+    }
+  }
+  &--mobile {
+    &::after,
+    &::before {
+      animation: welcomeAnimation 5s ease-in-out 0s both;
+
+      @media only screen and (max-width: $bp-600) {
+        animation: welcomeAnimation 3.5s ease-in-out 0s both;
+      }
     }
   }
 }
