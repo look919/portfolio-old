@@ -9,7 +9,6 @@ const ContactPage = () => {
   const paragraph = [
     "You can also contact me directly by sending email to wirkus919@gmail.com, I'm open for any kind of cooperation.",
     "Because of my studies I exclude the possibility of moving and I'm only interested in working in Koszalin.",
-    'Due to the lack of professional experience, I would prefer not to work remotely.',
   ];
 
   const [formData, setFormData] = useState({

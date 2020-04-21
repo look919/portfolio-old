@@ -14,7 +14,6 @@ const SkillsPage = () => {
   const is600px = useMediaQuery({ query: '(max-width: 600px)' });
 
   const paragraph = [
-    "Full list of courses I've taken part:",
     'Advanced CSS and Sass: Flexbox, Grid, Animations and More! by Jonas Schmedtmann ~28h',
     'The Modern JavaScript Bootcamp by Andrew Mead ~30h',
     'The Complete React Developer by Andrew Mead Course ~39h',
@@ -50,7 +49,11 @@ const SkillsPage = () => {
   return (
     <div className='container'>
       <Header title='Skills' />
-      <Info title='What exactly can i do?' paragraph={paragraph} modalSvg={1} />
+      <Info
+        title='Courses I took part in:'
+        paragraph={paragraph}
+        modalSvg={1}
+      />
       <div className='content content--skillPage'>
         <p className='card__header'>
           {!is600px && 'Hover technology to get more detailed info. '}
