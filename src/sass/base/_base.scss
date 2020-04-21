@@ -16,7 +16,7 @@ h6 {
 html {
   font-size: 62.5%;
 
-  @media only screen and(max-width: $bp-1400) {
+  @media only screen and(max-width: $bp-1500) {
     font-size: 50%;
   }
   @media only screen and(max-width: $bp-900) {
@@ -66,8 +66,8 @@ img {
   background-position: center;
   overflow: hidden;
 
-  @media only screen and (max-width: $bp-1300) {
-    grid-template-rows: 13rem 10rem calc(100vh - 35rem) 12rem;
+  @media only screen and (max-width: $bp-1400) {
+    grid-template-rows: 13rem 10rem calc(100vh - 33rem) 10rem;
   }
   @media only screen and (max-width: $bp-1120) {
     grid-template-rows: 13rem 15rem calc(100vh - 40rem) 12rem;
@@ -144,11 +144,13 @@ img {
     align-items: center;
     justify-items: center;
 
-    @media only screen and (max-width: $bp-1300) {
+    @media only screen and (max-width: $bp-1400) {
+      margin-bottom: 0;
       grid-template-rows: 4rem repeat(4, 1fr);
       align-items: end;
     }
     @media only screen and (max-width: $bp-1120) {
+      margin-bottom: 2rem;
       grid-template-rows: 10rem repeat(4, 1fr);
       align-items: center;
     }
