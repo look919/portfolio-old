@@ -1,5 +1,5 @@
 .carousel-root {
-  max-width: 72rem;
+  width: 72rem;
   height: 100%;
 
   display: flex;
@@ -7,14 +7,13 @@
   justify-content: center;
 
   @media only screen and (max-width: $bp-600) {
-    max-width: 62rem;
+    width: 62rem;
   }
   @media only screen and (max-width: $bp-450) {
-    width: 100%;
     padding: 2rem;
   }
   @media only screen and (max-width: $bp-350) {
-    max-width: 52rem;
+    width: 52rem;
   }
 }
 
