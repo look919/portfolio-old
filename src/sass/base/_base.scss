@@ -67,7 +67,7 @@ img {
   overflow: hidden;
 
   @media only screen and (max-width: $bp-1400) {
-    grid-template-rows: 13rem 10rem calc(100vh - 33rem) 10rem;
+    grid-template-rows: 9rem 10rem calc(100vh - 29rem) 10rem;
   }
   @media only screen and (max-width: $bp-1120) {
     grid-template-rows: 13rem 15rem calc(100vh - 40rem) 12rem;
@@ -159,14 +159,13 @@ img {
     }
   }
   &--projectPage {
-    display: grid;
-    grid-template-rows: 100%;
+    display: flex;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
     padding: 1rem 10rem;
 
     @media only screen and (max-width: $bp-600) {
-      padding: 1rem 3rem;
+      padding: 1rem 2.5rem;
     }
     @media only screen and (max-width: $bp-450) {
       padding: 0;

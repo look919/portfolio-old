@@ -1,17 +1,47 @@
-.project {
-  position: relative;
+.carousel-root {
   max-width: 72rem;
+  height: 100%;
 
-  padding: 1rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
+  @media only screen and (max-width: $bp-600) {
+    max-width: 62rem;
+  }
+  @media only screen and (max-width: $bp-450) {
+    width: 100%;
+    padding: 2rem;
+  }
+  @media only screen and (max-width: $bp-350) {
+    max-width: 52rem;
+  }
+}
+
+.slide {
+  background: none !important;
+}
+.carousel-status {
+  display: none !important;
+}
+.control-dots {
+  position: relative !important;
+  margin-top: 3rem !important;
+}
+.selected {
+  &:active,
+  &:focus-within,
+  &:focus {
+    outline: none !important;
+  }
+}
+
+.project {
   display: grid;
   align-items: center;
+
   animation: showUp 1.5s ease-in 0.5s both;
   transition: all 0.4s;
-
-  @media only screen and (max-width: $bp-450) {
-    padding: 3rem;
-  }
 
   &__info {
     display: flex;
@@ -58,7 +88,6 @@
   }
   &__techs {
     position: relative;
-    height: 100%;
   }
   &__technologies {
     position: absolute;
@@ -95,8 +124,6 @@
   &__img {
     width: 100%;
     height: 100%;
-
-    object-fit: contain;
   }
   &__techs:hover > &__technologies {
     display: grid;
@@ -114,30 +141,17 @@
   &__development {
     position: absolute;
     z-index: 20;
-    right: -3rem;
+    right: 0;
     bottom: 0;
 
     border: 1px solid $color-black;
-    padding: 0.4rem 1.3rem;
+    border-bottom: none;
+    border-right: none;
+    padding: 0.6rem 1.7rem;
     background-image: linear-gradient(
       to right bottom,
-      rgba(#0c28a6, 1),
-      rgba(#60c0e0, 1)
+      rgba(#1a53ff, 1),
+      rgba(#000060, 1)
     );
-    transform: rotate(25deg);
-  }
-}
-
-.slide {
-  background: none !important;
-}
-.carousel-status {
-  @media only screen and (max-width: $bp-450) {
-    display: none !important;
-  }
-}
-.control-dots {
-  @media only screen and (max-width: $bp-450) {
-    padding-top: 3rem !important;
   }
 }

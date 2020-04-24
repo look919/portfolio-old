@@ -35,14 +35,37 @@
     height: 2.2rem;
     width: 2.2rem;
     margin-bottom: 1rem;
+
+    @media only screen and(max-width: $bp-1400) {
+      margin-bottom: 0.8rem;
+      height: 2rem;
+      width: 2rem;
+    }
+    @media only screen and(max-width: $bp-1120) {
+      height: 2.2rem;
+      width: 2.2rem;
+      margin-bottom: 1rem;
+    }
+    @media only screen and(max-width: $bp-600) {
+      height: 2.6rem;
+      width: 2.6rem;
+      margin-bottom: 1.2rem;
+    }
   }
   &__heading {
-    font-family: 'Merriweather', serif;
+    font-family: "Merriweather", serif;
 
     font-size: 1.6rem;
     font-weight: 300;
     letter-spacing: 0.2rem;
     color: $color-white;
+
+    @media only screen and(max-width: $bp-1400) {
+      font-size: 1.4rem;
+    }
+    @media only screen and(max-width: $bp-1120) {
+      font-size: 1.6rem;
+    }
   }
 }
 
@@ -72,7 +95,7 @@
   animation: modalOpen 0.8s ease-in 0s both;
 
   @media only screen and (max-width: $bp-1400) {
-    top: 23rem !important;
+    top: 20rem !important;
   }
 
   @media only screen and (max-width: $bp-1120) {
@@ -154,7 +177,7 @@
   &__paragraphs {
     display: flex;
     flex-direction: column;
-    font-family: 'Merriweather', serif;
+    font-family: "Merriweather", serif;
     font-weight: 300;
     font-size: 2rem;
     line-height: 1.6;

@@ -10,18 +10,14 @@
   @media only screen and(max-width: $bp-450) {
     width: 95%;
   }
-  overflow: hidden;
-
   perspective: 150rem;
   -moz-perspective: 150rem;
-
   transition: all 0.9s ease;
 
   &__side {
     width: 85rem;
 
     padding: 0.1rem 5rem;
-    border-radius: 0.5rem;
     position: absolute;
     top: 0;
     left: 0;
@@ -57,7 +53,7 @@
       &-header {
         font-size: 3.5rem;
         letter-spacing: 0.2rem;
-        font-family: 'Quicksand', sans-serif;
+        font-family: "Quicksand", sans-serif;
         font-weight: 900;
       }
       &-image {
@@ -196,4 +192,15 @@
 
 .card__header {
   animation: showUp 0.5s ease-in 3.3s both;
+  font-size: 2.2rem;
+
+  @media only screen and (max-width: $bp-1400) {
+    font-size: 2rem;
+  }
+  @media only screen and (max-width: $bp-1120) {
+    font-size: 2.2rem;
+  }
+  @media only screen and (max-width: $bp-450) {
+    font-size: 1.8rem;
+  }
 }
