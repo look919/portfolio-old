@@ -57,7 +57,6 @@
         font-weight: 900;
       }
       &-image {
-        fill: white;
         height: 9rem;
         width: 9rem;
         align-self: center;
@@ -65,6 +64,7 @@
         @media only screen and(max-width: $bp-450) {
           height: 8rem;
           width: 8rem;
+          margin-right: 1rem;
         }
 
         &--js {
@@ -80,7 +80,7 @@
     }
 
     &--back {
-      height: 10rem;
+      height: 10rem !important;
 
       transform: rotateX(180deg);
       display: none;

@@ -219,17 +219,6 @@
     @media only screen and (max-width: $bp-450) {
       padding: 0.5rem 0;
     }
-
-    &--a {
-      pointer-events: visible;
-
-      color: $color-background;
-      font-style: default;
-
-      &:visited {
-        color: $color-background;
-      }
-    }
   }
   &__line {
     width: 100%;
@@ -262,6 +251,7 @@
 
       @media only screen and (max-width: $bp-450) {
         margin-right: 0;
+        animation: modalLine 2s ease-out 0.4s both;
       }
     }
   }
@@ -284,14 +274,8 @@
     }
     @media only screen and (max-width: $bp-600) {
       justify-self: center;
-    }
-    @media only screen and (max-width: $bp-600) {
       width: 10rem;
       height: 10rem;
     }
   }
-}
-
-p {
-  margin-bottom: 0.5rem;
 }
