@@ -27,6 +27,8 @@
 .control-dots {
   position: relative !important;
   margin-top: 3rem !important;
+
+  animation: showUp 1.5s ease-in 1s both;
 }
 .selected {
   &:active,

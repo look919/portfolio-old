@@ -1,13 +1,14 @@
-@import 'base/variables';
-@import 'base/base';
-@import 'base/animations';
+@import "base/variables";
+@import "base/base";
+@import "base/animations";
 
-@import 'components/btn';
-@import 'components/card';
+@import "components/btn";
+@import "components/card";
 
-@import 'layout/contact-page';
-@import 'layout/header';
-@import 'layout/infomodal';
-@import 'layout//main-page';
-@import 'layout/nav';
-@import 'layout/project-page';
+@import "layout/contact-page";
+@import "layout/header";
+@import "layout/infomodal";
+@import "layout//main-page";
+@import "layout/nav";
+@import "layout/project-page";
+@import "layout/skills-page";
