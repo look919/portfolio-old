@@ -1,6 +1,5 @@
 .card {
   display: inline-block;
-  height: 10rem !important;
   width: 85rem;
 
   @media only screen and(max-width: $bp-750) {
@@ -35,7 +34,6 @@
     backface-visibility: hidden;
 
     &--front {
-      height: 10rem;
       position: relative;
 
       transition: all 0.9s ease;
@@ -80,8 +78,6 @@
     }
 
     &--back {
-      height: 10rem !important;
-
       transform: rotateX(180deg);
       display: none;
       text-align: left;
@@ -112,6 +108,7 @@
 
         @media only screen and(max-width: $bp-900) {
           margin-left: -2rem;
+          padding: 1.5rem 0;
         }
       }
       &__link {
@@ -192,6 +189,7 @@
 
 .card__header {
   animation: showUp 0.5s ease-in 3.3s both;
+  width: 100%;
   font-size: 2.2rem;
 
   @media only screen and (max-width: $bp-1400) {
