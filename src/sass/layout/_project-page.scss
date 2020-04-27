@@ -16,7 +16,6 @@
     width: 52rem;
   }
 }
-
 .slide {
   background: none !important;
 }
@@ -35,6 +34,9 @@
   &:focus {
     outline: none !important;
   }
+}
+.control-arrow {
+  margin: 10rem 0 !important;
 }
 
 .project {

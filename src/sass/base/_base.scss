@@ -50,6 +50,7 @@ img {
 }
 .container {
   margin: 0 auto;
+  height: 100vh;
 
   display: grid;
   grid-template-rows: 13rem 12rem calc(100vh - 37rem) 12rem;
