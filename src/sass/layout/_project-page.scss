@@ -74,9 +74,19 @@
   &__link {
     transition: all 0.4s;
     padding: 0 1.5rem;
+    color: $color-white-3;
+    font-size: 2.2rem;
+    margin-bottom: 0;
 
     &--small {
       display: none;
+    }
+    &--grey {
+      color: #aaa;
+
+      &:hover {
+        transform: scale(1) !important;
+      }
     }
 
     &:link,

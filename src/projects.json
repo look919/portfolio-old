@@ -5,7 +5,8 @@
     "url": "https://tomoffice.herokuapp.com/",
     "img": "tomOffice.png",
     "imgHover": ["node.png", "mongodb.png", "reactredux.png", "css.png"],
-    "development": true
+    "development": true,
+    "online": true
   },
   {
     "title": "Hotel Giant",
@@ -13,7 +14,17 @@
     "url": "https://hotelgiant.herokuapp.com/",
     "img": "hotelGiant.png",
     "imgHover": ["node.png", "mongodb.png", "reactredux.png", "css.png"],
-    "development": false
+    "development": false,
+    "online": true
+  },
+  {
+    "title": "ResumeGenerator",
+    "github": "https://github.com/look919/resumeGenerator",
+    "url": "https://tomoffice.herokuapp.com/",
+    "img": "resumeGenerator.png",
+    "imgHover": ["node.png", "mongodb.png", "reactredux.png", "css.png"],
+    "development": true,
+    "online": false
   },
   {
     "title": "ChickyChicken",
@@ -21,7 +32,8 @@
     "url": "https://chickychicken.herokuapp.com",
     "img": "chickychicken.png",
     "imgHover": ["node.png", "firebase.png", "reactredux.png", "css.png"],
-    "development": false
+    "development": false,
+    "online": true
   },
   {
     "title": "Portfolio",
@@ -29,7 +41,8 @@
     "url": "https://tomasz-wirkus-portfolio.herokuapp.com/",
     "img": "portfolio.png",
     "imgHover": ["react.png", "css.png"],
-    "development": true
+    "development": true,
+    "online": true
   },
 
   {
@@ -38,7 +51,8 @@
     "url": "https://www.youtube.com/watch?v=oQRxG5nHmoY",
     "img": "chess.png",
     "imgHover": ["cpp.png", "qt.png"],
-    "development": false
+    "development": false,
+    "online": true
   },
   {
     "title": "BookYourTime",
@@ -46,6 +60,7 @@
     "url": "https://bookyourtime.herokuapp.com/",
     "img": "byt.png",
     "imgHover": ["node.png", "firebase.png", "react.png", "css.png"],
-    "development": false
+    "development": false,
+    "online": true
   }
 ]

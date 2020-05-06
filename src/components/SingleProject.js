@@ -8,9 +8,13 @@ const SingleProject = ({ project, side }) => {
         <a href={project.github} className="project__link" target="_blanc">
           Github
         </a>
-        <a href={project.url} className="project__link" target="_blanc">
-          Online
-        </a>
+        {project.online ? (
+          <a href={project.url} className="project__link" target="_blanc">
+            Online
+          </a>
+        ) : (
+          <p className="project__link project__link--grey">Not online</p>
+        )}
       </div>
 
       <div className="project__techs">
