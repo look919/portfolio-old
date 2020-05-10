@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import Div100vh from "react-div-100vh";
 import validator from "validator";
-
 import Header from "./Header";
 import Info from "./Info";
 import Nav from "./Nav";
@@ -84,7 +82,7 @@ const ContactPage = () => {
   };
 
   return (
-    <Div100vh className="container">
+    <div className="container">
       <Header title="Contact" />
       <Info title="First step" paragraph={paragraph} modalSvg={3} />
       <div className="content content--contactPage">
@@ -131,7 +129,7 @@ const ContactPage = () => {
         </form>
       </div>
       <Nav />
-    </Div100vh>
+    </div>
   );
 };
 

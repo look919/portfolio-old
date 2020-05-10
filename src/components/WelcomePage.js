@@ -4,7 +4,6 @@ import Info from "./Info";
 import Nav from "./Nav";
 import { Link } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
-import Div100vh from "react-div-100vh";
 
 import myPhoto from "../img/me.png";
 import Polish from "../img/polflag.png";
@@ -18,10 +17,9 @@ const WelcomePage = () => {
     "I started my programming adventure with the beginning of my studies in October 2018. At the beginning I programmed in c++ but around March 2019 i decided that i want to tie my future with web developing. ",
     "For the first couple of months i was focused on frontend using raw Javascript and CSS with Sass preprocessor. Later I dived into React and thats the place where most of my projects comes from. Right now I'm mostly focused on backend using Node.js. My goal is to become MERN stack developer and i work hard everyday to become one.",
   ];
+
   return (
-    <Div100vh
-      className={!is600px ? `container container--animated` : "container"}
-    >
+    <div className={!is600px ? `container container--animated` : "container"}>
       <Header title="Tomasz Wirkus" />
       <Info title="About me" paragraph={paragraph} modalSvg={0} />
       <div className="content content--welcomePage">
@@ -124,7 +122,7 @@ const WelcomePage = () => {
         </div>
       </div>
       <Nav />
-    </Div100vh>
+    </div>
   );
 };
 

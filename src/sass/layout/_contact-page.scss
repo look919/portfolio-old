@@ -9,13 +9,13 @@
   }
   &__email {
     height: 3rem;
-    width: 60rem;
+    width: 72rem;
     margin-bottom: 1rem;
     padding: 0.5rem 1rem;
     border: 1px solid $color-black;
     border-radius: 0.6rem;
     letter-spacing: 0.2rem;
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Quicksand", sans-serif;
     font-weight: 600;
     font-size: 1.4rem;
     letter-spacing: 1px;
@@ -60,8 +60,8 @@
   }
   &__textarea {
     resize: none;
-    width: 60rem;
-    height: 28rem;
+    width: 72rem;
+    height: 34rem;
     margin-bottom: 1rem;
     padding: 2.5rem 3rem;
     font-size: 1.6rem;
@@ -72,12 +72,13 @@
 
     @media only screen and(max-width: $bp-600) {
       width: 80%;
+      height: 28rem;
     }
     @media only screen and(max-width: $bp-450) {
       width: 95%;
     }
 
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Quicksand", sans-serif;
     color: $color-black;
     font-weight: 900;
 

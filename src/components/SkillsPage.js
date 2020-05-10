@@ -1,5 +1,4 @@
 import React from "react";
-import Div100vh from "react-div-100vh";
 import Header from "./Header";
 import Info from "./Info";
 import Card from "./Card";
@@ -48,7 +47,7 @@ const SkillsPage = () => {
   ];
 
   return (
-    <Div100vh className="container">
+    <div className="container">
       <Header title="Skills" />
       <Info
         title="Courses I took part in:"
@@ -95,7 +94,7 @@ const SkillsPage = () => {
         </section>
       </div>
       <Nav />
-    </Div100vh>
+    </div>
   );
 };
 

@@ -1,5 +1,4 @@
 import React from "react";
-import Div100vh from "react-div-100vh";
 import Header from "./Header";
 import Info from "./Info";
 import Nav from "./Nav";
@@ -12,14 +11,14 @@ const ProjectsPage = () => {
   ];
 
   return (
-    <Div100vh className="container">
+    <div className="container">
       <Header title="Projects" />
       <Info title="My works" paragraph={paragraph} modalSvg={2} />
       <div className="content content--projectPage">
         <Carousel />
       </div>
       <Nav />
-    </Div100vh>
+    </div>
   );
 };
 
