@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import validator from 'validator';
 import Header from './Header';
 import Nav from './Nav';
+import { FormattedMessage } from 'react-intl';
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -77,16 +78,24 @@ const ContactPage = () => {
 
   return (
     <div className='container'>
-      <Header title='Contact' />
+      <Header
+        title={<FormattedMessage id='Nav.contact' defaultMessage='Contact' />}
+      />
       <div className='content content--contactPage'>
         <div className='info'>
           <p className='info__p'>
-            You can also contact me directly by sending email to
-            wirkus919@gmail.com, I'm open for any kind of cooperation.
+            <FormattedMessage
+              id='ContactPage.paragraphOne'
+              defaultMessage="You can also contact me directly by sending email to
+              wirkus919@gmail.com, I'm open for any kind of cooperation."
+            />
           </p>
           <p className='info__p'>
-            Because of my studies I exclude the possibility of moving and I'm
-            only interested in working in Koszalin.
+            <FormattedMessage
+              id='ContactPage.paragraphTwo'
+              defaultMessage="Because of my studies I exclude the possibility of moving and I'm
+              only interested in working in Koszalin."
+            />
           </p>
         </div>
         <form
@@ -95,39 +104,67 @@ const ContactPage = () => {
           method='POST'
           className='contact-page'
         >
-          <input
-            type='email'
-            placeholder='from: email@example.com'
-            className='contact-page__email contact-page__email--user'
-            value={formData.email}
-            name='email'
-            onChange={(e) => onChange(e)}
-          />
-          <input
-            disabled
-            placeholder='to: wirkus919@gmail.com'
-            className='contact-page__email'
-          />
+          <FormattedMessage
+            id='ContactPage.from'
+            defaultMessage='from: email@example.com'
+          >
+            {(msg) => (
+              <input
+                type='email'
+                placeholder={msg}
+                className='contact-page__email contact-page__email--user'
+                value={formData.email}
+                name='email'
+                onChange={(e) => onChange(e)}
+              />
+            )}
+          </FormattedMessage>
+          <FormattedMessage
+            id='ContactPage.to'
+            defaultMessage='to: wirkus919@gmail.com'
+          >
+            {(msg) => (
+              <input
+                disabled
+                placeholder={msg}
+                className='contact-page__email'
+              />
+            )}
+          </FormattedMessage>
+
           <textarea
             className='contact-page__textarea'
             name='message'
             value={formData.message}
             onChange={(e) => onChange(e)}
           />
-          <button className='btn__action'>Submit</button>
+          <button className='btn__action'>
+            <FormattedMessage id='ContactPage.btn' defaultMessage='Submit' />
+          </button>
 
           {formData.status === 'ERROR' && (
             <p className='contact-page__info'>
-              An Error, please make sure u provided valid email.
+              <FormattedMessage
+                id='ContactPage.error'
+                defaultMessage='An Error, please make sure u provided valid email.'
+              />
             </p>
           )}
           {formData.status === 'SHORT_MESSAGE' && (
             <p className='contact-page__info'>
-              I asked you to leave me a message, not a test spam.
+              <FormattedMessage
+                id='ContactPage.short'
+                defaultMessage='I asked you to leave me a message, not a test spam.'
+              />
             </p>
           )}
           {formData.status === 'SUCCESS' && (
-            <p className='contact-page__info'>Thanks!</p>
+            <p className='contact-page__info'>
+              <FormattedMessage
+                id='ContactPage.success'
+                defaultMessage='Thanks!'
+              />
+            </p>
           )}
         </form>
       </div>

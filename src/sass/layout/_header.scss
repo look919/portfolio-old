@@ -11,6 +11,15 @@
     font-weight: 100;
     font-size: 6rem;
     letter-spacing: 0.5rem;
+
+    @media only screen and (max-width: $bp-450) {
+      font-size: 5.5rem;
+      padding: 0.5rem 0;
+    }
+    @media only screen and (max-width: $bp-350) {
+      font-size: 4.5rem;
+      padding: 1rem 0;
+    }
   }
 
   @media only screen and (max-width: $bp-350) {
@@ -71,6 +80,16 @@
     height: 4rem;
     border: none !important;
     background-color: inherit !important;
+    transition: all 0.3s;
+
+    @media only screen and (max-width: $bp-1120) {
+      top: 1rem;
+    }
+    @media only screen and (max-width: $bp-600) {
+      top: 0.5rem;
+      width: 9rem;
+      right: 1rem;
+    }
 
     &__lang {
       height: 4rem;
@@ -103,4 +122,18 @@
 .css-1hb7zxy-IndicatorsContainer {
   width: 4rem !important;
   padding: 0 !important;
+}
+#root
+  > div
+  > div
+  > header
+  > div
+  > div
+  > div.css-1hb7zxy-IndicatorsContainer
+  > div {
+  padding: 8px !important;
+
+  @media only screen and (max-width: $bp-600) {
+    padding: 2px !important;
+  }
 }

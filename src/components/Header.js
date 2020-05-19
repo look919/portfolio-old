@@ -7,6 +7,7 @@ import EnLang from '../img/uklang.png';
 
 const Header = (props) => {
   const context = useContext(Context);
+  let local = localStorage.getItem('lang') || 'en';
 
   const is600px = useMediaQuery({ query: '(max-width: 600px)' });
   const options = [
@@ -27,52 +28,60 @@ const Header = (props) => {
       ),
     },
   ];
-  console.log(context.locale, options[0].value);
 
-  const mobileView =
-    props.title === 'Tomasz Wirkus' ? (
-      <header className='header header--mobile'>
-        <h1 className='header__heading-primary'>{props.title}</h1>
-      </header>
-    ) : (
-      <header className='header'>
-        <h1 className='header__heading-primary'>{props.title}</h1>
-      </header>
-    );
-  const deskopView =
-    props.title === 'Tomasz Wirkus' ? (
-      <header className='header header--delayed'>
-        <h1 className='header__heading-primary'>{props.title}</h1>
+  const mobileView = (
+    <header
+      className={
+        props.title === 'Tomasz Wirkus' ? 'header header--mobile' : 'header'
+      }
+    >
+      <h1 className='header__heading-primary'>{props.title}</h1>
+      <Select
+        className='header__select'
+        defaultValue={{
+          value: local,
+          label: (
+            <div>
+              <img
+                src={local === 'en' ? EnLang : PlLang}
+                className='header__select__lang'
+                alt='uk flag'
+              />
+            </div>
+          ),
+        }}
+        onChange={(e) => context.selectLang(e)}
+        options={options}
+      />
+    </header>
+  );
 
-        <Select
-          className='header__select'
-          defaultValue={{
-            value: 'en',
-            label: (
-              <div>
-                <img
-                  src={EnLang}
-                  className='header__select__lang'
-                  alt='uk flag'
-                />
-              </div>
-            ),
-          }}
-          onChange={(e) => context.selectLang(e)}
-          options={options}
-        />
-      </header>
-    ) : (
-      <header className='header'>
-        <h1 className='header__heading-primary'>{props.title}</h1>
-        <Select
-          className='header__select'
-          value={context.locale}
-          onChange={(e) => context.selectLang(e)}
-          options={options}
-        />
-      </header>
-    );
+  const deskopView = (
+    <header
+      className={
+        props.title === 'Tomasz Wirkus' ? 'header header--delayed' : 'header'
+      }
+    >
+      <h1 className='header__heading-primary'>{props.title}</h1>
+      <Select
+        className='header__select'
+        defaultValue={{
+          value: local,
+          label: (
+            <div>
+              <img
+                src={local === 'en' ? EnLang : PlLang}
+                className='header__select__lang'
+                alt='uk flag'
+              />
+            </div>
+          ),
+        }}
+        onChange={(e) => context.selectLang(e)}
+        options={options}
+      />
+    </header>
+  );
 
   return !is600px ? deskopView : mobileView;
 };

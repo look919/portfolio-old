@@ -3,6 +3,7 @@ import Header from './Header';
 import Nav from './Nav';
 import { Link } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
+import { FormattedMessage } from 'react-intl';
 
 import myPhoto from '../img/me.png';
 import Polish from '../img/polflag.png';
@@ -19,46 +20,89 @@ const WelcomePage = () => {
       <div className='content content--welcomePage'>
         <div className={!is600px ? `info info--animated` : 'info'}>
           <p className='info__p'>
-            Hello! My name is Tomasz and I would like to welcome you on my
-            website, feel free to look around.
+            <FormattedMessage
+              id='WelcomePage.paragraphOne'
+              defaultMessage='Hello! My name is Tomasz and I would like to welcome you on my
+                website, feel free to look around.'
+            />
           </p>
           <p className='info__p'>
-            I am into web programming for over one year and my goal is to become
-            MERN Stack Developer so i work hard everyday to become one.
+            <FormattedMessage
+              id='WelcomePage.paragraphTwo'
+              defaultMessage='I am into web programming for over one year and my goal is to become
+          MERN Stack Developer so i work hard everyday to become one.'
+            />
           </p>
         </div>
         <div className={!is600px ? `about-me about-me--animated` : 'about-me'}>
           <ul className='about-me__list'>
             <li className='about-me__item'>
-              Name: <span className='about-me__item--answer'>Tomasz</span>
-            </li>
-            <li className='about-me__item'>
-              Surname: <span className='about-me__item--answer'>Wirkus</span>
-            </li>
-            <li className='about-me__item'>
-              Age: <span className='about-me__item--answer'>21</span>
-            </li>
-            <li className='about-me__item'>
-              Status:{' '}
+              <FormattedMessage id='WelcomePage.name' defaultMessage='Name: ' />
               <span className='about-me__item--answer'>
-                Student of computer science
+                <FormattedMessage
+                  id='WelcomePage.nameAnswer'
+                  defaultMessage='Tomasz'
+                />
               </span>
             </li>
             <li className='about-me__item'>
-              Goal:
+              <FormattedMessage
+                id='WelcomePage.vorname'
+                defaultMessage='Surname: '
+              />
               <span className='about-me__item--answer'>
-                Fullstack Developer
+                <FormattedMessage
+                  id='WelcomePage.vorname'
+                  defaultMessage='Wirkus'
+                />
               </span>
             </li>
             <li className='about-me__item'>
-              Languages:
+              <FormattedMessage id='WelcomePage.age' defaultMessage='Age: ' />
+              <span className='about-me__item--answer'>
+                <FormattedMessage
+                  id='WelcomePage.ageAnswer'
+                  defaultMessage='21'
+                />
+              </span>
+            </li>
+            <li className='about-me__item'>
+              <FormattedMessage
+                id='WelcomePage.status'
+                defaultMessage='Status: '
+              />
+              <span className='about-me__item--answer'>
+                <FormattedMessage
+                  id='WelcomePage.statusAnswer'
+                  defaultMessage='Student of computer science'
+                />
+              </span>
+            </li>
+            <li className='about-me__item'>
+              <FormattedMessage id='WelcomePage.goal' defaultMessage='Goal: ' />
+              <span className='about-me__item--answer'>
+                <FormattedMessage
+                  id='WelcomePage.goalAnswer'
+                  defaultMessage='Fullstack Developer'
+                />
+              </span>
+            </li>
+            <li className='about-me__item'>
+              <FormattedMessage
+                id='WelcomePage.languages'
+                defaultMessage='Languages: '
+              />
               <span className='about-me__item--answer about-me__item--answer--languages'>
                 <img
                   src={Polish}
                   className='about-me__item--flag'
                   alt='language icon'
                 />{' '}
-                - Native,&nbsp;
+                <FormattedMessage
+                  id='WelcomePage.languagesAnswer'
+                  defaultMessage='- Native,'
+                />
+                &nbsp;
                 <img
                   src={English}
                   className='about-me__item--flag'
@@ -74,9 +118,15 @@ const WelcomePage = () => {
               </span>
             </li>
             <li className='about-me__item'>
-              Email:
+              <FormattedMessage
+                id='WelcomePage.email'
+                defaultMessage='Email: '
+              />
               <span className='about-me__item--answer'>
-                wirkus919@gmail.com
+                <FormattedMessage
+                  id='WelcomePage.emailAnswer'
+                  defaultMessage='wirkus919@gmail.com'
+                />
               </span>
             </li>
           </ul>

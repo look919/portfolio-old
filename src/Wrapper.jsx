@@ -4,7 +4,7 @@ import English from './languages/en.json';
 import Polish from './languages/pl.json';
 
 export const Context = React.createContext();
-let local = localStorage.getItem('lang') || 'pl';
+let local = localStorage.getItem('lang') || 'en';
 
 let lang;
 if (local === 'en') lang = English;
@@ -15,7 +15,6 @@ const Wrapper = (props) => {
   const [messanges, setMessenges] = useState(lang);
 
   function selectLang(e) {
-    console.log(e.value);
     localStorage.setItem('lang', e.value);
     setLocale(e.value);
     e.value === 'en' ? setMessenges(English) : setMessenges(Polish);

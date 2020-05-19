@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './Header';
 import Card from './Card';
 import Nav from './Nav';
+import { FormattedMessage } from 'react-intl';
 
 import css from '../img/techs/css.png';
 import react from '../img/techs/react.png';
@@ -13,44 +14,99 @@ const SkillsPage = () => {
   const is600px = useMediaQuery({ query: '(max-width: 600px)' });
 
   const nodeParagraphs = [
-    'Express,',
-    'Restful API, MVC,',
-    'Error handling, security,',
-    'Server side rendering with pug templates',
-  ];
-  const mongoParagraphs = [
-    'Mongoose, Atlas, Compass,',
-    'Data CRUD operations, aggreagtion,',
-    'Data validation and protection,',
-    'Data modelling',
+    <FormattedMessage id='SkillsPage.NodeListOne' defaultMessage='Express,' />,
+    <FormattedMessage
+      id='SkillsPage.NodeListTwo'
+      defaultMessage='Restful API, MVC,'
+    />,
+    <FormattedMessage
+      id='SkillsPage.NodeListThree'
+      defaultMessage='Error handling, security,'
+    />,
+    <FormattedMessage
+      id='SkillsPage.NodeListFour'
+      defaultMessage='Server side rendering with pug templates'
+    />,
   ];
   const cssParagraphs = [
-    'Sass preprocessor,',
-    'Float, flexbox and grid layouts,',
-    'Cool animations, clean and nested code,',
-    'Modern and responsive design,',
+    <FormattedMessage
+      id='SkillsPage.CSSListOne'
+      defaultMessage='Sass preprocessor,'
+    />,
+    <FormattedMessage
+      id='SkillsPage.CSSListTwo'
+      defaultMessage='Flexbox, Grid,'
+    />,
+    <FormattedMessage
+      id='SkillsPage.CSSListThree'
+      defaultMessage='Cool animations, clean and nested code,'
+    />,
+    <FormattedMessage
+      id='SkillsPage.CSSListFour'
+      defaultMessage='Modern and responsive design'
+    />,
   ];
   const reactParagraphs = [
-    'React v16 & v15,',
-    'Redux,',
-    'Hooks, Third party components,',
-    'Basic understanding of unit testing with Jest',
+    <FormattedMessage
+      id='SkillsPage.ReactListOne'
+      defaultMessage='React v16 & v15,'
+    />,
+    <FormattedMessage
+      id='SkillsPage.ReactListTwo'
+      defaultMessage='React-Router, Redux,'
+    />,
+    <FormattedMessage id='SkillsPage.ReactListThree' defaultMessage='Hooks,' />,
+    <FormattedMessage
+      id='SkillsPage.ReactListFour'
+      defaultMessage='Third party components'
+    />,
+  ];
+  const mongoParagraphs = [
+    <FormattedMessage
+      id='SkillsPage.MongoDBListOne'
+      defaultMessage='Mongoose, Atlas, Compass,'
+    />,
+    <FormattedMessage
+      id='SkillsPage.MongoDBListTwo'
+      defaultMessage='Data CRUD operations, aggreagtion,'
+    />,
+    <FormattedMessage
+      id='SkillsPage.MongoDBListThree'
+      defaultMessage='Data validation and protection,'
+    />,
+    <FormattedMessage
+      id='SkillsPage.MongoDBListFour'
+      defaultMessage='Data modelling'
+    />,
   ];
 
   return (
     <div className='container'>
-      <Header title='Skills' />
+      <Header
+        title={<FormattedMessage id='Nav.skills' defaultMessage='Skills' />}
+      />
       <div className='content content--skillPage'>
         <div className='info'>
           <p className='info__p'>
-            {!is600px && 'Hover technology to get more detailed info. '}
-            Full list of technlogies I work with you can find by clicking this{' '}
+            {!is600px && (
+              <FormattedMessage
+                id='SkillsPage.paragraphOnePartOne'
+                defaultMessage='Hover technology to get more detailed info. '
+              />
+            )}
+            <FormattedMessage
+              id='SkillsPage.paragraphOnePartTwo'
+              defaultMessage='Full list of technlogies I work with you can find by clicking this '
+            />
             <a
               href='https://docs.google.com/document/d/1UUktoP11nRqgAhTEppao9B58RL6dvOz4u9B0DO5Lt74/edit?usp=sharing'
               target='_blank'
               rel='noopener noreferrer'
             >
-              link.
+              <FormattedMessage
+                id='SkillsPage.paragraphOnePartThree'
+                defaultMessage='link.'
+              />
             </a>{' '}
           </p>
         </div>
