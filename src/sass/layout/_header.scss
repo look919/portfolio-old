@@ -4,6 +4,7 @@
   width: 100%;
   align-self: end;
   background-color: $color-black;
+  position: relative;
 
   &__heading-primary {
     font-family: 'Quicksand', sans-serif;
@@ -61,4 +62,45 @@
       }
     }
   }
+
+  &__select {
+    position: absolute !important;
+    right: 3rem;
+    top: 2rem;
+    width: 9rem;
+    height: 4rem;
+    border: none !important;
+    background-color: inherit !important;
+
+    &__lang {
+      height: 4rem;
+      width: 4rem;
+    }
+  }
+}
+.css-g1d714-ValueContainer {
+  padding: 0 !important;
+  border: none !important;
+  background-color: inherit !important;
+
+  &:focus,
+  &:active {
+    background-color: hsl(271, 23%, 6%) !important;
+
+    border: none !important;
+  }
+}
+.css-yk16xz-control,
+.css-1pahdxg-control {
+  background-color: inherit !important;
+  border: none !important;
+
+  &:focus,
+  &:hover {
+    background-color: hsl(271, 23%, 6%) !important;
+  }
+}
+.css-1hb7zxy-IndicatorsContainer {
+  width: 4rem !important;
+  padding: 0 !important;
 }

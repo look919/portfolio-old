@@ -1,10 +1,9 @@
 .carousel-root {
   width: 72rem;
-  height: 100%;
 
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-end;
+  justify-content: flex-end;
 
   @media only screen and (max-width: $bp-600) {
     width: 62rem;
@@ -37,6 +36,10 @@
 }
 .control-arrow {
   margin: 10rem 0 !important;
+
+  &:hover {
+    background: rgba(#222, 0.8) !important;
+  }
 }
 
 .project {

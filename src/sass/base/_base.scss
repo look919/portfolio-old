@@ -32,7 +32,7 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
   letter-spacing: 1px;
   font-size: 2.2rem;
   color: $color-white;
@@ -54,7 +54,7 @@ img {
   height: 100vh;
 
   display: grid;
-  grid-template-rows: 13rem 12rem calc(100vh - 37rem) 12rem;
+  grid-template-rows: 13rem calc(100vh - 25rem) 12rem;
   grid-template-columns: 1fr;
   justify-items: center;
 
@@ -64,17 +64,17 @@ img {
       rgba($color-black, 0.9),
       rgba($color-black, 0.85)
     ),
-    url("../../img/background.jpg");
+    url('../../img/background.jpg');
   background-size: cover;
   background-position: center;
   overflow: hidden;
 
   @media only screen and (max-width: $bp-1400) {
-    grid-template-rows: 9rem 10rem calc(100vh - 29rem) 10rem;
+    grid-template-rows: 9rem calc(100vh - 19rem) 10rem;
   }
   @media only screen and (max-width: $bp-1120) {
-    grid-template-rows: 13rem 15rem -webkit-calc(100vh - 40rem) 12rem;
-    grid-template-rows: 13rem 15rem calc(100vh - 40rem) 12rem;
+    grid-template-rows: 13rem -webkit-calc(100vh - 25rem) 12rem;
+    grid-template-rows: 13rem calc(100vh - 25rem) 12rem;
   }
   @media only screen and (max-width: $bp-600) {
     background-image: linear-gradient(
@@ -82,19 +82,19 @@ img {
         rgba($color-black, 0.8),
         rgba($color-black, 0.75)
       ),
-      url("../../img/background.jpg");
+      url('../../img/background.jpg');
     height: 100vh;
   }
 
   //when landscape view and width is no bigger than 900px, otherwords, phone-landscape
   @media only screen and (orientation: landscape) and (max-width: $bp-1120) {
-    grid-template-rows: 13rem 15rem minmax(calc(100vh - 40rem), max-content) 12rem;
+    grid-template-rows: 13rem minmax(calc(100vh - 25rem), max-content) 12rem;
     height: auto;
   }
 
   &--animated {
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       z-index: 20;
       top: 0;
@@ -106,7 +106,7 @@ img {
       display: flex;
       justify-content: center;
       align-items: center;
-      font-family: "Quicksand", "Yanone Kaffeesatz", sans-serif;
+      font-family: 'Quicksand', 'Yanone Kaffeesatz', sans-serif;
       font-size: 10rem;
       font-weight: 900;
 
@@ -121,14 +121,20 @@ img {
   }
 }
 .content {
-  grid-row: 3 / 4;
+  grid-row: 2 / 3;
   width: 100%;
   margin: 2rem;
   margin-top: 0;
   padding: 1rem 20rem;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
   @media only screen and(max-width: $bp-1120) {
     padding: 1rem 10rem;
+    justify-content: space-around;
   }
   @media only screen and(max-width: $bp-750) {
     margin: 0;
@@ -136,48 +142,14 @@ img {
   }
   @media only screen and(max-width: $bp-600) {
     padding: 0 3rem;
+    margin-top: 6rem;
+  }
+  @media only screen and (max-width: $bp-350) {
+    margin-top: 4rem;
   }
 
   &--welcomePage {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
-  &--skillPage {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    @media only screen and (max-width: $bp-1400) {
-      margin-bottom: 0;
-      align-items: end;
-    }
-    @media only screen and (max-width: $bp-1120) {
-      margin-bottom: 2rem;
-      align-items: center;
-    }
-    @media only screen and (max-width: $bp-450) {
-      grid-template-rows: 15rem min-content;
-    }
-  }
-  &--projectPage {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem 10rem;
-
-    @media only screen and (max-width: $bp-600) {
-      padding: 1rem 2.5rem;
-    }
-    @media only screen and (max-width: $bp-450) {
-      padding: 0;
-    }
-  }
-  &--contactPage {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: initial;
   }
 }
 
@@ -190,5 +162,5 @@ a {
   color: $color-white;
 }
 p {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.6rem;
 }

@@ -1,10 +1,8 @@
 .card {
-  display: inline-block;
   width: 85rem;
 
   @media only screen and(max-width: $bp-750) {
     width: 80%;
-    margin-bottom: 1rem;
   }
   @media only screen and(max-width: $bp-450) {
     width: 95%;
@@ -16,11 +14,12 @@
   &__side {
     width: 85rem;
 
-    padding: 0.1rem 5rem;
+    padding: 0 5rem;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
+
     @media only screen and(max-width: $bp-750) {
       padding: 0 1.5rem;
       padding-left: 5rem;
@@ -51,7 +50,7 @@
       &-header {
         font-size: 3.5rem;
         letter-spacing: 0.2rem;
-        font-family: "Quicksand", sans-serif;
+        font-family: 'Quicksand', sans-serif;
         font-weight: 900;
       }
       &-image {
