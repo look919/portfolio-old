@@ -9,6 +9,15 @@
     "online": true
   },
   {
+    "title": "ResumeGenerator",
+    "github": "https://github.com/look919/resumeGenerator",
+    "url": "https://resume-generatoor.herokuapp.com/",
+    "img": "resumeGenerator.png",
+    "imgHover": ["node.png", "mongodb.png", "reactredux.png", "css.png"],
+    "development": true,
+    "online": true
+  },
+  {
     "title": "Hotel Giant",
     "github": "https://github.com/look919/hotelGiant",
     "url": "https://hotelgiant.herokuapp.com/",
@@ -16,15 +25,6 @@
     "imgHover": ["node.png", "mongodb.png", "reactredux.png", "css.png"],
     "development": false,
     "online": true
-  },
-  {
-    "title": "ResumeGenerator",
-    "github": "https://github.com/look919/resumeGenerator",
-    "url": "https://tomoffice.herokuapp.com/",
-    "img": "resumeGenerator.png",
-    "imgHover": ["node.png", "mongodb.png", "reactredux.png", "css.png"],
-    "development": true,
-    "online": false
   },
   {
     "title": "ChickyChicken",
@@ -61,6 +61,6 @@
     "img": "byt.png",
     "imgHover": ["node.png", "firebase.png", "react.png", "css.png"],
     "development": false,
-    "online": true
+    "online": false
   }
 ]

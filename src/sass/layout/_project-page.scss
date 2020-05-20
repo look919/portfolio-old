@@ -24,8 +24,14 @@
 }
 .control-dots {
   position: relative !important;
-  margin-top: 3rem !important;
+  margin-top: 1rem !important;
 
+  @media only screen and (max-width: $bp-1400) {
+    margin-top: 1.5rem !important;
+  }
+  @media only screen and (max-width: $bp-600) {
+    margin-top: 3rem !important;
+  }
   animation: showUp 1.5s ease-in 1s both;
 }
 .selected {
