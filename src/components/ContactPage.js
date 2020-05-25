@@ -21,7 +21,6 @@ const ContactPage = () => {
   const submitForm = (ev) => {
     ev.preventDefault();
     const { email, message } = formData;
-    console.log(email);
 
     const form = ev.target;
     const data = new FormData(form);
@@ -138,9 +137,15 @@ const ContactPage = () => {
             value={formData.message}
             onChange={(e) => onChange(e)}
           />
-          <button className='btn__action'>
-            <FormattedMessage id='ContactPage.btn' defaultMessage='Submit' />
-          </button>
+          {formData.status ? (
+            <button className='btn__action btn__action--short'>
+              <FormattedMessage id='ContactPage.btn' defaultMessage='Submit' />
+            </button>
+          ) : (
+            <button className='btn__action'>
+              <FormattedMessage id='ContactPage.btn' defaultMessage='Submit' />
+            </button>
+          )}
 
           {formData.status === 'ERROR' && (
             <p className='contact-page__info'>

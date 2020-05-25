@@ -48,14 +48,25 @@
   &__action {
     border: 1px solid $color-black;
     border-radius: 1rem;
-    padding: 0.5rem 10rem;
+    padding: 0.4rem 3rem;
     font-weight: 600;
     font-family: 'Quicksand', sans-serif;
     letter-spacing: 1px;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+    grid-column: 1 / -1;
+    width: 50%;
+    justify-self: center;
+    transition: all 0.2s;
+    text-align: center;
+
+    &--short {
+      grid-column: 1 / 2;
+      width: 90%;
+    }
 
     @media only screen and(max-width: $bp-600) {
-      padding: 0.8rem 12rem;
+      padding: 0.8rem 3rem;
+      width: 60%;
     }
 
     transition: all 0.2s;

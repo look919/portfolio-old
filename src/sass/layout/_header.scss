@@ -1,5 +1,4 @@
 .header {
-  margin-top: 1.5rem;
   align-self: center;
   width: 100%;
   align-self: end;
@@ -73,6 +72,7 @@
   }
 
   &__select {
+    cursor: pointer !important;
     position: absolute !important;
     right: 3rem;
     top: 2rem;
@@ -94,6 +94,7 @@
     &__lang {
       height: 4rem;
       width: 4rem;
+      cursor: pointer !important;
     }
   }
 }
@@ -101,6 +102,7 @@
   padding: 0 !important;
   border: none !important;
   background-color: inherit !important;
+  cursor: pointer !important;
 
   &:focus,
   &:active {
@@ -113,6 +115,7 @@
 .css-1pahdxg-control {
   background-color: inherit !important;
   border: none !important;
+  cursor: pointer !important;
 
   &:focus,
   &:hover {

@@ -1,5 +1,9 @@
 .card {
   width: 85rem;
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+  margin-bottom: 1rem;
 
   @media only screen and(max-width: $bp-750) {
     width: 80%;

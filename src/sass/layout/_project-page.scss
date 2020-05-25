@@ -1,22 +1,16 @@
 .carousel-root {
-  width: 60rem;
+  width: 52rem;
 
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
 
-  @media only screen and (max-width: $bp-1500) {
-    width: 50rem;
-  }
   @media only screen and (max-width: $bp-1120) {
-    width: 60rem;
+    width: 62rem;
   }
   @media only screen and (max-width: $bp-450) {
-    width: 57rem;
+    width: 90vw;
     padding: 2rem;
-  }
-  @media only screen and (max-width: $bp-350) {
-    width: 52rem;
   }
 }
 .slide {
@@ -28,6 +22,7 @@
 .control-dots {
   position: relative !important;
   margin-top: 1rem !important;
+  margin-bottom: 0 !important;
 
   @media only screen and (max-width: $bp-1400) {
     margin-top: 1.5rem !important;

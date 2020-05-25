@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import { Context } from '../Wrapper';
 import Select from 'react-select';

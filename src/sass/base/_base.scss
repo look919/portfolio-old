@@ -39,6 +39,7 @@ body {
   background-color: $color-background;
   width: 100%;
   height: 100vh;
+  overflow: hidden;
 }
 button {
   cursor: pointer;
@@ -54,7 +55,7 @@ img {
   height: 100vh;
 
   display: grid;
-  grid-template-rows: 13rem calc(100vh - 25rem) 12rem;
+  grid-template-rows: 9rem calc(100vh - 16rem) 7rem;
   grid-template-columns: 1fr;
   justify-items: center;
 
@@ -67,10 +68,9 @@ img {
     url('../../img/background.jpg');
   background-size: cover;
   background-position: center;
-  overflow: hidden;
 
   @media only screen and (max-width: $bp-1400) {
-    grid-template-rows: 9rem calc(100vh - 19rem) 10rem;
+    grid-template-rows: 9rem calc(100vh - 16rem) 7rem;
   }
   @media only screen and (max-width: $bp-1120) {
     grid-template-rows: 13rem -webkit-calc(100vh - 25rem) 12rem;
@@ -84,6 +84,8 @@ img {
       ),
       url('../../img/background.jpg');
     height: 100vh;
+
+    grid-template-rows: 9rem calc(100vh - 17rem) 8rem;
   }
 
   //when landscape view and width is no bigger than 900px, otherwords, phone-landscape
@@ -123,17 +125,16 @@ img {
 .content {
   grid-row: 2 / 3;
   width: 100%;
-  margin: 2rem;
-  margin-top: 0;
-  padding: 1rem 20rem;
+  height: 100%;
+  padding: 0 20rem;
 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 
   @media only screen and(max-width: $bp-1120) {
-    padding: 1rem 10rem;
+    padding: 0 10rem;
     justify-content: space-around;
   }
   @media only screen and(max-width: $bp-750) {
@@ -155,11 +156,10 @@ img {
 
 .info {
   align-self: center;
-  width: 75%;
-  margin-top: 6rem;
+  width: 80%;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   color: $color-white-3;
-  font-size: 2rem;
+  font-size: 2.2rem;
   line-height: 1.4;
 
   display: flex;
@@ -168,7 +168,7 @@ img {
   animation: showUp 1s ease-in 1.5s both;
 
   @media only screen and (max-width: $bp-1500) {
-    margin-top: 3rem;
+    font-size: 2rem;
   }
   @media only screen and (max-width: $bp-1120) {
     width: 90%;
@@ -183,10 +183,15 @@ img {
   }
 
   &__p {
-    margin-bottom: 0.8rem;
+    margin-bottom: 0;
+    &:not(:last-child) {
+      margin-bottom: 0.8rem;
+    }
 
     @media only screen and (max-width: $bp-600) {
-      margin-bottom: 1.4rem;
+      &:not(:last-child) {
+        margin-bottom: 1.4rem;
+      }
     }
   }
 }
@@ -198,7 +203,4 @@ img {
 
 a {
   color: $color-white;
-}
-p {
-  margin-bottom: 0.6rem;
 }
