@@ -167,6 +167,9 @@ img {
   align-items: center;
   animation: showUp 1s ease-in 1.5s both;
 
+  @media only screen and (max-width: $bp-1500) {
+    margin-top: 3rem;
+  }
   @media only screen and (max-width: $bp-600) {
     width: 100%;
     margin-top: 0;

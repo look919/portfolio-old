@@ -5,6 +5,9 @@
   align-items: center;
   justify-items: center;
 
+  @media only screen and (max-width: $bp-1500) {
+    grid-template-rows: repeat(4, 11rem);
+  }
   @media only screen and (max-width: $bp-1120) {
     grid-template-rows: repeat(4, 20rem);
   }

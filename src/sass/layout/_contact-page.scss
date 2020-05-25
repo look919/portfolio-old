@@ -15,7 +15,7 @@
     border: 1px solid $color-black;
     border-radius: 0.6rem;
     letter-spacing: 0.2rem;
-    font-family: "Quicksand", sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-weight: 600;
     font-size: 1.4rem;
     letter-spacing: 1px;
@@ -70,6 +70,12 @@
     border: 1px solid $color-black;
     border-radius: 1rem;
 
+    @media only screen and(max-width: $bp-1500) {
+      height: 26rem;
+    }
+    @media only screen and(max-width: $bp-1120) {
+      height: 34rem;
+    }
     @media only screen and(max-width: $bp-600) {
       width: 80%;
       height: 28rem;
@@ -78,7 +84,7 @@
       width: 95%;
     }
 
-    font-family: "Quicksand", sans-serif;
+    font-family: 'Quicksand', sans-serif;
     color: $color-black;
     font-weight: 900;
 
