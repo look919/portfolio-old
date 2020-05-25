@@ -27,14 +27,14 @@
     width: fit-content;
     padding-right: 1.5rem;
 
-    font-size: 3rem;
+    font-size: 2.6rem;
     text-transform: uppercase;
     letter-spacing: 0.3rem;
     margin-bottom: 0.5rem;
     border-bottom: 1px solid $color-white;
 
-    @media only screen and(max-width: $bp-1120) {
-      font-size: 2.6rem;
+    @media only screen and(max-width: $bp-1500) {
+      font-size: 2.4rem;
     }
     @media only screen and(max-width: $bp-600) {
       font-size: 2rem;
@@ -97,8 +97,8 @@
   justify-content: flex-end;
 
   &__img-radius {
-    height: 24rem;
-    width: 24rem;
+    height: 20rem;
+    width: 20rem;
     border-radius: 50%;
     border: 1px solid $color-white;
 
@@ -121,8 +121,8 @@
   }
 
   &__icon {
-    height: 4rem;
-    width: 4rem;
+    height: 3.6rem;
+    width: 3.6rem;
 
     @media only screen and(max-width: $bp-750) {
       height: 3.5rem;

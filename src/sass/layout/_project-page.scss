@@ -1,18 +1,15 @@
 .carousel-root {
-  width: 72rem;
+  width: 60rem;
 
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
 
   @media only screen and (max-width: $bp-1500) {
-    width: 52rem;
+    width: 50rem;
   }
   @media only screen and (max-width: $bp-1120) {
-    width: 72rem;
-  }
-  @media only screen and (max-width: $bp-600) {
-    width: 62rem;
+    width: 60rem;
   }
   @media only screen and (max-width: $bp-450) {
     width: 57rem;

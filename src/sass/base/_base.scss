@@ -159,7 +159,7 @@ img {
   margin-top: 6rem;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   color: $color-white-3;
-  font-size: 2.2rem;
+  font-size: 2rem;
   line-height: 1.4;
 
   display: flex;
@@ -169,6 +169,9 @@ img {
 
   @media only screen and (max-width: $bp-1500) {
     margin-top: 3rem;
+  }
+  @media only screen and (max-width: $bp-1120) {
+    width: 90%;
   }
   @media only screen and (max-width: $bp-600) {
     width: 100%;
