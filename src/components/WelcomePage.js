@@ -52,7 +52,7 @@ const WelcomePage = () => {
               />
               <span className='about-me__item--answer'>
                 <FormattedMessage
-                  id='WelcomePage.vorname'
+                  id='WelcomePage.vornameAnswer'
                   defaultMessage='Wirkus'
                 />
               </span>
