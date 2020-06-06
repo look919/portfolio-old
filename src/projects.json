@@ -5,7 +5,7 @@
     "url": "https://tomoffice.herokuapp.com/",
     "img": "tomOffice.png",
     "imgHover": ["node.png", "mongodb.png", "reactredux.png", "css.png"],
-    "development": true,
+    "development": false,
     "online": true
   },
   {

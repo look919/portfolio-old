@@ -48,6 +48,8 @@
     &:active,
     &:focus {
       outline: none;
+      box-shadow: 0 2rem 4rem rgba($color-black, 1);
+      border: 2px solid $color-black;
     }
     &::placeholder {
       color: $color-black;
@@ -109,12 +111,15 @@
     &:active,
     &:focus {
       outline: none;
+      box-shadow: 1rem 2rem 8rem rgba($color-black, 1);
+      border: 2px solid $color-black;
     }
   }
 
   &__info {
     font-size: 1.6rem;
     padding: 0.4rem;
+    margin: 0.5rem;
 
     grid-column: 2 / 3;
   }
