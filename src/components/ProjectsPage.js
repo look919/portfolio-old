@@ -7,11 +7,7 @@ import { FormattedMessage } from 'react-intl';
 const ProjectsPage = () => {
   return (
     <div className='container'>
-      <Header
-        title={<FormattedMessage id='Nav.projects' defaultMessage='Projects' />}
-        messageId='Nav.projects'
-        defaultMessage='Projects'
-      />
+      <Header title='Projects' />
 
       <div className='content content--projectPage'>
         <div className='info'>

@@ -82,11 +82,7 @@ const SkillsPage = () => {
 
   return (
     <div className='container'>
-      <Header
-        title={<FormattedMessage id='Nav.skills' defaultMessage='Skills' />}
-        messageId='Nav.skills'
-        defaultMessage='Skills'
-      />
+      <Header title='Skills' />
       <div className='content content--skillPage'>
         <div className='info'>
           <p className='info__p'>

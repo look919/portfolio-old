@@ -7,13 +7,7 @@ import { FormattedMessage } from 'react-intl';
 const NotFoundPage = () => {
   return (
     <div className='container'>
-      <Header
-        title={
-          <FormattedMessage id='Nav.notFound' defaultMessage='404 Not Found' />
-        }
-        messageId='Nav.notFound'
-        defaultMessage='404 Not Found'
-      />
+      <Header title='NotFound' />
       <div className='content content--contactPage'>
         <div className='info'>
           <p className='info__p'>

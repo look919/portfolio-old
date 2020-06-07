@@ -53,6 +53,7 @@
     }
     &::placeholder {
       color: $color-black;
+      opacity: 1;
     }
 
     &--user {

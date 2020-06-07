@@ -6,9 +6,31 @@ import Select from 'react-select';
 import PlLang from '../img/pllang.png';
 import EnLang from '../img/uklang.png';
 
-const Header = ({ title, messageId, defaultMessage }) => {
+const Header = ({ title }) => {
   const context = useContext(Context);
   let local = localStorage.getItem('lang') || 'en';
+
+  let header = '';
+
+  switch (title) {
+    case 'Tomasz Wirkus':
+      header = 'Tomasz Wirkus';
+      break;
+    case 'Skills':
+      local === 'en' ? (header = 'Skills') : (header = 'Umiejętności');
+      break;
+    case 'Projects':
+      local === 'en' ? (header = 'Projects') : (header = 'Projekty');
+      break;
+    case 'Contact':
+      local === 'en' ? (header = 'Contact') : (header = 'Kontakt');
+      break;
+    case 'NotFound':
+      header = '404 ;(';
+      break;
+    default:
+      break;
+  }
 
   const is600px = useMediaQuery({ query: '(max-width: 600px)' });
   const options = [
@@ -34,9 +56,7 @@ const Header = ({ title, messageId, defaultMessage }) => {
     <header
       className={title === 'Tomasz Wirkus' ? 'header header--mobile' : 'header'}
     >
-      <h1 className='header__heading-primary'>
-        <FormattedMessage id={messageId} defaultMessage={defaultMessage} />
-      </h1>
+      <h1 className='header__heading-primary'>{header}</h1>
       <Select
         className='header__select'
         defaultValue={{
@@ -63,9 +83,7 @@ const Header = ({ title, messageId, defaultMessage }) => {
         title === 'Tomasz Wirkus' ? 'header header--delayed' : 'header'
       }
     >
-      <h1 className='header__heading-primary'>
-        <FormattedMessage id={messageId} defaultMessage={defaultMessage} />
-      </h1>
+      <h1 className='header__heading-primary'>{header}</h1>
       <Select
         className='header__select'
         defaultValue={{
