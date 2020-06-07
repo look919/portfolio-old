@@ -74,7 +74,7 @@ const Header = ({ title }) => {
         title === 'Tomasz Wirkus' ? 'header header--delayed' : 'header'
       }
     >
-      <h1 className='header__heading-primary'>{header}</h1>
+      <h1 className='header__heading-primary'>{title}</h1>
       <Select
         className='header__select'
         defaultValue={{
