@@ -7,7 +7,7 @@ import { FormattedMessage } from 'react-intl';
 const ProjectsPage = () => {
   return (
     <div className='container'>
-      <Header title='Projects' />
+      <Header titleEn='Projects' titlePl='Projekty' />
 
       <div className='content content--projectPage'>
         <div className='info'>

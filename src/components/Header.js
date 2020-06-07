@@ -5,23 +5,9 @@ import Select from 'react-select';
 import PlLang from '../img/pllang.png';
 import EnLang from '../img/uklang.png';
 
-const Header = ({ title }) => {
+const Header = (props) => {
   const context = useContext(Context);
   let local = localStorage.getItem('lang') || 'en';
-
-  switch (title) {
-    case 'Skills':
-      local === 'en' ? (title = 'Skills') : (title = 'Umiejętności');
-      break;
-    case 'Projects':
-      local === 'en' ? (title = 'Projects') : (title = 'Projekty');
-      break;
-    case 'Contact':
-      local === 'en' ? (title = 'Contact') : (title = 'Kontakt');
-      break;
-    default:
-      break;
-  }
 
   const is600px = useMediaQuery({ query: '(max-width: 600px)' });
   const options = [
@@ -45,9 +31,13 @@ const Header = ({ title }) => {
 
   const mobileView = (
     <header
-      className={title === 'Tomasz Wirkus' ? 'header header--mobile' : 'header'}
+      className={
+        props.titleEn === 'Tomasz Wirkus' ? 'header header--mobile' : 'header'
+      }
     >
-      <h1 className='header__heading-primary'>{title}</h1>
+      <h1 className='header__heading-primary'>
+        {local === 'en' ? props.titleEn : props.titlePl}
+      </h1>
       <Select
         className='header__select'
         defaultValue={{
@@ -71,10 +61,12 @@ const Header = ({ title }) => {
   const deskopView = (
     <header
       className={
-        title === 'Tomasz Wirkus' ? 'header header--delayed' : 'header'
+        props.titleEn === 'Tomasz Wirkus' ? 'header header--delayed' : 'header'
       }
     >
-      <h1 className='header__heading-primary'>{title}</h1>
+      <h1 className='header__heading-primary'>
+        {local === 'en' ? props.titleEn : props.titlePl}
+      </h1>
       <Select
         className='header__select'
         defaultValue={{

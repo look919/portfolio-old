@@ -77,7 +77,7 @@ const ContactPage = () => {
 
   return (
     <div className='container'>
-      <Header title='Contact' />
+      <Header titleEn='Contact' titlePl='Kontakt' />
       <div className='content content--contactPage'>
         <div className='info'>
           <p className='info__p'>

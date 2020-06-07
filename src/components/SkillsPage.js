@@ -82,7 +82,7 @@ const SkillsPage = () => {
 
   return (
     <div className='container'>
-      <Header title='Skills' />
+      <Header titleEn='Skills' titlePl='Umiejętności' />
       <div className='content content--skillPage'>
         <div className='info'>
           <p className='info__p'>
