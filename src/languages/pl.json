@@ -4,6 +4,7 @@
   "Nav.skills": "Umiejętności",
   "Nav.projects": "Projekty",
   "Nav.contact": "Kontakt",
+  "Nav.notFound": "404 ;(",
 
   "WelcomePage.paragraphOne": "Cześć! Nazywam się Tomasz Wirkus i bardzo mi mił,o, że mogę Cię powitać na mojej stronie.",
   "WelcomePage.paragraphTwo": "Programowaniem webowym bawię się od ponad roku, moim celem jest zostanie MERN Stack Developerem, toteż codziennie dokładam cegiełkę żeby się nim stać.",
@@ -53,5 +54,8 @@
   "ContactPage.btn": "Wyślij",
   "ContactPage.error": "Error, Upewnij się, że podałeś dobry email",
   "ContactPage.short": "Poprosiłem Cię o wiadomość, nie testowy spam :)",
-  "ContactPage.success": "Dziękuję!"
+  "ContactPage.success": "Dziękuję!",
+
+  "NotFoundPage.paragraphOne": "Strona której szukasz nie istnieje lub nie jest w tym momencie dostępna.",
+  "NotFoundPage.paragraphTwo": "Spróbuj ponownie później."
 }

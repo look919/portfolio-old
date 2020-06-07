@@ -4,6 +4,7 @@
   "Nav.skills": "Skills",
   "Nav.projects": "Projects",
   "Nav.contact": "Contact",
+  "Nav.notFound": "404 ;(",
 
   "WelcomePage.paragraphOne": "Hello! My name is Tomasz and I would like to welcome you on my website, feel free to look around.",
   "WelcomePage.paragraphTwo": "I am into web programming for over one year and my goal is to become MERN Stack Developer so I work hard everyday to become one.",
@@ -53,5 +54,8 @@
   "ContactPage.btn": "Submit",
   "ContactPage.error": "An Error, please make sure u provided valid email.",
   "ContactPage.short": "I asked you to leave me a message, not a test spam :)",
-  "ContactPage.success": "Thanks!"
+  "ContactPage.success": "Thanks!",
+
+  "NotFoundPage.paragraphOne": "Page that you are looking for doesn't exist or is not aviable right now.",
+  "NotFoundPage.paragraphTwo": "Try again later."
 }
