@@ -9,6 +9,8 @@ const ProjectsPage = () => {
     <div className='container'>
       <Header
         title={<FormattedMessage id='Nav.projects' defaultMessage='Projects' />}
+        messageId='Nav.projects'
+        defaultMessage='Projects'
       />
 
       <div className='content content--projectPage'>

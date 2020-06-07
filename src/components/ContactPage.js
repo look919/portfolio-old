@@ -79,6 +79,8 @@ const ContactPage = () => {
     <div className='container'>
       <Header
         title={<FormattedMessage id='Nav.contact' defaultMessage='Contact' />}
+        messageId='Nav.contact'
+        defaultMessage='Contact'
       />
       <div className='content content--contactPage'>
         <div className='info'>

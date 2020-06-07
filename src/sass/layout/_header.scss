@@ -12,12 +12,12 @@
     letter-spacing: 0.5rem;
 
     @media only screen and (max-width: $bp-450) {
-      font-size: 5rem;
-      padding: 0.5rem 0;
+      font-size: 4rem;
+      padding: 1rem 0;
     }
     @media only screen and (max-width: $bp-350) {
-      font-size: 4.2rem;
-      padding: 1rem 0;
+      font-size: 3.6rem;
+      padding: 1.2rem 0;
     }
   }
 
@@ -86,8 +86,15 @@
       top: 1rem;
     }
     @media only screen and (max-width: $bp-600) {
-      top: 0.5rem;
+      top: 0;
       width: 9rem;
+      right: 1rem;
+      height: 100%;
+    }
+    @media only screen and (max-width: $bp-450) {
+      right: 2rem;
+    }
+    @media only screen and (max-width: $bp-350) {
       right: 1rem;
     }
 

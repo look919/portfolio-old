@@ -16,7 +16,11 @@ const WelcomePage = () => {
 
   return (
     <div className={!is600px ? `container container--animated` : 'container'}>
-      <Header title='Tomasz Wirkus' />
+      <Header
+        title='Tomasz Wirkus'
+        messageId='Nav.me'
+        defaultMessage='Tomasz Wirkus'
+      />
       <div className='content content--welcomePage'>
         <div className={!is600px ? `info info--animated` : 'info'}>
           <p className='info__p'>

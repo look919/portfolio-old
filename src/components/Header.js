@@ -1,11 +1,12 @@
 import React, { useContext } from 'react';
+import { FormattedMessage } from 'react-intl';
 import { useMediaQuery } from 'react-responsive';
 import { Context } from '../Wrapper';
 import Select from 'react-select';
 import PlLang from '../img/pllang.png';
 import EnLang from '../img/uklang.png';
 
-const Header = (props) => {
+const Header = ({ title, messageId, defaultMessage }) => {
   const context = useContext(Context);
   let local = localStorage.getItem('lang') || 'en';
 
@@ -31,11 +32,11 @@ const Header = (props) => {
 
   const mobileView = (
     <header
-      className={
-        props.title === 'Tomasz Wirkus' ? 'header header--mobile' : 'header'
-      }
+      className={title === 'Tomasz Wirkus' ? 'header header--mobile' : 'header'}
     >
-      <h1 className='header__heading-primary'>{props.title}</h1>
+      <h1 className='header__heading-primary'>
+        <FormattedMessage id={messageId} defaultMessage={defaultMessage} />
+      </h1>
       <Select
         className='header__select'
         defaultValue={{
@@ -59,10 +60,12 @@ const Header = (props) => {
   const deskopView = (
     <header
       className={
-        props.title === 'Tomasz Wirkus' ? 'header header--delayed' : 'header'
+        title === 'Tomasz Wirkus' ? 'header header--delayed' : 'header'
       }
     >
-      <h1 className='header__heading-primary'>{props.title}</h1>
+      <h1 className='header__heading-primary'>
+        <FormattedMessage id={messageId} defaultMessage={defaultMessage} />
+      </h1>
       <Select
         className='header__select'
         defaultValue={{

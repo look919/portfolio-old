@@ -1,4 +1,5 @@
 {
+  "Nav.me": "Tomasz Wirkus",
   "Nav.home": "Home",
   "Nav.skills": "Skills",
   "Nav.projects": "Projects",
@@ -15,7 +16,7 @@
   "WelcomePage.email": "Email: ",
   "WelcomePage.nameAnswer": "Tomasz",
   "WelcomePage.vornameAnswer": "Wirkus",
-  "WelcomePage.ageAnswer": "21",
+  "WelcomePage.ageAnswer": "22",
   "WelcomePage.statusAnswer": "Student of computer science",
   "WelcomePage.goalAnswer": "Fullstack Developer",
   "WelcomePage.languagesAnswer": "- Native,",
