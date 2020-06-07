@@ -92,10 +92,7 @@
       height: 100%;
     }
     @media only screen and (max-width: $bp-450) {
-      right: 2rem;
-    }
-    @media only screen and (max-width: $bp-350) {
-      right: 1rem;
+      width: 11rem;
     }
 
     &__lang {

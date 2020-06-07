@@ -9,6 +9,9 @@ const Header = (props) => {
   const context = useContext(Context);
   let local = localStorage.getItem('lang') || 'en';
 
+  if (props.titleEn === '') props.titleEn = 'Tomasz Wirkus';
+  if (props.titlePl === '') props.titlePl = 'Tomasz Wirkus';
+
   const is600px = useMediaQuery({ query: '(max-width: 600px)' });
   const options = [
     {
