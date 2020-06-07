@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import { FormattedMessage } from 'react-intl';
 import { useMediaQuery } from 'react-responsive';
 import { Context } from '../Wrapper';
 import Select from 'react-select';
@@ -10,23 +9,15 @@ const Header = ({ title }) => {
   const context = useContext(Context);
   let local = localStorage.getItem('lang') || 'en';
 
-  let header = '';
-
   switch (title) {
-    case 'Tomasz Wirkus':
-      header = 'Tomasz Wirkus';
-      break;
     case 'Skills':
-      local === 'en' ? (header = 'Skills') : (header = 'Umiejętności');
+      local === 'en' ? (title = 'Skills') : (title = 'Umiejętności');
       break;
     case 'Projects':
-      local === 'en' ? (header = 'Projects') : (header = 'Projekty');
+      local === 'en' ? (title = 'Projects') : (title = 'Projekty');
       break;
     case 'Contact':
-      local === 'en' ? (header = 'Contact') : (header = 'Kontakt');
-      break;
-    case 'NotFound':
-      header = '404 ;(';
+      local === 'en' ? (title = 'Contact') : (title = 'Kontakt');
       break;
     default:
       break;
@@ -56,7 +47,7 @@ const Header = ({ title }) => {
     <header
       className={title === 'Tomasz Wirkus' ? 'header header--mobile' : 'header'}
     >
-      <h1 className='header__heading-primary'>{header}</h1>
+      <h1 className='header__heading-primary'>{title}</h1>
       <Select
         className='header__select'
         defaultValue={{
