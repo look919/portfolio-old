@@ -48,11 +48,11 @@
   "ProjectsPage.paragraphTwoPartTwo": "See how i write my code.",
 
   "ContactPage.paragraphOne": "You can also contact me directly by sending email to wirkus919@gmail.com, I'm open for any kind of cooperation.",
-  "ContactPage.paragraphTwo": "Because of my studies I exclude the possibility of moving and I'monly interested in working in Koszalin.",
+  "ContactPage.paragraphTwo": "Because of my studies I exclude the possibility of moving and I'm only interested in working in Koszalin.",
   "ContactPage.from": "from: email@example.com",
   "ContactPage.to": "to: wirkus919@gmail.com",
   "ContactPage.btn": "Submit",
-  "ContactPage.error": "An Error, please make sure u provided valid email.",
+  "ContactPage.error": "An Error, please make sure you provided a valid email.",
   "ContactPage.short": "I asked you to leave me a message, not a test spam :)",
   "ContactPage.success": "Thanks!",
 
