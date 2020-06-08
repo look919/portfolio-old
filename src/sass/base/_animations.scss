@@ -26,8 +26,7 @@
   100% {
     width: 0%;
     z-index: 0;
-    display: none;
-    background-color: none;
+    display: none !important;
   }
 }
 
@@ -98,46 +97,6 @@
   }
 }
 
-@keyframes arrowRight {
-  0% {
-    fill: #3c873a;
-  }
-  30% {
-    fill: darken(#3c873a, 20%);
-    transform: rotate(180deg);
-  }
-
-  50% {
-    fill: #3c873a;
-  }
-  80% {
-    fill: darken(#3c873a, 20%);
-  }
-  100% {
-    transform: rotate(360deg);
-    fill: #3c873a;
-  }
-}
-@keyframes arrowLeft {
-  0% {
-    fill: #3c873a;
-  }
-  30% {
-    fill: lighten(#3c873a, 20%);
-    transform: rotate(-180deg);
-  }
-
-  50% {
-    fill: #3c873a;
-  }
-  80% {
-    fill: lighten(#3c873a, 20%);
-  }
-  100% {
-    transform: rotate(-360deg);
-    fill: #3c873a;
-  }
-}
 @keyframes moveInRight {
   0% {
     transform: translateX(10rem);
@@ -152,39 +111,6 @@
 @keyframes moveInLeft {
   0% {
     transform: translateX(-10rem);
-  }
-  50% {
-    transform: translateX(-7rem);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes modalOpen {
-  0% {
-    height: 0;
-  }
-  100% {
-    height: calc(100vh - 20rem);
-  }
-}
-@keyframes modalOpenMobile {
-  0% {
-    height: 0;
-  }
-  100% {
-    height: calc(100vh - 25rem);
-  }
-}
-
-@keyframes modalLine {
-  0% {
-    transform: translateX(-10rem);
-    opacity: 0;
-  }
-  25% {
-    opacity: 1;
   }
   50% {
     transform: translateX(-7rem);
