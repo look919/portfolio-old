@@ -6,7 +6,7 @@
   "Nav.contact": "Contact",
   "Nav.notFound": "404 ;(",
 
-  "WelcomePage.paragraphOne": "Hello! My name is Tomasz and I would like to welcome you on my website, feel free to look around.",
+  "WelcomePage.paragraphOne": "Hello! I'm Tomasz and its a big pleasure to welcome you on my website, feel free to look around.",
   "WelcomePage.paragraphTwo": "I am into web programming for over one year and my goal is to become MERN Stack Developer so I work hard everyday to become one.",
   "WelcomePage.name": "Name: ",
   "WelcomePage.vorname": "Surname: ",
@@ -45,10 +45,10 @@
 
   "ProjectsPage.paragraphOne": "I decided not to include projects from online courses here, despite the fact that their creation was very important in my development.",
   "ProjectsPage.paragraphTwoPartOne": "I wrote all the projects in the portfolio 100% by myself. ",
-  "ProjectsPage.paragraphTwoPartTwo": "See how i write my code.",
+  "ProjectsPage.paragraphTwoPartTwo": "Take a look how i write my code.",
 
   "ContactPage.paragraphOne": "You can also contact me directly by sending email to wirkus919@gmail.com, I'm open for any kind of cooperation.",
-  "ContactPage.paragraphTwo": "Because of my studies I exclude the possibility of moving and I'm only interested in working in Koszalin.",
+  "ContactPage.paragraphTwo": "Due to my studies I exclude the possibility of moving and I'm only interested in remote job offers or from Koszalin.",
   "ContactPage.from": "from: email@example.com",
   "ContactPage.to": "to: wirkus919@gmail.com",
   "ContactPage.btn": "Submit",
