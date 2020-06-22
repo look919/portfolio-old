@@ -45,6 +45,10 @@
     );
     animation: moveInLeft 3s ease 0.5s both;
 
+    &--mobile {
+      animation: none;
+    }
+
     &:active,
     &:focus {
       outline: none;

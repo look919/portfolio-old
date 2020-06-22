@@ -61,13 +61,11 @@
     }
   }
   &--mobile {
+    animation: none;
     &::after,
     &::before {
-      animation: welcomeAnimation 5s ease-in-out 0s both;
-
-      @media only screen and (max-width: $bp-600) {
-        animation: welcomeAnimation 3.5s ease-in-out 0s both;
-      }
+      animation: none;
+      display: none;
     }
   }
 
@@ -77,7 +75,7 @@
     right: 3rem;
     top: 2rem;
     width: 9rem;
-    height: 4rem;
+    height: 5rem;
     border: none !important;
     background-color: inherit !important;
     transition: all 0.3s;
@@ -95,9 +93,14 @@
       width: 11rem;
     }
 
+    &:focus,
+    &:active {
+      background-color: hsl(271, 23%, 6%) !important;
+      border: none !important;
+    }
     &__lang {
-      height: 4rem;
-      width: 4rem;
+      height: 4rem !important;
+      width: 4rem !important;
       cursor: pointer !important;
     }
   }
@@ -107,6 +110,8 @@
   border: none !important;
   background-color: inherit !important;
   cursor: pointer !important;
+  height: 5rem;
+  width: 5rem;
 
   &:focus,
   &:active {
@@ -118,6 +123,7 @@
 .css-1pahdxg-control {
   background-color: inherit !important;
   border: none !important;
+  box-shadow: none !important;
   cursor: pointer !important;
 
   &:focus,
@@ -128,6 +134,10 @@
 .css-1hb7zxy-IndicatorsContainer {
   width: 4rem !important;
   padding: 0 !important;
+
+  @media only screen and (max-width: $bp-450) {
+    width: 4.5rem !important;
+  }
 }
 #root
   > div
@@ -142,4 +152,12 @@
   @media only screen and (max-width: $bp-600) {
     padding: 2px !important;
   }
+}
+.css-1uccc91-singleValue {
+  height: 5rem;
+  width: 5rem;
+  padding-top: 0.2rem !important;
+}
+.css-1hb7zxy-IndicatorsContainer > span {
+  display: none !important;
 }

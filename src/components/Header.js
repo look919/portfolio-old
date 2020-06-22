@@ -32,10 +32,14 @@ const Header = (props) => {
     },
   ];
 
-  const mobileView = (
+  return (
     <header
       className={
-        props.titleEn === 'Tomasz Wirkus' ? 'header header--mobile' : 'header'
+        is600px
+          ? 'header header--mobile'
+          : props.titleEn === 'Tomasz Wirkus'
+          ? 'header header--delayed'
+          : 'header'
       }
     >
       <h1 className='header__heading-primary'>
@@ -60,37 +64,6 @@ const Header = (props) => {
       />
     </header>
   );
-
-  const deskopView = (
-    <header
-      className={
-        props.titleEn === 'Tomasz Wirkus' ? 'header header--delayed' : 'header'
-      }
-    >
-      <h1 className='header__heading-primary'>
-        {local === 'en' ? props.titleEn : props.titlePl}
-      </h1>
-      <Select
-        className='header__select'
-        defaultValue={{
-          value: local,
-          label: (
-            <div>
-              <img
-                src={local === 'en' ? EnLang : PlLang}
-                className='header__select__lang'
-                alt='uk flag'
-              />
-            </div>
-          ),
-        }}
-        onChange={(e) => context.selectLang(e)}
-        options={options}
-      />
-    </header>
-  );
-
-  return !is600px ? deskopView : mobileView;
 };
 
 export default Header;
