@@ -3,10 +3,11 @@ import Header from './Header';
 import Nav from './Nav';
 import MyPhoto from './MyPhoto';
 import { FormattedMessage } from 'react-intl';
+import Div100vh from 'react-div-100vh';
 
 const NotFoundPage = () => {
   return (
-    <div className='container'>
+    <Div100vh className='container'>
       <Header titleEn='404 ;(' titlePl='404 ;(' />
       <div className='content content--contactPage'>
         <div className='info'>
@@ -30,7 +31,7 @@ const NotFoundPage = () => {
         </div>
       </div>
       <Nav />
-    </div>
+    </Div100vh>
   );
 };
 

@@ -3,6 +3,7 @@ import Header from './Header';
 import Card from './Card';
 import Nav from './Nav';
 import { FormattedMessage } from 'react-intl';
+import Div100vh from 'react-div-100vh';
 
 import css from '../img/techs/css.png';
 import react from '../img/techs/react.png';
@@ -81,7 +82,7 @@ const SkillsPage = () => {
   ];
 
   return (
-    <div className='container'>
+    <Div100vh className='container'>
       <Header titleEn='Skills' titlePl='Umiejętności' />
       <div className='content content--skillPage'>
         <div className='info'>
@@ -137,7 +138,7 @@ const SkillsPage = () => {
         </section>
       </div>
       <Nav />
-    </div>
+    </Div100vh>
   );
 };
 

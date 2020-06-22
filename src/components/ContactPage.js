@@ -3,6 +3,7 @@ import validator from 'validator';
 import Header from './Header';
 import Nav from './Nav';
 import { FormattedMessage } from 'react-intl';
+import Div100vh from 'react-div-100vh';
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -76,7 +77,7 @@ const ContactPage = () => {
   };
 
   return (
-    <div className='container'>
+    <Div100vh className='container'>
       <Header titleEn='Contact' titlePl='Kontakt' />
       <div className='content content--contactPage'>
         <div className='info'>
@@ -172,7 +173,7 @@ const ContactPage = () => {
         </form>
       </div>
       <Nav />
-    </div>
+    </Div100vh>
   );
 };
 

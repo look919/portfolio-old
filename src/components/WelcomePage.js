@@ -4,6 +4,7 @@ import Nav from './Nav';
 import { useMediaQuery } from 'react-responsive';
 import { FormattedMessage } from 'react-intl';
 import MyPhoto from './MyPhoto';
+import Div100vh from 'react-div-100vh';
 
 import Polish from '../img/polflag.png';
 import English from '../img/uk.png';
@@ -13,7 +14,9 @@ const WelcomePage = () => {
   const is600px = useMediaQuery({ query: '(max-width: 600px)' });
 
   return (
-    <div className={!is600px ? `container container--animated` : 'container'}>
+    <Div100vh
+      className={!is600px ? `container container--animated` : 'container'}
+    >
       <Header titlePl='Tomasz Wirkus' titleEn='Tomasz Wirkus' />
       <div className='content content--welcomePage'>
         <div className={!is600px ? `info info--animated` : 'info'}>
@@ -132,7 +135,7 @@ const WelcomePage = () => {
         </div>
       </div>
       <Nav />
-    </div>
+    </Div100vh>
   );
 };
 

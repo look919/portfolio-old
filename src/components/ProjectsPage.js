@@ -3,10 +3,11 @@ import Header from './Header';
 import Nav from './Nav';
 import Carousel from './Carousel';
 import { FormattedMessage } from 'react-intl';
+import Div100vh from 'react-div-100vh';
 
 const ProjectsPage = () => {
   return (
-    <div className='container'>
+    <Div100vh className='container'>
       <Header titleEn='Projects' titlePl='Projekty' />
 
       <div className='content content--projectPage'>
@@ -38,7 +39,7 @@ const ProjectsPage = () => {
         <Carousel />
       </div>
       <Nav />
-    </div>
+    </Div100vh>
   );
 };
 
