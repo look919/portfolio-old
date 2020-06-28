@@ -82,23 +82,7 @@ const ContactPage = () => {
   return (
     <Div100vh className='container'>
       <Header titleEn='Contact' titlePl='Kontakt' />
-      <div className='content content--contactPage'>
-        <div className='info'>
-          <p className='info__p'>
-            <FormattedMessage
-              id='ContactPage.paragraphOne'
-              defaultMessage="You can also contact me directly by sending email to
-              wirkus919@gmail.com, I'm open for any kind of cooperation."
-            />
-          </p>
-          <p className='info__p'>
-            <FormattedMessage
-              id='ContactPage.paragraphTwo'
-              defaultMessage="Because of my studies I exclude the possibility of moving and I'm
-              only interested in working in Koszalin."
-            />
-          </p>
-        </div>
+      <div className='content content--contact'>
         <form
           onSubmit={submitForm}
           action='https://formspree.io/xkdayzkm'
@@ -182,6 +166,22 @@ const ContactPage = () => {
             </p>
           )}
         </form>
+        <div className='info'>
+          <p className='info__p'>
+            <FormattedMessage
+              id='ContactPage.paragraphOne'
+              defaultMessage="You can also contact me directly by sending email to
+              wirkus919@gmail.com, I'm open for any kind of cooperation."
+            />
+          </p>
+          <p className='info__p'>
+            <FormattedMessage
+              id='ContactPage.paragraphTwo'
+              defaultMessage="Because of my studies I exclude the possibility of moving and I'm
+              only interested in working in Koszalin."
+            />
+          </p>
+        </div>
       </div>
       <Nav />
     </Div100vh>

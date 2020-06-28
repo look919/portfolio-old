@@ -132,6 +132,10 @@ img {
   justify-content: space-around;
   align-items: center;
 
+  &--contact {
+    flex-direction: column-reverse;
+  }
+
   @media only screen and(max-width: $bp-1120) {
     padding: 0 10rem;
     justify-content: space-around;
@@ -151,7 +155,6 @@ img {
 }
 
 .info {
-  align-self: center;
   width: 85%;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   color: $color-white-3;
