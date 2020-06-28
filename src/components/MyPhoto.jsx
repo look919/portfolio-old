@@ -25,7 +25,7 @@ const MyPhoto = () => {
           <GithubIcon />
         </a>
         <a
-          href='https://drive.google.com/file/d/1AeqrLQb9DamGYA2ODQWMLhcxahSRnJYk/view?usp=sharing'
+          href='https://drive.google.com/file/d/18zFQPB6Xhl6tQjVtKN8mUvSQQdtbFn5U/view?usp=sharing'
           target='_blank'
           rel='noopener noreferrer'
         >

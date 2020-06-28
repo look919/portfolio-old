@@ -46,7 +46,7 @@ const Header = (props) => {
         {local === 'en' ? props.titleEn : props.titlePl}
       </h1>
       <Select
-        onfocus='blur();'
+        inputProps={{ readOnly: true }}
         className='header__select'
         defaultValue={{
           value: local,

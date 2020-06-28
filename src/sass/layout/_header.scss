@@ -105,7 +105,13 @@
     }
   }
 }
-
+@media only screen and(max-width: $bp-600) {
+  .header__select:focus-within + .info,
+  .header__select:focus + .info,
+  .header__select:active + .info {
+    color: transparent;
+  }
+}
 .css-g1d714-ValueContainer {
   padding: 0 !important;
   border: none !important;
