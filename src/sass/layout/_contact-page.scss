@@ -127,7 +127,7 @@
       border: 2px solid $color-black;
 
       @media only screen and(max-width: $bp-600) {
-        height: 18rem;
+        height: 22rem;
       }
     }
   }
@@ -141,15 +141,11 @@
   }
 }
 @media only screen and(max-width: $bp-600) {
-  .contact-page__email:active + .contact-page__textarea {
-    margin-bottom: 5rem;
-  }
-}
-@media only screen and(max-width: $bp-600) {
   .contact-page:focus-within + .info,
   .contact-page:focus + .info,
   .contact-page:active + .info {
     color: transparent;
+    display: none;
   }
 }
 input:-webkit-autofill,
