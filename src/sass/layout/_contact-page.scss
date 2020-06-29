@@ -31,6 +31,7 @@
     font-size: 1.4rem;
     letter-spacing: 1px;
     color: $color-black;
+    transition: all 0.2s;
 
     @media only screen and(max-width: $bp-600) {
       width: 80%;
@@ -93,6 +94,7 @@
     line-height: 2.2rem;
     border: 1px solid $color-black;
     border-radius: 1rem;
+    transition: all 0.4s;
 
     @media only screen and(max-width: $bp-1500) {
       height: 26rem;
@@ -123,6 +125,10 @@
       outline: none;
       box-shadow: 1rem 2rem 8rem rgba($color-black, 1);
       border: 2px solid $color-black;
+
+      @media only screen and(max-width: $bp-600) {
+        height: 18rem;
+      }
     }
   }
 
@@ -134,7 +140,11 @@
     grid-column: 2 / 3;
   }
 }
-
+@media only screen and(max-width: $bp-600) {
+  .contact-page__email:active + .contact-page__textarea {
+    margin-bottom: 5rem;
+  }
+}
 @media only screen and(max-width: $bp-600) {
   .contact-page:focus-within + .info,
   .contact-page:focus + .info,
