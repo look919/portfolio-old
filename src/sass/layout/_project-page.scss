@@ -146,8 +146,14 @@
     color: $color-white-3;
     border-bottom: 1px solid $color-white;
 
+    p {
+      padding: 0 1rem;
+    }
     @media only screen and (max-width: $bp-600) {
       font-size: 1.6rem;
+      p {
+        padding: 0 1rem;
+      }
     }
   }
   &__technologies {

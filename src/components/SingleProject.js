@@ -3,8 +3,8 @@ import { Context } from '../Wrapper';
 
 const SingleProject = ({ project }) => {
   const context = useContext(Context);
-
   const lang = context.getLang();
+
   return (
     <figure className='project'>
       <div className='project__info'>

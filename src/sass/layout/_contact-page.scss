@@ -10,6 +10,8 @@
   align-items: center;
   font-size: 2rem;
 
+  transition: all 1s;
+
   @media only screen and(max-width: $bp-600) {
     width: 80%;
   }
@@ -31,7 +33,7 @@
     font-size: 1.4rem;
     letter-spacing: 1px;
     color: $color-black;
-    transition: all 0.2s;
+    transition: all 1s;
 
     @media only screen and(max-width: $bp-600) {
       width: 80%;
@@ -61,6 +63,12 @@
       box-shadow: 0 2rem 4rem rgba($color-black, 1);
       border: 2px solid $color-black;
     }
+    @media only screen and(max-width: $bp-600) {
+      &:focus ~ .contact-page__textarea {
+        height: 16rem;
+      }
+    }
+
     &::placeholder {
       color: $color-black;
       opacity: 1;
@@ -94,7 +102,7 @@
     line-height: 2.2rem;
     border: 1px solid $color-black;
     border-radius: 1rem;
-    transition: all 0.4s;
+    transition: all 1.4s;
 
     @media only screen and(max-width: $bp-1500) {
       height: 26rem;
@@ -104,7 +112,7 @@
     }
     @media only screen and(max-width: $bp-600) {
       width: 80%;
-      height: 28rem;
+      height: 24rem;
     }
     @media only screen and(max-width: $bp-450) {
       width: 100%;
