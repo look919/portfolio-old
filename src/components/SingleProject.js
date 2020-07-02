@@ -62,7 +62,11 @@ const SingleProject = ({ project }) => {
               return (
                 <img
                   src={require(`../img/techs/${el}`)}
-                  className='project__technologies__imgHover'
+                  className={
+                    el !== 'node.png'
+                      ? 'project__technologies__imgHover'
+                      : 'project__technologies__imgHover project__technologies__imgHover--node'
+                  }
                   key={el}
                   alt='project technlogies'
                 />
