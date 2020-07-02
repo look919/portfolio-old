@@ -136,13 +136,6 @@
     }
   }
 }
-@media only screen and(max-width: $bp-600) {
-  .header__select:focus-within + .info,
-  .header__select:focus + .info,
-  .header__select:active + .info {
-    color: transparent;
-  }
-}
 .css-g1d714-ValueContainer {
   padding: 0 !important;
   border: none !important;
@@ -172,10 +165,6 @@
 .css-1hb7zxy-IndicatorsContainer {
   width: 4rem !important;
   padding: 0 !important;
-
-  @media only screen and (max-width: $bp-450) {
-    width: 4.5rem !important;
-  }
 }
 #root
   > div
@@ -186,10 +175,6 @@
   > div.css-1hb7zxy-IndicatorsContainer
   > div {
   padding: 8px !important;
-
-  @media only screen and (max-width: $bp-600) {
-    padding: 2px !important;
-  }
 }
 .css-1uccc91-singleValue {
   height: 5rem;

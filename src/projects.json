@@ -4,7 +4,9 @@
     "github": "https://github.com/look919/tomOffice",
     "url": "https://tomoffice.herokuapp.com/",
     "img": "tomOffice.png",
-    "imgHover": ["node.png", "mongodb.png", "reactredux.png", "css.png"],
+    "descriptionPl": "Sklep biurowy sprzedający meble do biura. Potencjalny klient może zapoznać się z ofertą sklepu, znaleźć interesujący go produkt poprzez filtrowanie, dodawać do koszyka, zamawiać produkty i zapłacić za nie online.",
+    "descriptionEn": "Store online that sells office furnitures. Potential customer can get overview of goods that company sells, find the product by filtering, place an order and pay for it online.",
+    "imgHover": ["node.png", "reactredux.png", "css.png", "mongodb.png"],
     "development": false,
     "online": true
   },
@@ -13,8 +15,10 @@
     "github": "https://github.com/look919/resumeGenerator",
     "url": "https://resume-generatoor.herokuapp.com/",
     "img": "resumeGenerator.png",
-    "imgHover": ["node.png", "mongodb.png", "reactredux.png", "css.png"],
-    "development": true,
+    "descriptionPl": "Strona stworzona z myślą o tworzeniu CV dla junior web developerów. Stworzyłem ją na własne potrzeby, oto przykład ",
+    "descriptionEn": "Website destined to generate resumes for junior web developers. I created this app for my own usage, here's an example of a ",
+    "imgHover": ["node.png", "reactredux.png", "css.png", "mongodb.png"],
+    "development": false,
     "online": true
   },
   {
@@ -22,7 +26,9 @@
     "github": "https://github.com/look919/hotelGiant",
     "url": "https://hotelgiant.herokuapp.com/",
     "img": "hotelGiant.png",
-    "imgHover": ["node.png", "mongodb.png", "reactredux.png", "css.png"],
+    "descriptionPl": "Aplikacja dla hotelu, która zawiera przegląd usług sprzedawanych przez podmiot, rezerawcje pokojów online, panel zarówno dla admina hotelu jak i gości, w którym mogą kontrolować swoje wydatki.",
+    "descriptionEn": "Hotel application that containts overview of company services, orders online, panel for admin and current guests in which they can control their expenses and buy extra services.",
+    "imgHover": ["node.png", "reactredux.png", "css.png", "mongodb.png"],
     "development": false,
     "online": true
   },
@@ -31,7 +37,9 @@
     "github": "https://github.com/look919/chickyChicken",
     "url": "https://chickychicken.herokuapp.com",
     "img": "chickychicken.png",
-    "imgHover": ["node.png", "firebase.png", "reactredux.png", "css.png"],
+    "descriptionPl": "Restauracja fast foodowa napisana w Reaccie. Posiada informacje o lokalu, pozwala klientom na zamawianie dań z menu, rezerwowanie stolików czy też kontakt z obsługą.",
+    "descriptionEn": "React application for fast food restaurant. Provides a brief overview of services sold by the company and enables customers to order food online, reserve table and contact with restaurant.",
+    "imgHover": ["node.png", "reactredux.png", "css.png", "firebase.png"],
     "development": false,
     "online": true
   },
@@ -40,6 +48,8 @@
     "github": "https://github.com/look919/portfolio",
     "url": "https://tomasz-wirkus-portfolio.herokuapp.com/",
     "img": "portfolio.png",
+    "descriptionPl": "Strona, na której się obecenie znajdujesz. To z pewnością nie jest najbardziej zaawansowany z moich projektów, ale zdecydowanie to właśnie na niego poświęciłem najwięcej czasu.",
+    "descriptionEn": "Website you are currently sitting at. It's definately not the most complex project of mine but for sure the one i spent the most time for.",
     "imgHover": ["react.png", "css.png"],
     "development": true,
     "online": true
@@ -50,6 +60,8 @@
     "github": "https://github.com/look919/Chess-game-Qt",
     "url": "https://www.youtube.com/watch?v=oQRxG5nHmoY",
     "img": "chess.png",
+    "descriptionPl": "Mój największy niewebowy projekt. Ponieważ napisałem go na początku mojej zabawy z programowaniem jakość kodu pozostawia wiele do życzenia. Sama gra jest w pełni funkcjonalna, zawiera wiązania figur przeciwnika, ruch en passant, podwójny szach i z szach z odkrycia.",
+    "descriptionEn": "My biggest non web project. Due to the fact, I coded it at the beggining of my programming journey, the quality of code is not great. Game is fully functional, includes pinning figures, en passant move, discover and double checks.",
     "imgHover": ["cpp.png", "qt.png"],
     "development": false,
     "online": true
@@ -59,6 +71,8 @@
     "github": "https://github.com/look919/Book-Your-Time",
     "url": "https://bookyourtime.herokuapp.com/",
     "img": "byt.png",
+    "descriptionPl": "Prosta aplikacja, która wybierze dla użytkownika książkę do przeczytania.",
+    "descriptionEn": "Simple application that can help potential user choose a book to read.",
     "imgHover": ["node.png", "firebase.png", "react.png", "css.png"],
     "development": false,
     "online": false

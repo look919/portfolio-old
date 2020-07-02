@@ -20,9 +20,12 @@ const Wrapper = (props) => {
     setLocale(e.value);
     e.value === 'en' ? setMessenges(English) : setMessenges(Polish);
   }
+  function getLang() {
+    return localStorage.getItem('lang') || 'en';
+  }
 
   return (
-    <Context.Provider value={{ selectLang, locale }}>
+    <Context.Provider value={{ selectLang, locale, getLang }}>
       <IntlProvider messages={messanges} locale={locale}>
         {props.children}
       </IntlProvider>
