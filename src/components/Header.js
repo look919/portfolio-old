@@ -9,6 +9,11 @@ const Header = (props) => {
   const context = useContext(Context);
   let local = localStorage.getItem('lang') || 'en';
 
+  const langBtns = {
+    pl: { value: 'pl' },
+    en: { value: 'en' },
+  };
+
   if (props.titleEn === '') props.titleEn = 'Tomasz Wirkus';
   if (props.titlePl === '') props.titlePl = 'Tomasz Wirkus';
 
@@ -45,24 +50,49 @@ const Header = (props) => {
       <h1 className='header__heading-primary'>
         {local === 'en' ? props.titleEn : props.titlePl}
       </h1>
-      <Select
-        searchable={false}
-        className='header__select'
-        defaultValue={{
-          value: local,
-          label: (
-            <div>
-              <img
-                src={local === 'en' ? EnLang : PlLang}
-                className='header__select__lang'
-                alt='uk flag'
-              />
-            </div>
-          ),
-        }}
-        onChange={(e) => context.selectLang(e)}
-        options={options}
-      />
+      {!is600px ? (
+        <Select
+          searchable={false}
+          className='header__select'
+          defaultValue={{
+            value: local,
+            label: (
+              <div>
+                <img
+                  src={local === 'en' ? EnLang : PlLang}
+                  className='header__select__lang'
+                  alt='uk flag'
+                />
+              </div>
+            ),
+          }}
+          onChange={(e) => context.selectLang(e)}
+          options={options}
+        />
+      ) : (
+        <div className='header__langBtns'>
+          <button
+            onClick={(e) => context.selectLang(langBtns.pl)}
+            className='header__langBtns__btn '
+          >
+            <img
+              src={PlLang}
+              alt='pl flag'
+              className='header__langBtns__btn__img'
+            />
+          </button>
+          <button
+            onClick={(e) => context.selectLang(langBtns.en)}
+            className='header__langBtns__btn'
+          >
+            <img
+              src={EnLang}
+              alt='uk flag'
+              className='header__langBtns__btn__img'
+            />
+          </button>
+        </div>
+      )}
     </header>
   );
 };

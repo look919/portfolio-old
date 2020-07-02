@@ -15,6 +15,7 @@ const Wrapper = (props) => {
   const [messanges, setMessenges] = useState(lang);
 
   function selectLang(e) {
+    console.log(e);
     localStorage.setItem('lang', e.value);
     setLocale(e.value);
     e.value === 'en' ? setMessenges(English) : setMessenges(Polish);
