@@ -4,7 +4,7 @@
     "github": "https://github.com/look919/tomOffice",
     "url": "https://tomoffice.herokuapp.com/",
     "img": "tomOffice.png",
-    "descriptionPl": "Sklep biurowy sprzedający meble do biura. Potencjalny klient może zapoznać się z ofertą sklepu, znaleźć interesujący go produkt poprzez filtrowanie, dodawać do koszyka, zamawiać produkty i zapłacić za nie online.",
+    "descriptionPl": "Sklep sprzedający meble biurowe. Potencjalny klient może zapoznać się z ofertą sklepu, znaleźć interesujący go produkt poprzez filtrowanie, dodawać do koszyka, zamawiać produkty i płacić za nie online.",
     "descriptionEn": "Store online that sells office furnitures. Potential customer can get overview of goods that company sells, find the product by filtering, place an order and pay for it online.",
     "imgHover": ["node.png", "reactredux.png", "css.png", "mongodb.png"],
     "development": false,
@@ -16,7 +16,7 @@
     "url": "https://resume-generatoor.herokuapp.com/",
     "img": "resumeGenerator.png",
     "descriptionPl": "Strona stworzona z myślą o tworzeniu CV dla junior web developerów. Stworzyłem ją na własne potrzeby, oto przykład ",
-    "descriptionEn": "Website destined to generate resumes for junior web developers. I created this app for my own usage, here's an example of a ",
+    "descriptionEn": "Website designated to generate resumes for junior web developers. I created this app for my own usage, here's an example of a ",
     "imgHover": ["node.png", "reactredux.png", "css.png", "mongodb.png"],
     "development": false,
     "online": true
@@ -26,7 +26,7 @@
     "github": "https://github.com/look919/hotelGiant",
     "url": "https://hotelgiant.herokuapp.com/",
     "img": "hotelGiant.png",
-    "descriptionPl": "Aplikacja dla hotelu, która zawiera przegląd usług sprzedawanych przez podmiot, rezerawcje pokojów online, panel zarówno dla admina hotelu jak i gości, w którym mogą kontrolować swoje wydatki.",
+    "descriptionPl": "Aplikacja dla hotelu, która zawiera przegląd usług sprzedawanych przez podmiot, rezerawcję pokojów online, panel zarówno dla admina hotelu jak i gości, w którym to mogą kontrolować swoje wydatki.",
     "descriptionEn": "Hotel application that containts overview of company services, orders online, panel for admin and current guests in which they can control their expenses and buy extra services.",
     "imgHover": ["node.png", "reactredux.png", "css.png", "mongodb.png"],
     "development": false,
@@ -49,12 +49,11 @@
     "url": "https://tomasz-wirkus-portfolio.herokuapp.com/",
     "img": "portfolio.png",
     "descriptionPl": "Strona, na której się obecenie znajdujesz. To z pewnością nie jest najbardziej zaawansowany z moich projektów, ale zdecydowanie to właśnie na niego poświęciłem najwięcej czasu.",
-    "descriptionEn": "Website you are currently sitting at. It's definately not the most complex project of mine but for sure the one i spent the most time for.",
+    "descriptionEn": "Website you are currently sitting at. It's definately not the most complex project of mine but for sure the one I spent the most time for.",
     "imgHover": ["react.png", "css.png"],
     "development": true,
     "online": true
   },
-
   {
     "title": "C++ Chess game",
     "github": "https://github.com/look919/Chess-game-Qt",
@@ -67,14 +66,25 @@
     "online": true
   },
   {
+    "title": "xkcd React Native app",
+    "github": "https://github.com/look919/xkcdReactNative",
+    "url": "https://github.com/look919/xkcdReactNative",
+    "img": "xkcd.png",
+    "descriptionPl": "Pierwsze spotkanie z React Native i Expo. Aplikacja fetchuje najnowsze komiksy z xkcd.com i na bieżąco renduruje kolejne przy scrollowaniu.",
+    "descriptionEn": "First meeting with React Native and Expo. Application fetch the latest comics from xkcd.com and renders the next one on scrolling.",
+    "imgHover": ["react.png", "expo.png"],
+    "development": false,
+    "online": false
+  },
+  {
     "title": "BookYourTime",
     "github": "https://github.com/look919/Book-Your-Time",
     "url": "https://bookyourtime.herokuapp.com/",
     "img": "byt.png",
-    "descriptionPl": "Prosta aplikacja, która wybierze dla użytkownika książkę do przeczytania.",
-    "descriptionEn": "Simple application that can help potential user choose a book to read.",
-    "imgHover": ["node.png", "firebase.png", "react.png", "css.png"],
+    "descriptionPl": "Prosta aplikacja, która wylosuje dla użytkownika książkę godną przeczytania.",
+    "descriptionEn": "A simple application that will draw a book worth reading for the user.",
+    "imgHover": ["react.png", "css.png", "firebase.png"],
     "development": false,
-    "online": false
+    "online": true
   }
 ]
