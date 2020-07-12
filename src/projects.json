@@ -60,7 +60,7 @@
     "url": "https://www.youtube.com/watch?v=oQRxG5nHmoY",
     "img": "chess.png",
     "descriptionPl": "Mój największy niewebowy projekt. Ponieważ napisałem go na początku mojej zabawy z programowaniem jakość kodu pozostawia wiele do życzenia. Sama gra jest w pełni funkcjonalna, zawiera wiązania figur przeciwnika, ruch en passant, podwójny szach i z szach z odkrycia.",
-    "descriptionEn": "My biggest non web project. Due to the fact, I coded it at the beggining of my programming journey, the quality of code is not great. Game is fully functional, includes pinning figures, en passant move, discover and double checks.",
+    "descriptionEn": "My biggest non web project. Due to the fact, I coded it at the begginning of my programming journey, the quality of code is not great. Game is fully functional, includes pinning figures, en passant move, discover and double checks.",
     "imgHover": ["cpp.png", "qt.png"],
     "development": false,
     "online": true
@@ -71,7 +71,7 @@
     "url": "https://github.com/look919/xkcdReactNative",
     "img": "xkcd.png",
     "descriptionPl": "Pierwsze spotkanie z React Native i Expo. Aplikacja fetchuje najnowsze komiksy z xkcd.com i na bieżąco renduruje kolejne przy scrollowaniu.",
-    "descriptionEn": "First meeting with React Native and Expo. Application fetch the latest comics from xkcd.com and renders the next one on scrolling.",
+    "descriptionEn": "First meeting with React Native and Expo. Application fetches the latest comics from xkcd.com and renders more of them on scrolling.",
     "imgHover": ["react.png", "expo.png"],
     "development": false,
     "online": false

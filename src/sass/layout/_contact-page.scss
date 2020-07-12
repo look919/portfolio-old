@@ -60,7 +60,7 @@
     &:active,
     &:focus {
       outline: none;
-      box-shadow: 0 2rem 4rem rgba($color-black, 1);
+      box-shadow: 0 2rem 8rem rgba($color-black, 1);
       border: 2px solid $color-black;
     }
     @media only screen and(max-width: $bp-600) {

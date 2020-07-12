@@ -103,19 +103,13 @@ const WelcomePage = () => {
                   id='WelcomePage.languagesAnswer'
                   defaultMessage='- Native,'
                 />
-                &nbsp;
+                &nbsp;&nbsp;
                 <img
                   src={English}
                   className='about-me__item--flag'
                   alt='language icon'
                 />{' '}
-                - B2,&nbsp;
-                <img
-                  src={Italian}
-                  className='about-me__item--flag'
-                  alt='language icon'
-                />{' '}
-                - A2
+                - B2
               </span>
             </li>
             <li className='about-me__item'>
