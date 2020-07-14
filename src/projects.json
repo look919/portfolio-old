@@ -5,7 +5,7 @@
     "url": "https://tomoffice.herokuapp.com/",
     "img": "tomOffice.png",
     "descriptionPl": "Sklep sprzedający meble biurowe. Potencjalny klient może zapoznać się z ofertą sklepu, znaleźć interesujący go produkt poprzez filtrowanie, dodawać do koszyka, zamawiać produkty i płacić za nie online.",
-    "descriptionEn": "Store online that sells office furnitures. Potential customer can get overview of goods that company sells, find the product by filtering, place an order and pay for it online.",
+    "descriptionEn": "A shop selling office furniture. A prospective customer can view the shop's offer, find the product they are interested in by filtering, add it to their shopping cart, order products and pay for them online.",
     "imgHover": ["node.png", "reactredux.png", "css.png", "mongodb.png"],
     "development": false,
     "online": true
@@ -27,7 +27,7 @@
     "url": "https://hotelgiant.herokuapp.com/",
     "img": "hotelGiant.png",
     "descriptionPl": "Aplikacja dla hotelu, która zawiera przegląd usług sprzedawanych przez podmiot, rezerawcję pokojów online, panel zarówno dla admina hotelu jak i gości, w którym to mogą kontrolować swoje wydatki.",
-    "descriptionEn": "Hotel application that containts overview of company services, orders online, panel for admin and current guests in which they can control their expenses and buy extra services.",
+    "descriptionEn": "Application for the hotel, which contains an overview of the services sold by the entity, booking rooms online, a panel for both the hotel admin and guests where they can control their expenses.",
     "imgHover": ["node.png", "reactredux.png", "css.png", "mongodb.png"],
     "development": false,
     "online": true
@@ -49,7 +49,7 @@
     "url": "https://tomasz-wirkus-portfolio.herokuapp.com/",
     "img": "portfolio.png",
     "descriptionPl": "Strona, na której się obecenie znajdujesz. To z pewnością nie jest najbardziej zaawansowany z moich projektów, ale zdecydowanie to właśnie na niego poświęciłem najwięcej czasu.",
-    "descriptionEn": "Website you are currently sitting at. It's definately not the most complex project of mine but for sure the one I spent the most time for.",
+    "descriptionEn": "The website you are currently on. It's certainly not the most advanced of my projects, but it's definitely the one I spent most of my time on.",
     "imgHover": ["react.png", "css.png"],
     "development": true,
     "online": true
@@ -60,7 +60,7 @@
     "url": "https://www.youtube.com/watch?v=oQRxG5nHmoY",
     "img": "chess.png",
     "descriptionPl": "Mój największy niewebowy projekt. Ponieważ napisałem go na początku mojej zabawy z programowaniem jakość kodu pozostawia wiele do życzenia. Sama gra jest w pełni funkcjonalna, zawiera wiązania figur przeciwnika, ruch en passant, podwójny szach i z szach z odkrycia.",
-    "descriptionEn": "My biggest non web project. Due to the fact, I coded it at the begginning of my programming journey, the quality of code is not great. Game is fully functional, includes pinning figures, en passant move, discover and double checks.",
+    "descriptionEn": "My biggest non web project. Due to the fact, I coded it at the begginning of my programming journey, the quality of code is not great. Game is fully functional, includes pinning opponent's figures, en passant move, discover and double checks.",
     "imgHover": ["cpp.png", "qt.png"],
     "development": false,
     "online": true
@@ -71,7 +71,7 @@
     "url": "https://github.com/look919/xkcdReactNative",
     "img": "xkcd.png",
     "descriptionPl": "Pierwsze spotkanie z React Native i Expo. Aplikacja fetchuje najnowsze komiksy z xkcd.com i na bieżąco renduruje kolejne przy scrollowaniu.",
-    "descriptionEn": "First meeting with React Native and Expo. Application fetches the latest comics from xkcd.com and renders more of them on scrolling.",
+    "descriptionEn": "First meeting with React Native and Expo. Application fetches the latest comics from xkcd.com and renders the next ones on scrolling.",
     "imgHover": ["react.png", "expo.png"],
     "development": false,
     "online": false
@@ -82,7 +82,7 @@
     "url": "https://bookyourtime.herokuapp.com/",
     "img": "byt.png",
     "descriptionPl": "Prosta aplikacja, która wylosuje dla użytkownika książkę godną przeczytania.",
-    "descriptionEn": "A simple application that will draw a book worth reading for the user.",
+    "descriptionEn": "A simple application that will draw a book worth reading for you.",
     "imgHover": ["react.png", "css.png", "firebase.png"],
     "development": false,
     "online": true

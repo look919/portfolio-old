@@ -6,8 +6,8 @@
   "Nav.contact": "Contact",
   "Nav.notFound": "404 ;(",
 
-  "WelcomePage.paragraphOne": "Hello! I'm Tomasz and it's a big pleasure to welcome you on my website, feel free to look around.",
-  "WelcomePage.paragraphTwo": "I am into web programming for over one year and my goal is to become MERN Stack Developer so I work hard everyday to become one.",
+  "WelcomePage.paragraphOne": "Hello! My name is Tomasz and I am very pleased to welcome you on my website, feel free to look around.",
+  "WelcomePage.paragraphTwo": "I am into web programming for over one year and my goal is to become MERN Stack Developer, so I work hard everyday to become one.",
   "WelcomePage.name": "Name: ",
   "WelcomePage.vorname": "Surname: ",
   "WelcomePage.age": "Age: ",
@@ -24,7 +24,7 @@
   "WelcomePage.emailAnswer": "wirkus919@gmail.com",
 
   "SkillsPage.paragraphOnePartOne": "Hover technology to get more detailed info. ",
-  "SkillsPage.paragraphOnePartTwo": "Full list of technlogies I work with you can find by clicking this ",
+  "SkillsPage.paragraphOnePartTwo": "Full list of technologies I work with you can find by clicking this ",
   "SkillsPage.paragraphOnePartThree": "link.",
   "SkillsPage.NodeListOne": "Express,",
   "SkillsPage.NodeListTwo": "Restful API, MVC,",
@@ -43,13 +43,13 @@
   "SkillsPage.MongoDBListThree": "Data validation and protection",
   "SkillsPage.MongoDBListFour": "Data modelling",
 
-  "ProjectsPage.paragraphOne": "I decided not to include projects from online courses here, despite the fact that their creation was very important in my development.",
+  "ProjectsPage.paragraphOne": "I decided not to include projects from online courses here, even though they have had a great impact on my skills development.",
   "ProjectsPage.paragraphTwoPartOne": "All the projects in the portfolio I created 100% by myself. ",
   "ProjectsPage.paragraphTwoPartTwo": "Take a look how i write my code.",
 
-  "ContactPage.paragraphOne": "You can also contact me directly by sending email to wirkus919@gmail.com, I'm open for any kind of cooperation.",
-  "ContactPage.paragraphTwo": "I will consider moving to another city for summer peroid.",
-  "ContactPage.paragraphTwoOld": "Due to my studies I exclude the possibility of moving and I'm only interested in remote job offers or offers from Koszalin.",
+  "ContactPage.paragraphOne": "You can also contact me directly by sending email to wirkus919@gmail.com, I'm open for any form of cooperation.",
+  "ContactPage.paragraphTwo": "I will consider moving to another city for the summer peroid.",
+  "ContactPage.paragraphTwoOld": "Due to my studies, I exclude the possibility of moving and I am only interested in working remotely or in Koszalin.",
   "ContactPage.from": "from: email@example.com",
   "ContactPage.to": "to: wirkus919@gmail.com",
   "ContactPage.btn": "Submit",
@@ -57,6 +57,6 @@
   "ContactPage.short": "I asked you to leave me a message, not a test spam :)",
   "ContactPage.success": "Thanks!",
 
-  "NotFoundPage.paragraphOne": "Page that you are looking for doesn't exist or is not aviable right now.",
+  "NotFoundPage.paragraphOne": "Page that you are looking for does not exist or is not aviable right now.",
   "NotFoundPage.paragraphTwo": "Try again later."
 }

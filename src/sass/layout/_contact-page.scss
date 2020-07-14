@@ -49,14 +49,6 @@
     );
     animation: moveInLeft 3s ease 0.5s both;
 
-    &--mobile {
-      animation: none;
-
-      &:active + .info__p {
-        display: none;
-      }
-    }
-
     &:active,
     &:focus {
       outline: none;
@@ -86,6 +78,19 @@
       &:placeholder-shown {
         animation: moveInRight 3s ease 0.5s both,
           placeholder 3.5s ease-in-out infinite;
+      }
+    }
+    &--mobile {
+      animation: none;
+      color: $color-black;
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(#0c28a6, 0.7),
+        rgba(#60c0e0, 0.7)
+      ) !important;
+
+      &:active + .info__p {
+        display: none;
       }
     }
   }
