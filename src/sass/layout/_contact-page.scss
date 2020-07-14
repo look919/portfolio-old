@@ -82,12 +82,6 @@
     }
     &--mobile {
       animation: none;
-      color: $color-black;
-      background-image: linear-gradient(
-        to right bottom,
-        rgba(#0c28a6, 0.7),
-        rgba(#60c0e0, 0.7)
-      ) !important;
 
       &:active + .info__p {
         display: none;

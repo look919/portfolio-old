@@ -100,7 +100,7 @@ const ContactPage = () => {
                 className={
                   !is600px
                     ? 'contact-page__email contact-page__email--user'
-                    : 'contact-page__email contact-page__email--mobile'
+                    : 'contact-page__email contact-page__email--user contact-page__email--mobile'
                 }
                 value={formData.email}
                 name='email'
