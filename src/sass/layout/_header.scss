@@ -11,6 +11,9 @@
     font-size: 6rem;
     letter-spacing: 0.5rem;
 
+    @media only screen and (max-width: $bp-1120) {
+      font-size: 7rem;
+    }
     @media only screen and (max-width: $bp-450) {
       font-size: 5rem;
       padding: 1rem 0;
@@ -80,9 +83,6 @@
     background-color: inherit !important;
     transition: all 0.3s;
 
-    @media only screen and (max-width: $bp-1120) {
-      top: 1rem;
-    }
     @media only screen and (max-width: $bp-600) {
       display: none;
     }

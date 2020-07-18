@@ -6,12 +6,12 @@
   justify-items: center;
 
   @media only screen and (max-width: $bp-1120) {
-    grid-template-rows: repeat(4, 20rem);
+    grid-template-rows: repeat(4, 12rem);
   }
   @media only screen and (max-width: $bp-600) {
     grid-template-rows: repeat(4, 15rem);
   }
-  @media only screen and (max-width: $bp-350) {
-    grid-template-rows: repeat(4, 12rem);
+  @media only screen and (max-width: $bp-450) {
+    grid-template-rows: repeat(4, 13rem);
   }
 }
