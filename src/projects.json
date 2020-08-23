@@ -1,5 +1,16 @@
 [
   {
+    "title": "TwitterReplica",
+    "github": "https://github.com/look919/twitterReplica",
+    "url": "https://www.youtube.com/watch?v=ZYlMCxW5iRI&t=51s",
+    "img": "twitter.png",
+    "descriptionPl": "To na razie mój największy projekt. Zawiera główne funkcjonalności Twittera jak tweety, profile i wszystkie akcje z nimi związane.  Apka wciąż jest we wczesnej fazie rozwoju i z tego powodu jeszcze jej nie upubliczniłem, w zamian prezentuję jej stan w filmiku do którego prowadzi link (film może być nieaktualny gdy to czytasz, sprawdź datę publikacji)",
+    "descriptionEn": "This is my biggest project so far. It contains the main Twitter functionalities like tweets, profiles and all related actions.  The app is still in the early stages of development and for this reason I haven't published it yet, instead I present its status in a video to which the link leads (the video may be out of date when you read it, check the publication date)",
+    "imgHover": ["node.png", "reactredux.png", "css.png", "mongodb.png"],
+    "development": true,
+    "online": true
+  },
+  {
     "title": "TomOffice",
     "github": "https://github.com/look919/tomOffice",
     "url": "https://tomoffice.herokuapp.com/",
@@ -75,16 +86,5 @@
     "imgHover": ["react.png", "expo.png"],
     "development": false,
     "online": false
-  },
-  {
-    "title": "BookYourTime",
-    "github": "https://github.com/look919/Book-Your-Time",
-    "url": "https://bookyourtime.herokuapp.com/",
-    "img": "byt.png",
-    "descriptionPl": "Prosta aplikacja, która wylosuje dla użytkownika książkę godną przeczytania.",
-    "descriptionEn": "A simple application that will draw a book worth reading for you.",
-    "imgHover": ["react.png", "css.png", "firebase.png"],
-    "development": false,
-    "online": true
   }
 ]
