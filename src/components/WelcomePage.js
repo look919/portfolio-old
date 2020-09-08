@@ -8,7 +8,7 @@ import Div100vh from 'react-div-100vh';
 
 import Polish from '../img/polflag.png';
 import English from '../img/uk.png';
-import Italian from '../img/italy.png';
+//import Italian from '../img/italy.png';
 
 const WelcomePage = () => {
   const is600px = useMediaQuery({ query: '(max-width: 600px)' });
