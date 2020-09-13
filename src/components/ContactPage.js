@@ -7,7 +7,8 @@ import Div100vh from 'react-div-100vh';
 import { useMediaQuery } from 'react-responsive';
 
 const ContactPage = () => {
-  const is600px = useMediaQuery({ query: '(max-width: 600px)' });
+  const isMobile = useMediaQuery({ query: '(max-width: 500px)' });
+  const isMobileLandscape = useMediaQuery({ query: '(max-height: 500px' });
 
   const [formData, setFormData] = useState({
     email: '',
@@ -80,7 +81,11 @@ const ContactPage = () => {
   };
 
   return (
-    <Div100vh className='container'>
+    <Div100vh
+      className={
+        isMobileLandscape ? 'container container--landscape' : 'container'
+      }
+    >
       <Header titleEn='Contact' titlePl='Kontakt' />
       <div className='content content--contact'>
         <form
@@ -98,7 +103,7 @@ const ContactPage = () => {
                 type='email'
                 placeholder={msg}
                 className={
-                  !is600px
+                  !isMobile && !isMobileLandscape
                     ? 'contact-page__email contact-page__email--user'
                     : 'contact-page__email contact-page__email--user contact-page__email--mobile'
                 }
@@ -117,7 +122,7 @@ const ContactPage = () => {
                 disabled
                 placeholder={msg}
                 className={
-                  !is600px
+                  !isMobile && !isMobileLandscape
                     ? 'contact-page__email'
                     : 'contact-page__email contact-page__email--mobile'
                 }

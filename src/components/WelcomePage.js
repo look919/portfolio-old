@@ -11,15 +11,26 @@ import English from '../img/uk.png';
 //import Italian from '../img/italy.png';
 
 const WelcomePage = () => {
-  const is600px = useMediaQuery({ query: '(max-width: 600px)' });
+  const isMobile = useMediaQuery({ query: '(max-width: 500px)' });
+  const isMobileLandscape = useMediaQuery({ query: '(max-height: 500px' });
 
   return (
     <Div100vh
-      className={!is600px ? `container container--animated` : 'container'}
+      className={
+        isMobileLandscape
+          ? 'container container--landscape'
+          : isMobile
+          ? 'container'
+          : 'container  container--animated'
+      }
     >
       <Header titlePl='Tomasz Wirkus' titleEn='Tomasz Wirkus' />
       <div className='content content--welcomePage'>
-        <div className={!is600px ? `info info--animated` : 'info'}>
+        <div
+          className={
+            isMobile || isMobileLandscape ? 'info' : 'info  info--animated'
+          }
+        >
           <p className='info__p'>
             <FormattedMessage
               id='WelcomePage.paragraphOne'
@@ -35,7 +46,13 @@ const WelcomePage = () => {
             />
           </p>
         </div>
-        <div className={!is600px ? `about-me about-me--animated` : 'about-me'}>
+        <div
+          className={
+            isMobile || isMobileLandscape
+              ? 'about-me'
+              : 'about-me  about-me--animated'
+          }
+        >
           <ul className='about-me__list'>
             <li className='about-me__item'>
               <FormattedMessage id='WelcomePage.name' defaultMessage='Name: ' />

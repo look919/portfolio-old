@@ -4,10 +4,17 @@ import Nav from './Nav';
 import Carousel from './Carousel';
 import { FormattedMessage } from 'react-intl';
 import Div100vh from 'react-div-100vh';
+import { useMediaQuery } from 'react-responsive';
 
 const ProjectsPage = () => {
+  const isMobileLandscape = useMediaQuery({ query: '(max-height: 500px' });
+
   return (
-    <Div100vh className='container'>
+    <Div100vh
+      className={
+        isMobileLandscape ? 'container container--landscape' : 'container'
+      }
+    >
       <Header titleEn='Projects' titlePl='Projekty' />
 
       <div className='content content--projectPage'>

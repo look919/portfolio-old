@@ -17,7 +17,9 @@ const Header = (props) => {
   if (props.titleEn === '') props.titleEn = 'Tomasz Wirkus';
   if (props.titlePl === '') props.titlePl = 'Tomasz Wirkus';
 
-  const is600px = useMediaQuery({ query: '(max-width: 600px)' });
+  const isMobile = useMediaQuery({ query: '(max-width: 500px)' });
+  const isMobileLandscape = useMediaQuery({ query: '(max-height: 500px' });
+
   const options = [
     {
       value: 'en',
@@ -40,7 +42,7 @@ const Header = (props) => {
   return (
     <header
       className={
-        is600px
+        isMobile || isMobileLandscape
           ? 'header header--mobile'
           : props.titleEn === 'Tomasz Wirkus'
           ? 'header header--delayed'
@@ -50,7 +52,7 @@ const Header = (props) => {
       <h1 className='header__heading-primary'>
         {local === 'en' ? props.titleEn : props.titlePl}
       </h1>
-      {!is600px ? (
+      {!isMobile ? (
         <Select
           searchable={false}
           className='header__select'
@@ -72,7 +74,7 @@ const Header = (props) => {
       ) : (
         <div className='header__langBtns'>
           <button
-            onClick={(e) => context.selectLang(langBtns.pl)}
+            onClick={() => context.selectLang(langBtns.pl)}
             className='header__langBtns__btn '
           >
             <img
@@ -82,7 +84,7 @@ const Header = (props) => {
             />
           </button>
           <button
-            onClick={(e) => context.selectLang(langBtns.en)}
+            onClick={() => context.selectLang(langBtns.en)}
             className='header__langBtns__btn'
           >
             <img

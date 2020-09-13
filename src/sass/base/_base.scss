@@ -38,7 +38,6 @@ body {
   color: $color-white;
   background-color: $color-background;
   width: 100%;
-  overflow: hidden;
 }
 button {
   cursor: pointer;
@@ -57,6 +56,7 @@ img {
   grid-template-rows: 9rem calc(100vh - 16rem) 7rem;
   grid-template-columns: 1fr;
   justify-items: center;
+  overflow: hidden;
 
   text-align: center;
   background-image: linear-gradient(
@@ -89,12 +89,10 @@ img {
     grid-template-rows: 12rem calc(100% - 20rem) 8rem;
   }
 
-  //when landscape view and width is no bigger than 900px, otherwords, phone-landscape
-  @media only screen and (orientation: landscape) and (max-width: $bp-1120) {
-    grid-template-rows: 13rem minmax(calc(100vh - 25rem), max-content) 12rem;
-    height: auto;
+  &--landscape {
+    height: 100rem !important;
+    overflow: initial;
   }
-
   &--animated {
     &::before {
       content: '';

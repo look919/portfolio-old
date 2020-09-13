@@ -12,7 +12,8 @@ import mongo from '../img/techs/mongodb.png';
 import { useMediaQuery } from 'react-responsive';
 
 const SkillsPage = () => {
-  const is600px = useMediaQuery({ query: '(max-width: 600px)' });
+  const isMobile = useMediaQuery({ query: '(max-width: 500px)' });
+  const isMobileLandscape = useMediaQuery({ query: '(max-height: 500px' });
 
   const nodeParagraphs = [
     <FormattedMessage id='SkillsPage.NodeListOne' defaultMessage='Express,' />,
@@ -82,17 +83,22 @@ const SkillsPage = () => {
   ];
 
   return (
-    <Div100vh className='container'>
+    <Div100vh
+      className={
+        isMobileLandscape ? 'container container--landscape' : 'container'
+      }
+    >
       <Header titleEn='Skills' titlePl='Umiejętności' />
       <div className='content content--skillPage'>
         <div className='info'>
           <p className='info__p'>
-            {!is600px && (
-              <FormattedMessage
-                id='SkillsPage.paragraphOnePartOne'
-                defaultMessage='Hover technology to get more detailed info. '
-              />
-            )}
+            {!isMobile ||
+              (!isMobileLandscape && (
+                <FormattedMessage
+                  id='SkillsPage.paragraphOnePartOne'
+                  defaultMessage='Hover technology to get more detailed info. '
+                />
+              ))}
             <FormattedMessage
               id='SkillsPage.paragraphOnePartTwo'
               defaultMessage='Full list of technlogies I work with you can find by clicking this '
