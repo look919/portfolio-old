@@ -2,10 +2,10 @@
   {
     "title": "TwitterReplica",
     "github": "https://github.com/look919/twitterReplica",
-    "url": "https://twitterreplica.herokuapp.com/",
+    "url": "http://35.158.105.176",
     "img": "twitter.png",
-    "descriptionPl": "To na razie mój największy projekt. Zawiera główne funkcjonalności Twittera jak tweety, profile i wszystkie akcje z nimi związane. Apka wciąż jest w fazie rozwoju i z tego powodu może zawierać błędy.",
-    "descriptionEn": "This is my biggest project so far. It contains the main Twitter functionalities like tweets, profiles and all related actions. The app is still in the development and for this reason It may contain bugs.",
+    "descriptionPl": "To mój największy projekt, kompleksowością dorównuje całej reszcie projektów razem wziętej. Zawiera główne funkcjonalności Twittera, tweety, profile i wszystkie akcje z nimi związane takie jak like'i, retweety, followy i wiele wiele więcej.",
+    "descriptionEn": "This is my biggest project, the complexity of which is equal to the rest of the projects put together. It contains the main features of Twitter, tweets, profiles and all related actions such as likes, retweets, follows and much more.",
     "imgHover": ["node.png", "reactredux.png", "css.png", "mongodb.png"],
     "development": true,
     "online": true
